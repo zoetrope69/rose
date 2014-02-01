@@ -9,7 +9,7 @@ $roseRed: #C43200;
 $roseWhite: #FDFDFD;
 
 body{
-	height: 100000px;
+	height: 1000px;
 	background: $roseWhite;
 	color: $roseBlack;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -25,10 +25,9 @@ header{
 	position: fixed;
 	top: 0; right: 0; left: 0;
 	overflow: hidden;
-	background: transparentize($roseWhite, .1);
+	background: transparentize(white, .05);
 	padding: 1.5em 0;
 	color: $roseWhite;
-	box-shadow: 0 10px 20px transparentize($roseWhite, .1);
 }
 
 header .logo, header nav{
@@ -58,11 +57,15 @@ header nav li a:hover{
 	color: $roseBlack;
 }
 
-main section{
-	width: 50%;
-	margin: 2em auto;
+main section{	
+	background: url('../../img/headertwitterrose.png');
+	background-size: cover;
+	color: $roseWhite;
 	padding: 4em 0;
 
+}
+
+main section .wrapper{
 	animation: fadeIn 1s;
 }
 
