@@ -1,0 +1,91 @@
+/* _logo.scss */
+
+.logo{
+	margin-bottom: 50px;
+
+	font-family: Quicksand;
+	font-weight: 400;
+	font-size: 4.5rem;
+
+	color: $roseWhite;
+
+	text-align: center;
+	white-space: nowrap;
+
+	transform-origin: bottom;
+	animation: logoFadeIn 1s;
+
+	user-select: none;
+	cursor: default;
+}
+
+.logo--image{
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+
+	text-indent: -9999px;
+	
+	background: no-repeat center;
+	background-size: 100%;
+}
+
+.logo--image--svg{
+	background-image: url('../../img/default.svg');
+}
+
+.logo--image--png{
+	background-image: url('../../img/default.png');
+}
+
+@keyframes logoFadeIn{
+	0%{
+		transform: scale(.5) translateY(-50%) rotateX(-90deg);
+		opacity: 0;
+	}
+}
+
+.logo .petals{
+	position: relative;
+	display: inline-block;
+	width: 5.5rem;
+	height: 4.5rem;
+	text-indent: -9999px;
+}
+
+.logo .petals li{
+	position: absolute;
+	height: 3.5rem;
+	width: 3.5rem;
+	line-height: .5rem;
+	border: 4px solid $roseWhite;
+	border-radius: 50%;
+	transform: translateY(0);
+}
+
+.logo .petals li:nth-child(1){
+	animation: petal-one 1.25s .5s;
+	transform: translateX(1.25rem) translateY(0rem);
+}
+
+.logo .petals li:nth-child(2){
+	animation: petal-two 1.25s .5s;
+	transform: translateX(0rem) translateY(0.63rem);
+}
+
+.logo .petals li:nth-child(3){
+	animation: petal-three 1.25s .5s;
+	transform: translateX(1.25rem) translateY(1.25rem);
+}
+
+@keyframes petal-one{
+	50%{ transform: translateX(0rem) translateY(0.63rem); }
+}
+
+@keyframes petal-two{
+	50%{ transform: translateX(1.25rem) translateY(1.25rem); }
+}
+
+@keyframes petal-three{
+	50%{ transform: translateX(1.25rem) translateY(0rem); }
+}
