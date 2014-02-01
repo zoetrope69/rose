@@ -1,0 +1,25 @@
+{
+  "name": "rose",
+  "version": "0.0.0",
+  "authors": [
+    "Zac Colley <hi@zaccolley.com>"
+  ],
+  "description": "ROSE Digital's website",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://rosedigital.co.uk",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.0"
+  }
+}
