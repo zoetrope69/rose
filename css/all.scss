@@ -9,21 +9,59 @@ $roseRed: #C43200;
 $roseWhite: #FDFDFD;
 
 body{
+	height: 100000px;
 	background: $roseWhite;
+	color: $roseBlack;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	background: $roseRed;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
 }
 
 header{
-	padding: 3em 0;
-	width: 70%;
-	margin: 0 auto;
+	z-index: 1337;
+	position: fixed;
+	top: 0; right: 0; left: 0;
+	overflow: hidden;
+	background: transparentize($roseWhite, .1);
+	padding: 1.5em 0;
 	color: $roseWhite;
+	box-shadow: 0 10px 20px transparentize($roseWhite, .1);
 }
 
-header section{
-	padding: 1em;
-	color: transparentize($roseWhite, .005);
+header .logo, header nav{
+	float: left;
+	width: 50%;
+}
+
+header nav li{
+	letter-spacing: .25em;
+	float: left;
+	width: 25%;
+	font-size: 1em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+header nav li a{
+	display: block;
+	color: $roseRed;
+	font: inherit;
+	padding: 2em 1.5em;
+	text-decoration: none;
+	transition: color .15s;
+}
+
+header nav li a:hover{
+	color: $roseBlack;
+}
+
+main section{
+	width: 50%;
+	margin: 2em auto;
+	padding: 4em 0;
 
 	animation: fadeIn 1s;
 }
@@ -35,19 +73,18 @@ header section{
 	}
 }
 
-header section h1{
+main section h1{
 	margin-bottom: .5em;
 
 	font-weight: 300;
-	font-size: 3.5em;
-	// font-style: italic;
+	font-size: 4em;
+	font-style: italic;
 
-	font-family: 'Crete Round';
-	// letter-spacing: -5px;
+	font-family: 'Crete Round', Georgia, serif;
 
 }
 
-header section p{
+main section p{
 	font-size: 1.25em;
 	font-weight: 300;
 	line-height: 1.35;
