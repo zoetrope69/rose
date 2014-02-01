@@ -1,0 +1,1 @@
+{"version":3,"file":"js/build/script.min.js","sources":["script.js"],"names":["fadeInLogo","$","html"],"mappings":";AACA,QAASA,cAERC,EAAE,SAASC,KAAK,2DAGjB,WAECF"}
