@@ -7,6 +7,9 @@
 $roseBlack: #282828;
 $roseRed: #C43200;
 $roseWhite: #FDFDFD;
+$roseGreen: #174D1F;
+
+*{ box-sizing: border-box; }
 
 body{
 	height: 1000px;
@@ -26,13 +29,18 @@ header{
 	top: 0; right: 0; left: 0;
 	overflow: hidden;
 	background: transparentize(white, .05);
-	padding: 1.5em 0;
+	padding: .75em 0;
 	color: $roseWhite;
 }
 
-header .logo, header nav{
+header .logo{
 	float: left;
-	width: 50%;
+	width: 30%;
+}
+
+header nav{
+	float: left;
+	width: 70%;
 }
 
 header nav li{
@@ -40,7 +48,7 @@ header nav li{
 	float: left;
 	width: 25%;
 	font-size: 1em;
-	font-weight: 800;
+	font-weight: 500;
 	text-transform: uppercase;
 }
 
@@ -48,8 +56,9 @@ header nav li a{
 	display: block;
 	color: $roseRed;
 	font: inherit;
-	padding: 2em 1.5em;
+	padding: .5em 0;
 	text-decoration: none;
+	text-align: right;
 	transition: color .15s;
 }
 
@@ -57,23 +66,59 @@ header nav li a:hover{
 	color: $roseBlack;
 }
 
-main section{	
+main section{
+	height: 100vh;
+	padding: 25vh 0;
+}
+
+main section:nth-child(2n){
+	text-align: right;
+}
+
+main section:nth-child(3n+1){
+	color: $roseWhite;
+	background: $roseRed;
+}
+
+main section:nth-child(3n+2){
+	color: $roseBlack;
+	background: $roseWhite;
+}
+
+main section:nth-child(3n+3){
+	color: $roseWhite;
+	background: $roseBlack;
+}
+
+main section.image{
 	background: url('../../img/headertwitterrose.png');
 	background-size: cover;
-	color: $roseWhite;
-	padding: 4em 0;
-
 }
 
 main section .wrapper{
-	animation: fadeIn 1s;
+	animation: inLeft 1s;
+	backface-visibility: hidden;
 }
 
-@keyframes fadeIn{
-	0%{
-		transform: translateY(25%);
-		opacity: 0;
-	}
+main section:nth-child(2n){
+	animation: inRight 1s;
+	text-align: right;
+}
+
+@keyframes inTop{
+	0%{ transform: translateY(25%); opacity: 0; }
+}
+
+@keyframes inRight{
+	0%{ transform: translateX(25%); opacity: 0; }
+}
+
+@keyframes inBottom{
+	0%{ transform: translateY(-25%); opacity: 0; }
+}
+
+@keyframes inLeft{
+	0%{ transform: translateX(-25%); opacity: 0; }
 }
 
 main section h1{

@@ -6,11 +6,9 @@ function fadeInLogo(){
 }
 
 function bodyPadding(){
-	$('body').css('padding-top',  $('header').height());
+	$('body').css('padding-top',  $('header').outerHeight());
 }
 (function(){
-
 	bodyPadding();
 	fadeInLogo();
-
 })()

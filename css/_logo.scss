@@ -1,22 +1,22 @@
 /* _logo.scss */
 
 .logo{
-
 	font-family: Quicksand;
 	font-weight: 400;
-	font-size: 4.5rem;
+	font-size: 2.5rem;
 
-	color: $roseWhite;
 	color: $roseBlack;
 
-	// text-align: center;
-
-	transform-origin: bottom;
+	backface-visibility: hidden;
+	transform-origin: center;
 	animation: logoFadeIn 1s;
 
 	user-select: none;
-	cursor: default;
+
+	transition: opacity .15s;
 }
+
+.logo:hover{ opacity: .8; }
 
 .logo--image{
 	width: 150px;
@@ -39,7 +39,7 @@
 
 @keyframes logoFadeIn{
 	0%{
-		transform: translateY(-50%) rotateX(-90deg);
+		transform: translateY(-25%);
 		opacity: 0;
 	}
 }
@@ -47,45 +47,55 @@
 .logo .petals{
 	position: relative;
 	display: inline-block;
-	width: 5.5rem;
-	height: 4.5rem;
-	text-indent: -9999px;
+	width: 2.25rem;
+	height: 2.15rem;
 }
 
 .logo .petals li{
 	position: absolute;
-	height: 3.5rem;
-	width: 3.5rem;
+	height: 1.75rem;
+	width: 1.75rem;
 	line-height: .5rem;
-	border: 4px solid $roseWhite;
-	border: 4px solid $roseRed;
+	border: 2px solid $roseRed;
 	border-radius: 50%;
 	transform: translateY(0);
 }
 
 .logo .petals li:nth-child(1){
-	animation: petal-one 1.25s .5s;
-	transform: translateX(1.25rem) translateY(0rem);
+	animation: petal-one 1.25s .5s 1;
+	transform: translateX(.5rem) translateY(0rem);
+}
+
+.logo:hover .petals li:nth-child(1){
+	animation: petal-one 1.25s;
 }
 
 .logo .petals li:nth-child(2){
-	animation: petal-two 1.25s .5s;
-	transform: translateX(0rem) translateY(0.63rem);
+	animation: petal-two 1.25s .5s 1;
+	transform: translateX(0rem) translateY(0.25rem);
+}
+
+.logo:hover .petals li:nth-child(2){
+	animation: petal-two 1.25s;
 }
 
 .logo .petals li:nth-child(3){
-	animation: petal-three 1.25s .5s;
-	transform: translateX(1.25rem) translateY(1.25rem);
+	animation: petal-three 1.25s .5s 1;
+	transform: translateX(.5rem) translateY(.5rem);
+}
+
+.logo:hover .petals li:nth-child(3){
+	animation: petal-three 1.25s;
 }
 
 @keyframes petal-one{
-	50%{ transform: translateX(0rem) translateY(0.63rem); }
+	50%{ transform: translateX(0rem) translateY(0.25rem); }
 }
 
 @keyframes petal-two{
-	50%{ transform: translateX(1.25rem) translateY(1.25rem); }
+	50%{ transform: translateX(.5rem) translateY(.5rem); }
 }
 
 @keyframes petal-three{
-	50%{ transform: translateX(1.25rem) translateY(0rem); }
+	50%{ transform: translateX(.5rem) translateY(0rem); }
 }
