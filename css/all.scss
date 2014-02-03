@@ -16,10 +16,11 @@ body{
 	background: $roseWhite;
 	color: $roseBlack;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	padding: 1em;
 }
 
 .wrapper{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -29,7 +30,7 @@ header{
 	top: 0; right: 0; left: 0;
 	overflow: hidden;
 	background: transparentize(white, .05);
-	padding: .75em 0;
+	padding: .75em 1em;
 	color: $roseWhite;
 }
 
@@ -44,10 +45,11 @@ header nav{
 }
 
 header nav li{
-	letter-spacing: .25em;
+	letter-spacing: .15em;
 	float: left;
 	width: 25%;
-	font-size: 1em;
+	padding: .25em 0;
+	font-size: .85em;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -66,9 +68,11 @@ header nav li a:hover{
 	color: $roseBlack;
 }
 
+main{ overflow: hidden; }
+
 main section{
 	height: 100vh;
-	padding: 25vh 0;
+	padding: 16% 0;
 }
 
 main section:nth-child(2n){
@@ -106,19 +110,19 @@ main section:nth-child(2n){
 }
 
 @keyframes inTop{
-	0%{ transform: translateY(25%); opacity: 0; }
+	0%{ transform: translateY(15%); opacity: 0; }
 }
 
 @keyframes inRight{
-	0%{ transform: translateX(25%); opacity: 0; }
+	0%{ transform: translateX(5%); opacity: 0; }
 }
 
 @keyframes inBottom{
-	0%{ transform: translateY(-25%); opacity: 0; }
+	0%{ transform: translateY(-15%); opacity: 0; }
 }
 
 @keyframes inLeft{
-	0%{ transform: translateX(-25%); opacity: 0; }
+	0%{ transform: translateX(-5%); opacity: 0; }
 }
 
 main section h1{
