@@ -1,6 +1,8 @@
 /* _logo.scss */
 
 .logo{
+	display: inline-block;
+
 	font-family: Quicksand;
 	font-weight: 400;
 	font-size: 2.5rem;
@@ -9,11 +11,12 @@
 
 	backface-visibility: hidden;
 	transform-origin: center;
-	animation: logoFadeIn 1s;
-
-	user-select: none;
+	animation: logoFadeIn 1.5s;
 
 	transition: opacity .15s;
+
+	user-select: none;
+	text-decoration: none;
 }
 
 .logo:hover{ opacity: .8; }
@@ -38,7 +41,8 @@
 }
 
 @keyframes logoFadeIn{
-	0%{
+	0%{ opacity: 0; }
+	50%{
 		transform: translateY(-25%);
 		opacity: 0;
 	}

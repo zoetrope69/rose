@@ -1,4 +1,9 @@
 (function(){
+
 	bodyPadding();
-	fadeInLogo();
+
+	anchorPageScrolling();
+
+	logoInit();
+
 })()
