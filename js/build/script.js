@@ -25,8 +25,21 @@ function scrollPage(clicked){
 		// Speed of the animation in ms
 		var animationSpeed = 500
 
-		var url = window.location.protocol + "//" + window.location.host + window.location.pathname; // Get current URL
+		var host = window.location.protocol + "//" + window.location.host;
+		var url = host + window.location.pathname; // Get current URL
+
 		var id = String(clicked).substr(url.length); // Take the URL and leave the # part
+		var strippedId = id.substr(1);
+
+		var title = capsString(strippedId)+" ✿ ROSE Digital";
+		
+		// if clicking the logo
+		if(id.toLowerCase() == "#intro"){
+			title = "ROSE Digital";
+		}
+		
+		document.title = title;
+
 		var postPosition = $(id).position().top; // Finds the position from the top of the window for the heading with the ID 'hrefValue'
 		
 		var headerHeight = $('header').outerHeight();
@@ -39,6 +52,9 @@ function scrollPage(clicked){
 		event.preventDefault(); // Stops the link's normal behaviour
 }
 
+function capsString(string){
+	return string.substring(0, 1).toUpperCase()+string.substring(1);
+}
 (function(){
 
 	consoleSleuths();
