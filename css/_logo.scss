@@ -7,46 +7,53 @@
 	font-weight: 400;
 	font-size: 2.5rem;
 
+	line-height: 1.5em;
+
 	color: $roseBlack;
 
-	backface-visibility: hidden;
+	backface-visibility: hidden; // stops the animation white flash
 	transform-origin: center;
-	animation: logoFadeIn 1.5s;
+	animation: logoIn 1.5s;
 
 	transition: opacity .15s;
 
-	user-select: none;
+	user-select: none; // stops the user from being able to select the text
 	text-decoration: none;
 }
 
+// white variant
+.logo-white{ color: $roseWhite; }
+
 .logo:hover{ opacity: .8; }
 
-.logo--image{
-	width: 150px;
-	height: 50px;
-	margin: 0 auto;
-
-	text-indent: -9999px;
-	
-	background: no-repeat center;
-	background-size: 100%;
-}
-
-.logo--image--svg{
-	background-image: url('../../img/default.svg');
-}
-
-.logo--image--png{
-	background-image: url('../../img/default.png');
-}
-
-@keyframes logoFadeIn{
+// fades in and moves down
+@keyframes logoIn{
 	0%{ opacity: 0; }
 	50%{
 		transform: translateY(-25%);
 		opacity: 0;
 	}
 }
+
+.logo-img{
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+
+	text-indent: -9999px;
+	
+	background: no-repeat left center;
+	background-size: auto 100%;
+}
+
+.logo-default-svg{ background-image: url('../../img/logo/default.svg'); }
+.logo-default-png{ background-image: url('../../img/logo/default.png'); }
+
+.logo-black-svg{ background-image: url('../../img/logo/black.svg'); }
+.logo-black-png{ background-image: url('../../img/logo/black.png'); }
+
+.logo-white-svg{ background-image: url('../../img/logo/white.svg'); }
+.logo-white-png{ background-image: url('../../img/logo/white.png'); }
 
 .logo .petals{
 	position: relative;
@@ -55,15 +62,22 @@
 	height: 2.15rem;
 }
 
+// each petal is absolute positioned so they're over each other
 .logo .petals li{
 	position: absolute;
 	height: 1.75rem;
 	width: 1.75rem;
 	line-height: .5rem;
+
 	border: 2px solid $roseRed;
 	border-radius: 50%;
-	transform: translateY(0);
 }
+
+// black & white variants
+.logo-black .petals li{	border-color: $roseBlack; }
+.logo-white .petals li{	border-color: $roseWhite; }
+
+// then there each petal is handled by nth-child and move to it's position
 
 .logo .petals li:nth-child(1){
 	animation: petal-one 1.25s .5s 1;
@@ -91,6 +105,8 @@
 .logo:hover .petals li:nth-child(3){
 	animation: petal-three 1.25s;
 }
+
+// each petal has a respective animation
 
 @keyframes petal-one{
 	50%{ transform: translateX(0rem) translateY(0.25rem); }

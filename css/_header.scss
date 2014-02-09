@@ -1,0 +1,20 @@
+/* _header.scss */
+
+header{
+	z-index: 1337;
+	position: fixed;
+	top: 0; right: 0; left: 0;
+	overflow: hidden;
+	padding: .75em 1em;
+	
+	background: transparentize(white, .05);
+	color: $roseWhite;
+}
+
+header .logo{
+	float: left;
+	width: 30%;
+}
+
+@import 'logo';
+@import 'nav';

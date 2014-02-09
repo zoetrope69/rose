@@ -1,7 +1,10 @@
+// replaces the logo with the spinny petals version
 function logoInit(){
-	$('.logo').html('R<ul class="petals"><li></li><li></li><li></li></ul>SE');
+	$('.logo').removeClass().addClass('logo'); // remove backup img classes
+	$('.logo').html('R<ul class="petals"><li></li><li></li><li></li></ul>SE'); // add in spinny petals wow
 }
 
+// adds padding to the top of the page to account for the header
 function bodyPadding(){
 	var headerHeight = $('header').outerHeight();
 
@@ -11,23 +14,27 @@ function bodyPadding(){
 	$('body').css('padding-top', headerHeight);
 }
 
+// so anchor links do a smooth scroll
 function anchorPageScrolling(){
-	$('.move-button').click(function(){ scrollPage(this); });
-	$('nav li a').click(function(){ scrollPage(this); });
-	$('.logo').click(function(){ scrollPage(this); });
+	$('.move-button').click(function(){ scrollPage(this) }); 
+	$('nav li a').click(function(){ scrollPage(this) }); 
+	$('.logo').click(function(){ scrollPage(this) }); 
 }
 
 function scrollPage(clicked){
-		var animationSpeed = 1000					// Speed of the animation in ms
+		// Speed of the animation in ms
+		var animationSpeed = 500
 
 		var url = window.location.protocol + "//" + window.location.host + window.location.pathname; // Get current URL
 		var id = String(clicked).substr(url.length); // Take the URL and leave the # part
-		var postPosition = $(id).position().top;	// Finds the position from the top of the window for the heading with the ID 'hrefValue'
-		var headerHeight = $('header').outerHeight();
-
-		var scrollAmount = postPosition - headerHeight;  // How far scrolled down minus the height of the header
+		var postPosition = $(id).position().top; // Finds the position from the top of the window for the heading with the ID 'hrefValue'
 		
-		$('html, body').animate({scrollTop: scrollAmount}, animationSpeed); // Moves to the top of the post in 'animationSpeed'ms
+		var headerHeight = $('header').outerHeight();
+		
+		// How far scrolled down minus the height of the header
+		var scrollAmount = postPosition - headerHeight;
+		// Moves to the top of the post in 'animationSpeed'ms
+		$('html').animate({scrollTop: scrollAmount}, animationSpeed);
 		
 		event.preventDefault(); // Stops the link's normal behaviour
 }
