@@ -5,7 +5,8 @@ function logoInit(){
 }
 
 // adds padding to the top of the page to account for the header
-function bodyPadding(){
+// and makes the section height snug
+function elementResize(){
 	var headerHeight = $('header').outerHeight();
 
 	var sectionHeight = $(window).height() - headerHeight;

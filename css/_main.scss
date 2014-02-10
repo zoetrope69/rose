@@ -18,9 +18,19 @@ main section:nth-child(3n+1){
 	background-color: $roseRed;
 }
 
+main section:nth-child(3n+1) *::selection{
+	background: $roseWhite;
+	color: $roseRed;
+}
+
 main section:nth-child(3n+2){
 	color: $roseWhite;
 	background-color: $roseBlack;
+}
+
+main section:nth-child(3n+2) *::selection{
+	background: $roseWhite;
+	color: $roseBlack;
 }
 
 main section:nth-child(3n+3){
@@ -28,10 +38,9 @@ main section:nth-child(3n+3){
 	background-color: $roseWhite;
 }
 
-main section#about{
-	background-image: url('../../img/boys-background.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+main section:nth-child(3n+3) *::selection{
+	background: $roseBlack;
+	color: $roseWhite;
 }
 
 main section .wrapper{
@@ -86,6 +95,7 @@ main section a:hover{
 
 main section .move-button{
 	position: absolute;
+	display: inline-block;
 	bottom: 15%;
 	padding: .25em;
 

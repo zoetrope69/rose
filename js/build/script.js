@@ -5,7 +5,8 @@ function logoInit(){
 }
 
 // adds padding to the top of the page to account for the header
-function bodyPadding(){
+// and makes the section height snug
+function elementResize(){
 	var headerHeight = $('header').outerHeight();
 
 	var sectionHeight = $(window).height() - headerHeight;
@@ -59,7 +60,11 @@ function capsString(string){
 
 	consoleSleuths();
 
-	bodyPadding();
+	elementResize();
+
+	$(window).resize(function(){
+		elementResize();
+	});
 
 	anchorPageScrolling();
 
@@ -71,8 +76,7 @@ function capsString(string){
 function consoleSleuths(){
 	// if we can console log, some browsers can't
 	if(typeof console !== 'undefined'){
-		console.log("Maybe you'll be interested in our tech posts? http://rosedigital.co.uk/blog#tech\n\n" +
-					"Oh and if you find anything broken, please go post an issue:" +
-					" http://github.com/rosedigital/website/issues :¬)");
+		console.log("Hey, if you find anything broken, please go post an issue: " +
+					"http://github.com/rosedigital/website/issues :¬)");
 	}
 }
