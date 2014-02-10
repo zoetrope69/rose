@@ -93,9 +93,9 @@ main section a:hover{
 	border-color: transparent;
 }
 
-main section .move-button{
+main section .move-link{
 	position: absolute;
-	display: inline-block;
+	display: block;
 	bottom: 15%;
 	padding: .25em;
 
@@ -108,5 +108,5 @@ main section .move-button{
 	animation: inTop 1.5s;
 }
 
-main section:nth-child(odd)  .move-button{ right: 5%; }
-main section:nth-child(even) .move-button{ left: 5%; }
+main section:nth-child(odd)  .move-link{ right: 5%; }
+main section:nth-child(even) .move-link{ left: 5%; }

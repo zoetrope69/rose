@@ -10,7 +10,7 @@ $roseWhite: #FDFDFD;
 $roseGreen: #174D1F;
 
 body{
-	padding: 0 1em;
+	padding: 0 1rem;
 	
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 400;
@@ -48,4 +48,85 @@ body{
 @keyframes inLeft{
 	0%{ opacity: 0 ;}
 	50%{ transform: translateX(-5%); opacity: 0; }
+}
+
+
+@media screen and (max-width: 800px){
+
+	main section h1{
+		font-size: 5.5em;
+	}
+
+}
+
+
+@media screen and (max-width: 600px){
+
+	header{
+		padding: .25em 1rem;
+	}
+
+	main section{
+		padding: 3em 0;
+	}
+
+	main section h1{
+		font-size: 4.5em;
+	}
+
+	main section .text{
+		width: (100% * 3/4);
+	}
+
+	main section p{
+		font-size: 1em;
+		line-height: 1.25;
+	}
+
+	main section .move-link{
+		font-size: 1.5em; 
+		bottom: 5%;
+	}
+
+	nav li a{
+		padding: 2em 0;
+		font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+
+	header .logo{
+		width: 100%;
+	}
+
+	nav li{ display: none; }
+
+	main section{
+		padding: 1.25em 0;
+	}
+
+	main section h1{
+		text-align: center;
+		font-size: 2.25em;
+	}
+
+	main section .text{
+		width: 100%;
+		float: none;
+	}
+
+	main section p{
+		text-align: center;
+		font-size: .85em;
+	}
+
+	main section .move-link{
+		bottom: 5%; right: 5%; left: 5%;
+
+		font-size: 1.25em; 
+		text-align: center;
+	}
+
 }

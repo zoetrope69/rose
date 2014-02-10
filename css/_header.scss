@@ -5,7 +5,7 @@ header{
 	position: fixed;
 	top: 0; right: 0; left: 0;
 	overflow: hidden;
-	padding: .75em 1em;
+	padding: .75em 1rem;
 	
 	background: transparentize(white, .05);
 	color: $roseWhite;
@@ -13,7 +13,12 @@ header{
 
 header .logo{
 	float: left;
-	width: 30%;
+	width: 50%;
+}
+
+header nav{
+	float: left;
+	width: 50%;
 }
 
 @import 'logo';

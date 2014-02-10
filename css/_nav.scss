@@ -1,33 +1,29 @@
 /* _nav.scss */
 
-nav{
-	float: left;
-	width: 70%;
-}
-
 $navLinkAmount: 3;
 
 nav li{
 	float: left;
 	width: (100%/$navLinkAmount);
-	padding: 1em 0;
 	
 	font-size: .85em;
 	font-weight: 500;
 	
+	color: $roseRed;
+
 	letter-spacing: .15em;
 	text-transform: uppercase;
+	text-align: right;
 }
 
 nav li a{
-	padding: .5em 0;
 	display: block;
+	padding: 1.5em 0;
 	
-	color: $roseRed;
+	color: inherit;
 	font: inherit;
 	
 	text-decoration: none;
-	text-align: center;
 	
 	transition: color .15s;
 
@@ -37,6 +33,11 @@ nav li a{
 
 nav li a:hover{
 	color: $roseBlack;
+}
+
+nav li.menu-link{
+	display: none;
+	width: 100%;
 }
 
 @keyframes navLinkIn{

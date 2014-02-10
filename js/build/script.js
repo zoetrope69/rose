@@ -17,7 +17,7 @@ function elementResize(){
 
 // so anchor links do a smooth scroll
 function anchorPageScrolling(){
-	$('.move-button').click(function(){ scrollPage(this) }); 
+	$('.move-link').click(function(){ scrollPage(this) }); 
 	$('nav li a').click(function(){ scrollPage(this) }); 
 	$('.logo').click(function(){ scrollPage(this) }); 
 }
@@ -59,6 +59,8 @@ function capsString(string){
 (function(){
 
 	consoleSleuths();
+	
+	logoInit();
 
 	elementResize();
 
@@ -67,8 +69,6 @@ function capsString(string){
 	});
 
 	anchorPageScrolling();
-
-	logoInit();
 
 })()
 

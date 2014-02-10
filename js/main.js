@@ -1,6 +1,8 @@
 (function(){
 
 	consoleSleuths();
+	
+	logoInit();
 
 	elementResize();
 
@@ -9,8 +11,6 @@
 	});
 
 	anchorPageScrolling();
-
-	logoInit();
 
 })()
 
