@@ -1,7 +1,8 @@
-(function(){
+$(document).ready(loaded());
 
+function loaded(){
 	consoleSleuths();
-	
+
 	logoInit();
 
 	elementResize();
@@ -11,8 +12,7 @@
 	});
 
 	anchorPageScrolling();
-
-})()
+}
 
 // if anyone pokes into the console display this
 function consoleSleuths(){

@@ -56,10 +56,11 @@ function scrollPage(clicked){
 function capsString(string){
 	return string.substring(0, 1).toUpperCase()+string.substring(1);
 }
-(function(){
+$(document).ready(loaded());
 
+function loaded(){
 	consoleSleuths();
-	
+
 	logoInit();
 
 	elementResize();
@@ -69,8 +70,7 @@ function capsString(string){
 	});
 
 	anchorPageScrolling();
-
-})()
+}
 
 // if anyone pokes into the console display this
 function consoleSleuths(){
