@@ -1,7 +1,7 @@
 // replaces the logo with the spinny petals version
 function logoInit(){
 	$('.logo').removeClass().addClass('logo'); // remove backup img classes
-	$('.logo').html('R<ul class="petals"><li></li><li></li><li></li></ul>SE'); // add in spinny petals wow
+	$('.logo a').html('R<ul class="petals"><li></li><li></li><li></li></ul>SE'); // add in spinny petals wow
 }
 
 // adds padding to the top of the page to account for the header
@@ -19,7 +19,7 @@ function elementResize(){
 function anchorPageScrolling(){
 	$('.move-link').click(function(){ scrollPage(this) }); 
 	$('nav li a').click(function(){ scrollPage(this) }); 
-	$('.logo').click(function(){ scrollPage(this) }); 
+	$('.logo a').click(function(){ scrollPage(this) }); 
 }
 
 function scrollPage(clicked){

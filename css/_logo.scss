@@ -18,6 +18,10 @@
 	transition: opacity .15s;
 
 	user-select: none; // stops the user from being able to select the text
+}
+
+.logo a{
+	color: inherit;
 	text-decoration: none;
 }
 
