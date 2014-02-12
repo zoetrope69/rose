@@ -20,13 +20,13 @@
 	user-select: none; // stops the user from being able to select the text
 }
 
+.logo-white{ color: $roseWhite; }
+
 .logo a{
+	display: block;
 	color: inherit;
 	text-decoration: none;
 }
-
-// white variant
-.logo-white{ color: $roseWhite; }
 
 .logo:hover{ opacity: .8; }
 
@@ -40,9 +40,7 @@
 }
 
 .logo-img{
-	width: 150px;
-	height: 50px;
-	margin: 0 auto;
+	height: 1.5em;
 
 	text-indent: -9999px;
 	
@@ -52,7 +50,7 @@
 
 .logo-default-svg{ background-image: url('../../img/logo/default.svg'); }
 .logo-default-png{ background-image: url('../../img/logo/default.png'); }
-
+ 
 .logo-black-svg{ background-image: url('../../img/logo/black.svg'); }
 .logo-black-png{ background-image: url('../../img/logo/black.png'); }
 

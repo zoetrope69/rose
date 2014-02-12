@@ -1,6 +1,6 @@
 /* _nav.scss */
 
-$navLinkAmount: 4;
+$navLinkAmount: 3;
 
 nav li{
 	float: left;
@@ -13,7 +13,7 @@ nav li{
 
 	letter-spacing: .15em;
 	text-transform: uppercase;
-	text-align: right;
+	text-align: center;
 }
 
 nav li a{
