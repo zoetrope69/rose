@@ -19,7 +19,7 @@ main section:nth-child(3n+1){
 }
 
 main section:nth-child(3n+1) *::selection{
-	background: $roseWhite;
+	background-color: $roseWhite;
 	color: $roseRed;
 }
 
@@ -29,7 +29,7 @@ main section:nth-child(3n+2){
 }
 
 main section:nth-child(3n+2) *::selection{
-	background: $roseWhite;
+	background-color: $roseWhite;
 	color: $roseBlack;
 }
 
@@ -39,8 +39,23 @@ main section:nth-child(3n+3){
 }
 
 main section:nth-child(3n+3) *::selection{
-	background: $roseBlack;
+	background-color: $roseBlack;
 	color: $roseWhite;
+}
+
+main section#intro{
+	background-image: url('../../img/poly-rose.png');
+	background-repeat: no-repeat;
+	background-position: 125% 500%;
+
+	animation: introIn 1.5s;
+}
+
+@keyframes introIn{
+	0%{
+		background-image: none;
+		background-position: 125% 0%;
+	}
 }
 
 main section .wrapper{

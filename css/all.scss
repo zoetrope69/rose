@@ -65,6 +65,10 @@ body{
 		font-size: 1em;
 	}
 
+	main section#intro{
+		background-position: -125% -500%;
+	}
+
 }
 
 
@@ -114,6 +118,10 @@ body{
 
 	main section{
 		padding: 1.25em 0;
+	}
+
+	main section#intro{
+		background-position: 50% -100%;
 	}
 
 	main section h1{
