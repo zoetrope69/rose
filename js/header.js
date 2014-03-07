@@ -23,6 +23,7 @@ function anchorPageScrolling(){
 }
 
 function scrollPage(clicked){
+	console.log('scrollPage');
 		// Speed of the animation in ms
 		var animationSpeed = 500
 
@@ -48,7 +49,7 @@ function scrollPage(clicked){
 		// How far scrolled down minus the height of the header
 		var scrollAmount = postPosition - headerHeight;
 		// Moves to the top of the post in 'animationSpeed'ms
-		$('html').animate({scrollTop: scrollAmount}, animationSpeed);
+		$('html').animate({ scrollTop: scrollAmount }, animationSpeed);
 		
 		event.preventDefault(); // Stops the link's normal behaviour
 }
