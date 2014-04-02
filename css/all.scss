@@ -2,6 +2,8 @@
 
 @import 'reset'; // used to reset styling values
 
+@import 'variables';
+
 // fonts
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Crete+Round:400,400italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
 
@@ -25,6 +27,7 @@ body{
 .wrapper{
 	overflow: hidden;
 	width: 90%;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
