@@ -161,3 +161,36 @@ main section .move-link{
 
 main section:nth-child(odd)  .move-link{ right: 5%; }
 main section:nth-child(even) .move-link{ left: 5%; }
+
+#blog{
+	padding: 1em;
+	
+	background: $roseBlack;
+}
+
+#blog h1{
+	width: 100%;
+	display: inline-block;
+	
+	font-size: 1.5em;
+	font-weight: 300;
+	color: $roseWhite;
+	text-align: center
+}
+
+#blog q{
+	font-family: $headerFont;
+}
+
+#blog q::before,
+#blog q::after{
+	vertical-align: -0.25em;
+	margin: 0 2px;
+	
+	font-size: 2em;
+	color: darken($roseWhite, 70%);
+}
+
+#blog q { quotes: "“" "”" "‘" "’"; }
+#blog q:before { content: open-quote; }
+#blog q:after{ content: close-quote; }
