@@ -17,8 +17,7 @@ function elementResize(){
 
 // so anchor links do a smooth scroll
 function anchorPageScrolling(){
-	$('.move-link').click(function(){ scrollPage(this) }); 
-	$('nav li a').click(function(){ scrollPage(this) }); 
+	$('.move-link').click(function(){ scrollPage(this) });
 	$('.logo a').click(function(){ scrollPage(this) }); 
 }
 
