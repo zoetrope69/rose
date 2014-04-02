@@ -68,7 +68,7 @@ main section:nth-child(2n) .wrapper{
 	text-align: right;
 }
 
-main section h1{
+main section .wrapper h1{
 	margin-bottom: .5em;
 
 	font-weight: 300;
@@ -79,7 +79,7 @@ main section h1{
 	letter-spacing: -.025em;
 }
 
-main section h2{
+main section .wrapper h2{
 	margin-bottom: .25em;
 
 	font-size: 2.25em;
@@ -163,12 +163,16 @@ main section:nth-child(odd)  .move-link{ right: 5%; }
 main section:nth-child(even) .move-link{ left: 5%; }
 
 #blog{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	background: $roseBlack;
 }
 
 #blog a{
 	display: block;
 	padding: 1em;
+	border: none;
 }
 
 #blog a:hover{ opacity: .8; }
