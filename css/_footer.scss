@@ -1,7 +1,7 @@
 /* _footer.scss */
 
 footer{
-	padding: 2.25em 0;
+	padding: 1.25em;
 
 	font-size: .75em;
 	font-weight: 300;
@@ -12,11 +12,8 @@ footer{
 footer .details,
 footer > nav{
 	display: inline-block;
-}
-
-footer .details::after{
-	content: ' -';
-	margin-left: .35em;
+	padding: .5em 0;
+	width: 100%;
 }
 
 footer .details:first-of-type::before{
@@ -53,6 +50,8 @@ footer > nav li a{
 	font-size: 1em;
 	color: lighten($roseBlack, 10%);
 	text-align: right;
+
+	animation: none;
 }
 
 footer > nav li a:hover{
