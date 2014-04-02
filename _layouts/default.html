@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- 
+  ROSE Digital
+
+  Oh hello, what you doing here?..
+
+  If you find anything broken, please go post an issue: http://github.com/rosedigital/website/issues :¬)
+-->
+<html lang="en">
+<head>
+  <!--[if lt IE 9]>
+      <script src="{{ root_url }}/bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0' />
+
+  <title>{{ page.title }}</title>
+
+  <link rel="shortcut icon" href="{{ root_url }}/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ root_url }}/css/build/style.min.css">
+
+  <link rel="shortcut icon" href="{{ root_url }}/img/favicon.ico" />
+</head>
+<body>
+
+  <header>
+
+    <h1 class="logo logo-img logo-default-svg"><a href="{{ root_url }}">ROSE Digital</a></h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="menu-link"><a href="#">Menu</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    {{ content }}    
+  </main>
+
+    
+  <footer>
+
+    <p class="details">ROSE Digital &copy; 2014</p>
+    <p class="details">Code available on <a href="#">GitHub</a></p>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="menu-link"><a href="#">Menu</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="{{ root_url }}/bower_components/jquery/dist/jquery.min.js"></script> 
+  <script src="{{ root_url }}/js/build/script.min.js"></script>
+</body>
+</html>

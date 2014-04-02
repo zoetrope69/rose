@@ -1,0 +1,7 @@
+{% if post.title %}
+<div id="blog">
+	<a href="{{ root_url }}{{ post.url }}">
+		<h1>From our blog: <q>{{ post.title }}</q></h1>
+	</a>
+</div>
+{% endif %}
