@@ -122,7 +122,7 @@ module.exports = function(grunt) {
             },
 
             jekyll: {
-                files: ['_posts/*.md', '_drafts_*.md', 'templates/*.html'],
+                files: ['**/*.html', '_posts/*.md', '_drafts_*.md', 'templates/*.html'],
                 tasks: ['exec:build']
             },
 
