@@ -7,4 +7,14 @@ $roseRed: #C43200;
 $roseWhite: #FDFDFD;
 $roseGreen: #174D1F;
 
+// media query breakpoints
+
+$breakPointLarge: 800px;
+$breakPointMedium: 600px;
+$breakPointSmall: 400px;
+
+// nav items
+
+$navLinkAmount: 4;
+
 @import 'fonts';

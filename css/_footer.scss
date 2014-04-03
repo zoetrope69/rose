@@ -38,20 +38,14 @@ footer .details a:hover{
 
 footer > nav li{
 	display: inline-block;
-	float: none;
-	width: auto;
 	margin-left: 1em;
 	font-size: 1em;
 }
 
-footer > nav li a{
-	padding: 0;
-	
+footer > nav li a{	
 	font-size: 1em;
 	color: lighten($roseBlack, 10%);
 	text-align: right;
-
-	animation: none;
 }
 
 footer > nav li a:hover{

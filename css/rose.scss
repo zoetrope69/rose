@@ -1,0 +1,32 @@
+/* rose.scss */
+
+@import 'reset'; // used to reset styling values
+
+@import 'variables';
+
+body{
+	padding: 0 1rem;
+	
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	
+	background: $roseWhite;
+	color: $roseBlack;
+}
+
+.wrapper{
+	overflow: hidden;
+	width: 90%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+main{ overflow: hidden; }
+
+@import 'header';
+@import 'logo';
+@import 'nav';
+@import 'home';
+
+@import 'animations';
+@import 'footer';

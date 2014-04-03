@@ -1,24 +1,15 @@
 /* _nav.scss */
 
-$navLinkAmount: 4;
-
-nav li{
-	float: left;
-	width: (100%/$navLinkAmount);
-	
+nav li{	
 	font-size: .85em;
 	font-weight: 500;
-	
-	color: $roseRed;
 
 	letter-spacing: .15em;
 	text-transform: uppercase;
-	text-align: center;
 }
 
 nav li a{
 	display: block;
-	padding: 1.5em 0;
 	
 	color: inherit;
 	font: inherit;
@@ -26,20 +17,20 @@ nav li a{
 	text-decoration: none;
 	
 	transition: color .15s;
-
 	transform-origin: center;
-	animation: navLinkIn 1.5s;
 }
 
-nav li a:hover{
-	color: $roseBlack;
+@media screen and (max-width: $breakPointMedium){
+
+	nav li a{
+		padding: 2em 0;
+		font-size: .9em;
+	}
+
 }
 
-nav li.menu-link{
-	display: none;
-	width: 100%;
-}
+@media screen and (max-width: $breakPointSmall){
 
-@keyframes navLinkIn{
-	0%, 70%{ opacity: 0; }
+	nav li{ display: none; }
+	
 }
