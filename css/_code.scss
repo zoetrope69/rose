@@ -1,5 +1,7 @@
 /* _code.scss */
 
+@import 'syntax';
+
 code,
 kbd,
 pre,
@@ -20,16 +22,12 @@ kbd, code{
 
 pre{
 	display: block;
-	padding: .5em;
+	padding: 1em;
 	margin: 1em 0;
 	
 	word-break: break-all;
 	word-wrap: break-word;
-	line-height: 1.45;
 	font-size: 1em;
-
-	background-color: $roseBlack;
-	color: $roseWhite;
 }
 
 pre code{

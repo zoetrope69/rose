@@ -16,12 +16,9 @@
 	@include animateIn(fade);
 }
 
-.blog h1,
-.blog h2,
-.blog h3,
-.blog h4,
-.blog h5,
-.blog h6,
+.blog h1, .blog h2,
+.blog h3, .blog h4,
+.blog h5, .blog h6,
 .blog p{
 	margin-bottom: .5em;
 }
@@ -83,7 +80,7 @@
 	line-height: 1.45;
 }
 
-.blog p a{
+.blog a{
 	font-weight: 500;
 	
 	color: $roseBlack;
@@ -99,12 +96,20 @@
 	transition: opacity .15s;
 }
 
-.blog p a:hover{
+.blog a:hover{
 	opacity: .9;
 }
 
+.blog em{
+	font-style: italic;
+}
+
+.blog strong{
+	font-weight: bolder;
+}
+
 .blog hr{
-	margin: 1em 0;
+	margin: 1.5em 0;
 
 	border: 0;
 	border-top: 2px solid lighten($roseBlack, 75%);
@@ -150,15 +155,83 @@
 .blog ol li{ counter-increment: section; }
 .blog ol li::before{ content: counters(section, '.') '.'; }
 
-blockquote{}
+.blog blockquote{
+	margin: 1em;
+	padding: 0 .75em;
+	
+	font-size: 1.5em;
+	font-style: italic;
+	
+	border-left: 2px solid lighten($roseBlack, 50%);
+}
 
-q{}
+.blog q{
+	font-style: italic;
+	quotes: "“" "”" "‘" "’";
+}
 
-small{}
+.blog q::before,
+.blog q::after{
+	vertical-align: -.3em;
+	margin: 0 2px;
+	line-height: 0;
 
-mark{}
+	font-size: 1.25em;
+	font-style: normal;
+	font-family: "Crete Round",Georgia,serif;
+	color: #4e4e4e;
+}
 
-cite{}
+.blog q::before{ content: open-quote; }
+.blog q::after{ content: close-quote; }
+
+.blog cite::before{
+	content: '— ';
+}
+
+.blog cite a{ background: none; }
+
+
+.blog small{
+	font-variant: small-caps;
+	font-size: .85em;
+	font-family: $sans-serif;
+}
+
+$markColour: transparentize(invert($roseRed), .85);
+
+.blog mark{
+	padding: 1px 0;
+	position: relative;
+	
+	background: $markColour;
+	color: lighten($roseBlack, 5%);
+}
+
+.blog mark::after,
+.blog mark::before{
+	position: absolute;
+	content: '';
+
+	border: 10px solid transparent;
+	
+}
+
+.blog mark::before{
+	left: -15px;
+	
+	border-bottom-color: $markColour;
+	border-top-width: 20px;
+	border-left-width: 5px;
+	border-right-color: $markColour;
+}
+
+.blog mark::after{
+	border-top-color: $markColour;
+	border-left-color: $markColour;
+	border-bottom-width: 20px;
+	border-right-width: 5px;
+}
 
 .blog .title{
 	margin-bottom: .25em;
