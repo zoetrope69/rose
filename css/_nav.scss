@@ -22,7 +22,7 @@ nav li a{
 
 @media screen and (max-width: $breakPointMedium){
 
-	nav li a{
+	header > nav li a{
 		padding: 2em 0;
 		font-size: .9em;
 	}
@@ -31,6 +31,6 @@ nav li a{
 
 @media screen and (max-width: $breakPointSmall){
 
-	nav li{ display: none; }
+	header > nav li{ display: none; }
 	
 }
