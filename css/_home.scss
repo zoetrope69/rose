@@ -57,14 +57,24 @@
 		background-image: none;
 		background-position: 125% 0%;
 	}
-}	
+}
 
-.home section:nth-child(2n) h1{
+.home section > h1,
+.home section > p{
+	animation: inLeft 1.5s;
+	backface-visibility: hidden; // stops the animation white flash
+}
+
+.home section:nth-child(2n) > h1,
+.home section:nth-child(2n) > p{
 	animation: inRight 1.5s;
+}
+
+.home section:nth-child(2n) > h1{
 	text-align: right;
 }
 
-.home section h1{
+.home section > h1{
 	margin-bottom: .5em;
 
 	font-weight: 300;
@@ -73,12 +83,9 @@
 	font-family: 'Crete Round', Georgia, serif;
 
 	letter-spacing: -.025em;
-
-	animation: inLeft 1.5s;
-	backface-visibility: hidden; // stops the animation white flash
 }
 
-.home section h2{
+.home section > h2{
 	margin-bottom: .25em;
 
 	font-size: 2.25em;
@@ -87,22 +94,22 @@
 	text-transform: uppercase;
 }
 
-.home section .text{
+.home section > .text{
 	width: (100% * 2/3);
 	font-size: 1.5em;
 }
 
-.home section p{
+.home section > .text p{
 	font-weight: 300;
 	line-height: 1.35;
 	margin-bottom: .75em;
 }
 
-.home section p strike{
+.home section  > .text p strike{
 	position: relative;
 	text-decoration: none;
 }
-.home section p strike::after{
+.home section  > .text p strike::after{
 	position: absolute;
 	left: -5%; top: 50%;
 	width: 110%;
@@ -128,7 +135,7 @@
 .home section:nth-child(odd)  .text{ float: left; }
 .home section:nth-child(even) .text{ float: right; }
 
-.home section a{
+.home section > .text a{
 	font: inherit;
 	font-weight: 400;
 	
@@ -139,11 +146,11 @@
 	transition: border-color .15s;
 }
 
-.home section a:hover{
+.home section > .text a:hover{
 	border-color: transparent;
 }
 
-.home section .move-link{
+.home section > .move-link{
 	position: absolute;
 	display: block;
 	bottom: 15%;
@@ -152,19 +159,25 @@
 	font-family: "Crete Round", Georgia, serif;
 	font-size: 2em;
 	font-weight: 400;
+	color: inherit;
+	text-decoration: none;
 
-	border-width: 2px;
+	border-bottom: 2px solid;
 
 	animation: inTop 1.5s;
+	transition: border-color .15s;
 }
 
-.home section:nth-child(odd)  .move-link{ right: 5%; }
-.home section:nth-child(even) .move-link{ left: 5%; }
+.home section > .move-link:hover{
+	border-color: transparent;
+}
+
+.home section:nth-child(odd)  > .move-link{ right: 5%; }
+.home section:nth-child(even) > .move-link{ left: 5%; }
 
 .home #blog{
 	position: absolute;
-	bottom: 0;
-	width: 100%;
+	right: 0; bottom: 0; left: 0;
 	background: $roseBlack;
 }
 
@@ -180,14 +193,14 @@
 	width: 100%;
 	display: inline-block;
 	
-	font-size: 1.5em;
+	font-size: 1.75em;
 	font-weight: 300;
 	color: $roseWhite;
 	text-align: center
 }
 
 .home #blog q{
-	font-family: $headerFont;
+	font-family: $serif;
 }
 
 .home #blog q::before,
@@ -205,11 +218,11 @@
 
 @media screen and (max-width: $breakPointLarge){
 
-	.home section h1{
+	.home section > h1{
 		font-size: 5.5em;
 	}
 
-	.home section .text{
+	.home section > .text{
 		width: (100% * 3/4);
 		font-size: 1em;
 	}
@@ -238,21 +251,21 @@
 		padding: 3em .75em;
 	}
 
-	.home section h1{
+	.home section > h1{
 		font-size: 4.5em;
 	}
 
-	.home section .text{
+	.home section > .text{
 		width: (100% * 3/4);
 		font-size: .85em;
 	}
 
-	.home section p{
+	.home section > .text p{
 		font-size: 1em;
 		line-height: 1.25;
 	}
 
-	.home section .move-link{
+	.home section > .move-link{
 		font-size: 1.5em; 
 		bottom: 5%;
 	}
@@ -261,39 +274,36 @@
 
 @media screen and (max-width: $breakPointSmall){
 
-	.home section{
-		padding: 1.25em .5em;
-	}
-
 	.home section#intro{
 		background-position: 50% -100%;
 	}
 
-	.home section  h1{
+	.home section:nth-child(2n) > h1,
+	.home section > h1{
 		text-align: center;
 		font-size: 2.25em;
 	}
 
-	.home section  h2{
+	.home section > h2{
 		text-align: center;
 		font-size: 1.85em;
 	}
 
-	.home section .text{
+	.home section > .text{
 		width: 100%;
 		float: none;
 		font-size: .85em;
 	}
 
-	.home section p{
+	.home section > .text p{
 		text-align: center;
 	}
 
-	.home section .logo-sig{
+	.home section > .logo-sig{
 		background-position: center;
 	}
 
-	.home section .move-link{
+	.home section > .move-link{
 		bottom: 5%; right: 5%; left: 5%;
 
 		font-size: 1.25em; 
