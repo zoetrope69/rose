@@ -6,16 +6,16 @@ layout: default
 
 <article>
 	
-	<div class="wrapper">
+	<section class="top">
 		<h1 class="title">{{ page.title }}</h1>
-		<h2 class="meta">{{ page.date | date_to_string }}</h2>
+		<h2 class="meta"><time timestamp="{{ page.date }}" title="{{ page.date }}">{{ page.date | date_to_string }}</time></h2>
 		
 		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quidem, assumenda, ullam fugiat hic voluptatem quos quia at perferendis dolor repellendus soluta aliquam consectetur ipsam ex ipsum veritatis. Suscipit, consectetur.</p>
+	</section>
 
-		<div class="post">
-			{{ content }}
-		</div>
-	</div>
+	<section class="post">
+		{{ content }}
+	</section>
 
 </article>
 

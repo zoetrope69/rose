@@ -4,23 +4,24 @@ code,
 kbd,
 pre,
 samp{
-	font-family: monospace;
+	font-family: $monospace;
 	border-radius: 2px;
 }
 
 kbd, code{
-	padding: 2px 4px;
-	font-size: 90%;
+	padding: .15em .25em;
+	margin: 0 1px;
+	
+	font-size: .85em;
 
-	border: 1px solid lighten($roseGreen, 40%);
-	background-color: lighten($roseGreen, 60%);
+	background-color: lighten($roseGreen, 50%);
 	color: $roseGreen;
 }
 
 pre{
 	display: block;
 	padding: .5em;
-	margin-bottom: .5em;
+	margin: 1em 0;
 	
 	word-break: break-all;
 	word-wrap: break-word;

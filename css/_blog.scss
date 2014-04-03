@@ -1,8 +1,15 @@
 /* _blog.scss */
 
-.blog article{
-	max-width: 40em;
+.blog .top{
+	padding: 1.5em 2.5em;
+	
+	background: #282828;
+}
+
+.blog .post{
+	max-width: 45em;
 	margin: 0 auto;
+	padding: 1.5em 0;
 }
 
 .blog h1,
@@ -10,19 +17,16 @@
 .blog h3,
 .blog h4,
 .blog h5,
-.blog h6{
+.blog h6,
+.blog p{
 	margin-bottom: .5em;
-}
-
-.blog h1.title{
-	color: $roseGreen;
 }
 
 .blog h1,
 .blog h2,
 .blog h3{
 	font-weight: 400;
-	font-family: $headerFont;
+	font-family: $serif;
 }
 
 .blog h1,
@@ -32,14 +36,17 @@
 
 .blog h1{
 	font-size: 3em;
+	color: $roseBlack;
 }
 
 .blog h2{
 	font-size: 2.5em;
+	color: lighten($roseBlack, 2.5%);
 }
 
 .blog h3{
 	font-size: 2em;
+	color: lighten($roseBlack, 5%);
 }
 
 .blog h4,
@@ -51,44 +58,97 @@
 .blog h4{
 	font-weight: 700;
 	font-size: 1.5em;
+	color: lighten($roseBlack, 7.5%);
 }
 
 .blog h5{ 
 	font-weight: 600;
 	font-size: 1.25em;
+	color: lighten($roseBlack, 10%);
 }
 
 .blog h6{
 	font-weight: 500;
 	font-size: .9em;
+	color: lighten($roseBlack, 12.5%);
 }
 
-.blog .lead{
-	font-size: 1.25em;
-}
-
-.blog p{
-	font-size: 1em;
-	line-height: 1.25;
-	margin-bottom: .5em;
+.blog p{	
+	font-size: 1.3em;
+	font-weight: 300;
+	line-height: 1.45;
 }
 
 .blog p a{
-	font: inherit;
-	font-weight: 400;
+	font-weight: 500;
 	
-	border-bottom: 1px solid;
-	color: inherit;
-	
+	color: $roseBlack;
 	text-decoration: none;
-	transition: border-color .15s;
+
+	// lovely underline style from: https://medium.com/coding-design/2669cd13b5a7
+
+	background-image: linear-gradient(to bottom, #fff 50%, lighten($roseBlack, 15%) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 1.1em;
+	
+	transition: opacity .15s;
 }
 
-.blog p a{
-	border-color: transparent;
+.blog p a:hover{
+	opacity: .9;
 }
+
+.blog hr{
+	margin: 1em 0;
+
+	border: 0;
+	border-top: 2px solid lighten($roseBlack, 75%);
+}
+
+.blog ol:first-of-type,
+.blog ul:first-of-type{
+	margin: .5em 0;
+}
+
+.blog ol ol,
+.blog ol li,
+.blog li li,
+.blog li ol{
+	margin-left: 1em;
+}
+
+.blog li{
+	margin-bottom: .5em;
+
+	list-style: none;
+	font-size: 1.25rem;
+	font-family: $serif;
+	font-weight: 400;
+	color: lighten($roseBlack, 15%);
+}
+
+.blog li::before{
+	float: left;
+	margin: .25em 0;
+	margin-right: .5em;
+	
+	line-height: 1em;
+	font-size: .7em;
+	color: lighten($roseBlack, 50%);
+}
+
+.blog ul li::before{
+	content: '✿';
+}
+
+.blog ol{ counter-reset: section; }		
+.blog ol li{ counter-increment: section; }
+.blog ol li::before{ content: counters(section, '.') '.'; }
 
 blockquote{}
+
+q{}
 
 small{}
 
@@ -96,6 +156,69 @@ mark{}
 
 cite{}
 
-ul{}
+.blog .title{
+	margin-bottom: .25em;
+	
+	font-size: 3.5em;
+	color: $roseWhite;
+}
 
-ol{}
+.blog .lead{
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: darken($roseWhite, 50%);
+}
+
+.blog .meta{
+	display: inline-block;
+	
+	font-size: 1.5em;
+	font-style: normal;
+	color: $roseRed;
+
+	cursor: help;
+}
+
+.blog img{
+	display: block;
+	max-width: 100%;
+	margin: .5em auto;
+}
+
+@media all and (max-width: $breakPointLarge){
+
+	.blog .post{
+		font-size: .85em;
+	}
+
+}
+
+@media all and (max-width: $breakPointMedium){
+
+	.blog .top{
+		padding: 1em;
+	}
+
+	.blog .post{
+		font-size: .7em;
+	}
+
+	.blog .lead{
+		line-height: 1.25;
+		font-size: 1.25em;
+	}
+
+}
+
+@media all and (max-width: $breakPointSmall){
+
+	.blog .post{
+		font-size: .6em;
+	}
+
+	.blog .lead{
+		font-size: 1em;
+	}
+
+}
