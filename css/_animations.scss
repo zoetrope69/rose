@@ -1,30 +1,30 @@
 /* _animations.scss */
 
 @keyframes animate-in-top{
-	0%{ opacity: 0; }
-	50%{ transform: translateY(15%); opacity: 0; }
+	0%{ transform: translateY(15%); opacity: 0; }
 }
 
 @keyframes animate-in-right{
-	0%{ opacity: 0; }
-	50%{ transform: translateX(5%); opacity: 0; }
+	0%{ transform: translateX(5%); opacity: 0; }
 }
 
 @keyframes animate-in-bottom{
-	0%{ opacity: 0; }
-	50%{ transform: translateY(-15%); opacity: 0; }
+	0%{ transform: translateY(-15%); opacity: 0; }
 }
 
 @keyframes animate-in-left{
-	0%{ opacity: 0; }
-	50%{ transform: translateX(-5%); opacity: 0; }
+	0%{ transform: translateX(-5%); opacity: 0; }
 }
 
 @keyframes animate-in-fade{
-	0%, 50%{ opacity: 0; }
+	0%{ opacity: 0; }
 }
 
-$animationSpeed: 1.5s;
+@keyframes animate-in-logo{
+	0%{ transform: translateY(-25%); opacity: 0; }
+}
+
+$animationSpeed: .5s;
 
 @mixin animateIn($direction){
 	animation: animate-in-#{$direction} $animationSpeed;

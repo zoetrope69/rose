@@ -13,7 +13,7 @@
 
 	backface-visibility: hidden; // stops the animation white flash
 	transform-origin: center;
-	animation: logoIn 1.5s;
+	@include animateIn(logo);
 
 	transition: opacity .15s;
 
@@ -29,15 +29,6 @@
 }
 
 .logo:hover{ opacity: .8; }
-
-// fades in and moves down
-@keyframes logoIn{
-	0%{ opacity: 0; }
-	50%{
-		transform: translateY(-25%);
-		opacity: 0;
-	}
-}
 
 .logo-img{
 	height: 1.5em;
