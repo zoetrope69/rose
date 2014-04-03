@@ -3,6 +3,7 @@
 @import 'reset'; // used to reset styling values
 
 @import 'variables';
+@import 'animations';
 
 body{
 	padding: 0 1rem;
@@ -28,5 +29,4 @@ main{ overflow: hidden; }
 @import 'blog';
 @import 'code';
 
-@import 'animations';
 @import 'footer';

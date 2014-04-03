@@ -4,12 +4,16 @@
 	padding: 1.5em 2.5em;
 	
 	background: #282828;
+	
+	@include animateIn(bottom);
 }
 
 .blog .post{
 	max-width: 45em;
 	margin: 0 auto;
 	padding: 1.5em 0;
+
+	@include animateIn(fade);
 }
 
 .blog h1,
@@ -172,7 +176,7 @@ cite{}
 
 .blog .meta{
 	display: inline-block;
-	
+
 	font-size: 1.5em;
 	font-style: normal;
 	color: $roseRed;

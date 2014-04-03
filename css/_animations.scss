@@ -1,21 +1,31 @@
 /* _animations.scss */
 
-@keyframes inTop{
-	0%{ opacity: 0 ;}
+@keyframes animate-in-top{
+	0%{ opacity: 0; }
 	50%{ transform: translateY(15%); opacity: 0; }
 }
 
-@keyframes inRight{
-	0%{ opacity: 0 ;}
+@keyframes animate-in-right{
+	0%{ opacity: 0; }
 	50%{ transform: translateX(5%); opacity: 0; }
 }
 
-@keyframes inBottom{
-	0%{ opacity: 0 ;}
+@keyframes animate-in-bottom{
+	0%{ opacity: 0; }
 	50%{ transform: translateY(-15%); opacity: 0; }
 }
 
-@keyframes inLeft{
-	0%{ opacity: 0 ;}
+@keyframes animate-in-left{
+	0%{ opacity: 0; }
 	50%{ transform: translateX(-5%); opacity: 0; }
+}
+
+@keyframes animate-in-fade{
+	0%, 50%{ opacity: 0; }
+}
+
+$animationSpeed: 1.5s;
+
+@mixin animateIn($direction){
+	animation: animate-in-#{$direction} $animationSpeed;
 }
