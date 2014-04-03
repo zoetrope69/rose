@@ -1,0 +1,101 @@
+/* _blog.scss */
+
+.blog article{
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4,
+.blog h5,
+.blog h6{
+	margin-bottom: .5em;
+}
+
+.blog h1.title{
+	color: $roseGreen;
+}
+
+.blog h1,
+.blog h2,
+.blog h3{
+	font-weight: 400;
+	font-family: $headerFont;
+}
+
+.blog h1,
+.blog h2{
+	font-style: italic;
+}
+
+.blog h1{
+	font-size: 3em;
+}
+
+.blog h2{
+	font-size: 2.5em;
+}
+
+.blog h3{
+	font-size: 2em;
+}
+
+.blog h4,
+.blog h5,
+.blog h6{
+	text-transform: uppercase;
+}
+
+.blog h4{
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.blog h5{ 
+	font-weight: 600;
+	font-size: 1.25em;
+}
+
+.blog h6{
+	font-weight: 500;
+	font-size: .9em;
+}
+
+.blog .lead{
+	font-size: 1.25em;
+}
+
+.blog p{
+	font-size: 1em;
+	line-height: 1.25;
+	margin-bottom: .5em;
+}
+
+.blog p a{
+	font: inherit;
+	font-weight: 400;
+	
+	border-bottom: 1px solid;
+	color: inherit;
+	
+	text-decoration: none;
+	transition: border-color .15s;
+}
+
+.blog p a{
+	border-color: transparent;
+}
+
+blockquote{}
+
+small{}
+
+mark{}
+
+cite{}
+
+ul{}
+
+ol{}
