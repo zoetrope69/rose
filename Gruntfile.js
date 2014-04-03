@@ -33,7 +33,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css/build/style.css': 'css/all.scss'
+                    'css/build/style.css': 'css/rose.scss'
                 }
             } 
         },

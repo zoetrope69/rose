@@ -22,5 +22,40 @@ header nav{
 	width: 50%;
 }
 
-@import 'logo';
-@import 'nav';
+header nav li{
+	float: left;
+	width: (100%/$navLinkAmount);
+	
+	color: $roseRed;
+	text-align: center;
+}
+
+header nav li.menu-link{
+	display: none;
+	width: 100%;
+}
+
+header nav li a{
+	padding: 1.5em 0;
+	animation: navLinkIn 1.5s;
+}
+
+header nav li a:hover{
+	color: $roseBlack;
+}
+
+@keyframes navLinkIn{
+	0%, 70%{ opacity: 0; }
+}
+
+@media screen and (max-width: $breakPointMedium){
+	header{
+		padding: .25em 1rem;
+	}
+}
+
+@media screen and (max-width: $breakPointSmall){
+	header .logo{
+		width: 100%;
+	}
+}

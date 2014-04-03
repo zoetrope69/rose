@@ -1,0 +1,21 @@
+/* _animations.scss */
+
+@keyframes inTop{
+	0%{ opacity: 0 ;}
+	50%{ transform: translateY(15%); opacity: 0; }
+}
+
+@keyframes inRight{
+	0%{ opacity: 0 ;}
+	50%{ transform: translateX(5%); opacity: 0; }
+}
+
+@keyframes inBottom{
+	0%{ opacity: 0 ;}
+	50%{ transform: translateY(-15%); opacity: 0; }
+}
+
+@keyframes inLeft{
+	0%{ opacity: 0 ;}
+	50%{ transform: translateX(-5%); opacity: 0; }
+}

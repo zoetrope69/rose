@@ -1,0 +1,302 @@
+/* _home.scss */
+
+.home section{
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	padding: 6em 0;
+}
+
+.home section:nth-child(2n){
+	text-align: right;
+}
+
+.home section:nth-child(3n+1){
+	color: $roseWhite;
+	background-color: $roseRed;
+}
+
+.home section:nth-child(3n+1) *::selection{
+	background-color: $roseWhite;
+	color: $roseRed;
+}
+
+.home section:nth-child(3n+2){
+	color: $roseWhite;
+	background-color: $roseBlack;
+}
+
+.home section:nth-child(3n+2) *::selection{
+	background-color: $roseWhite;
+	color: $roseBlack;
+}
+
+.home section:nth-child(3n+3){
+	color: $roseBlack;
+	background-color: $roseWhite;
+}
+
+.home section:nth-child(3n+3) *::selection{
+	background-color: $roseBlack;
+	color: $roseWhite;
+}
+
+.home section#intro{
+	background-image: url('../../img/poly-rose.png');
+	background-repeat: no-repeat;
+	background-position: 125% 500%;
+
+	animation: introIn 1.5s;
+}
+
+@keyframes introIn{
+	0%{
+		background-image: none;
+		background-position: 125% 0%;
+	}
+}
+
+.home section .wrapper{
+	animation: inLeft 1.5s;
+	backface-visibility: hidden; // stops the animation white flash
+}
+
+.home section:nth-child(2n) .wrapper{
+	animation: inRight 1.5s;
+	text-align: right;
+}
+
+.home section .wrapper h1{
+	margin-bottom: .5em;
+
+	font-weight: 300;
+	font-size: 7em;
+	font-style: italic;
+	font-family: 'Crete Round', Georgia, serif;
+
+	letter-spacing: -.025em;
+}
+
+.home section .wrapper h2{
+	margin-bottom: .25em;
+
+	font-size: 2.25em;
+	font-weight: 600;
+	
+	text-transform: uppercase;
+}
+
+.home section .text{
+	width: (100% * 2/3);
+	font-size: 1.5em;
+}
+
+.home section p{
+	font-weight: 300;
+	line-height: 1.35;
+	margin-bottom: .75em;
+}
+
+.home section p strike{
+	position: relative;
+	text-decoration: none;
+}
+.home section p strike::after{
+	position: absolute;
+	left: -5%; top: 50%;
+	width: 110%;
+	content: '';
+
+	border-bottom: 2px solid $roseWhite;
+	transform: rotate(-2.5deg);
+}
+
+.home section .logo-sig{
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	height: 2em;
+
+	text-indent: -9999px;
+	
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: auto 100%;
+}
+
+.home section:nth-child(odd)  .text{ float: left; }
+.home section:nth-child(even) .text{ float: right; }
+
+.home section a{
+	font: inherit;
+	font-weight: 400;
+	
+	border-bottom: 1px solid;
+	color: inherit;
+	
+	text-decoration: none;
+	transition: border-color .15s;
+}
+
+.home section a:hover{
+	border-color: transparent;
+}
+
+.home section .move-link{
+	position: absolute;
+	display: block;
+	bottom: 15%;
+	padding: .25em;
+
+	font-family: "Crete Round", Georgia, serif;
+	font-size: 2em;
+	font-weight: 400;
+
+	border-width: 2px;
+
+	animation: inTop 1.5s;
+}
+
+.home section:nth-child(odd)  .move-link{ right: 5%; }
+.home section:nth-child(even) .move-link{ left: 5%; }
+
+.home #blog{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: $roseBlack;
+}
+
+.home #blog a{
+	display: block;
+	padding: 1em;
+	border: none;
+}
+
+.home #blog a:hover{ opacity: .8; }
+
+.home #blog h1{
+	width: 100%;
+	display: inline-block;
+	
+	font-size: 1.5em;
+	font-weight: 300;
+	color: $roseWhite;
+	text-align: center
+}
+
+.home #blog q{
+	font-family: $headerFont;
+}
+
+.home #blog q::before,
+.home #blog q::after{
+	vertical-align: -0.25em;
+	margin: 0 2px;
+	
+	font-size: 2em;
+	color: darken($roseWhite, 70%);
+}
+
+.home #blog q { quotes: "“" "”" "‘" "’"; }
+.home #blog q:before { content: open-quote; }
+.home #blog q:after{ content: close-quote; }
+
+@media screen and (max-width: $breakPointLarge){
+
+	.home section h1{
+		font-size: 5.5em;
+	}
+
+	.home section .text{
+		width: (100% * 3/4);
+		font-size: 1em;
+	}
+
+	.home section#intro{
+		background-position: -125% -500%;
+	}
+
+	.home #blog{
+		font-size: .85em;
+	}
+
+	.home #blog h1 q{
+		margin-top: .5em;
+		display: block;
+		line-height: 1.1em;
+
+		font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width: $breakPointMedium){
+	
+	.home section{
+		padding: 3em 0;
+	}
+
+	.home section h1{
+		font-size: 4.5em;
+	}
+
+	.home section .text{
+		width: (100% * 3/4);
+		font-size: .85em;
+	}
+
+	.home section p{
+		font-size: 1em;
+		line-height: 1.25;
+	}
+
+	.home section .move-link{
+		font-size: 1.5em; 
+		bottom: 5%;
+	}
+
+}
+
+@media screen and (max-width: $breakPointSmall){
+
+	.home section{
+		padding: 1.25em 0;
+	}
+
+	.home section#intro{
+		background-position: 50% -100%;
+	}
+
+	.home section h1{
+		text-align: center;
+		font-size: 2.25em;
+	}
+
+	.home section h2{
+		text-align: center;
+		font-size: 1.85em;
+	}
+
+	.home section .text{
+		width: 100%;
+		float: none;
+		font-size: .85em;
+	}
+
+	.home section p{
+		text-align: center;
+	}
+
+	.home section .logo-sig{
+		background-position: center;
+	}
+
+	.home section .move-link{
+		bottom: 5%; right: 5%; left: 5%;
+
+		font-size: 1.25em; 
+		text-align: center;
+	}
+
+}
