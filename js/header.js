@@ -10,7 +10,7 @@ function elementResize(){
 	var headerHeight = $('header').outerHeight();
 
 	var sectionHeight = $(window).height() - headerHeight;
-	$('main section').css('height', sectionHeight);
+	$('.home section').css('height', sectionHeight);
 
 	$('body').css('padding-top', headerHeight);
 }
