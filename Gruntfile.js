@@ -69,15 +69,45 @@ module.exports = function(grunt) {
             }   
         },
 
+        jekyll: {
+            server : {    
+                options: {
+                    serve : true,
+                },
+                src : 'templates',
+                dest: 'dev',
+                server_port : 9001,
+                auto : true
+            },
+            dev: {
+                src: 'templates',
+                dest: 'dev'
+            },
+            prod: {
+                src: 'templates',
+                dest: 'prod'
+            }
+        },
+
+        exec: {
+            build: {
+                cmd: 'jekyll build'
+            },
+            serve: {
+                cmd: 'jekyll serve'
+            }
+        },
+
         watch: {
 
             options: {
-                livereload: true
+                livereload: true,
+                atBegin: true
             },
 
             scripts: {
                 files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['concat', 'uglify', 'exec:build'],
                 options: {
                     spawn: false
                 }
@@ -85,26 +115,25 @@ module.exports = function(grunt) {
 
             css: {
                 files: ['css/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'csso'],
+                tasks: ['sass', 'autoprefixer', 'csso', 'exec:build'],
                 options: {
                     spawn: false
                 }
             },
 
-            html: {
-                files: ['*.html'],
-                options: {
-                    spawn: false
-                }
+            jekyll: {
+                files: ['_posts/*.md', '_drafts_*.md', 'templates/*.html'],
+                tasks: ['exec:build']
             },
 
             images: {
                 files: ['images/*.{png,jpg,gif}'],
-                tasks: ['imagemin'],
+                tasks: ['imagemin', 'exec:build'],
                 options: {
                     spawn: false
                 }
-            }
+            },
+
         },
 
     });
@@ -128,9 +157,10 @@ module.exports = function(grunt) {
     // watch for changes in files
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.loadNpmTasks('grunt-exec');
+
     // command line usage
     grunt.registerTask('default', ['concat', 'uglify','sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt'
-    grunt.registerTask('image-compress', ['imagemin']); // 'grunt image-compress'
     grunt.registerTask('lint', ['jshint', 'htmllint']); // 'grunt lint'
     grunt.registerTask('dev', ['watch']); // 'grunt dev'
 
