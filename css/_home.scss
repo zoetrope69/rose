@@ -4,7 +4,10 @@
 	overflow: hidden;
 	position: relative;
 	height: 100vh;
-	padding: 6em 0;
+	padding: 5em 1.5em;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
 .home section:nth-child(2n){
@@ -54,19 +57,14 @@
 		background-image: none;
 		background-position: 125% 0%;
 	}
-}
+}	
 
-.home section .wrapper{
-	animation: inLeft 1.5s;
-	backface-visibility: hidden; // stops the animation white flash
-}
-
-.home section:nth-child(2n) .wrapper{
+.home section:nth-child(2n) h1{
 	animation: inRight 1.5s;
 	text-align: right;
 }
 
-.home section .wrapper h1{
+.home section h1{
 	margin-bottom: .5em;
 
 	font-weight: 300;
@@ -75,9 +73,12 @@
 	font-family: 'Crete Round', Georgia, serif;
 
 	letter-spacing: -.025em;
+
+	animation: inLeft 1.5s;
+	backface-visibility: hidden; // stops the animation white flash
 }
 
-.home section .wrapper h2{
+.home section h2{
 	margin-bottom: .25em;
 
 	font-size: 2.25em;
@@ -234,7 +235,7 @@
 @media screen and (max-width: $breakPointMedium){
 	
 	.home section{
-		padding: 3em 0;
+		padding: 3em .75em;
 	}
 
 	.home section h1{
@@ -261,19 +262,19 @@
 @media screen and (max-width: $breakPointSmall){
 
 	.home section{
-		padding: 1.25em 0;
+		padding: 1.25em .5em;
 	}
 
 	.home section#intro{
 		background-position: 50% -100%;
 	}
 
-	.home section h1{
+	.home section  h1{
 		text-align: center;
 		font-size: 2.25em;
 	}
 
-	.home section h2{
+	.home section  h2{
 		text-align: center;
 		font-size: 1.85em;
 	}
