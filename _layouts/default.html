@@ -24,40 +24,13 @@
 </head>
 <body>
 
-  <header>
-
-    <h1 class="logo logo-img logo-default-svg"><a href="{{ root_url }}">ROSE Digital</a></h1>
-
-    <nav>
-      <ul>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="menu-link"><a href="#">Menu</a></li>
-      </ul>
-    </nav>
-
-  </header>
+  {% include header.html %}
 
   {{ content }}
     
-  <footer>
+  {% include footer.html %}
 
-    <p class="details">ROSE Digital &copy; 2014</p>
-    <p class="details">Code available on <a href="#">GitHub</a></p>
-    
-    <nav>
-      <ul>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </footer>
-
-  <script src="{{ root_url }}/bower_components/jquery/dist/jquery.min.js"></script> 
-  <script src="{{ root_url }}/js/build/script.min.js"></script>
+  {% include scripts.html %}
+  
 </body>
 </html>
