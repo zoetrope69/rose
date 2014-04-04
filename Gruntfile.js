@@ -69,26 +69,6 @@ module.exports = function(grunt) {
             }   
         },
 
-        jekyll: {
-            server : {    
-                options: {
-                    serve : true,
-                },
-                src : 'templates',
-                dest: 'dev',
-                server_port : 9001,
-                auto : true
-            },
-            dev: {
-                src: 'templates',
-                dest: 'dev'
-            },
-            prod: {
-                src: 'templates',
-                dest: 'prod'
-            }
-        },
-
         exec: {
             build: {
                 cmd: 'jekyll build'
