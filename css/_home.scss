@@ -120,19 +120,6 @@
 	transform: rotate(-2.5deg);
 }
 
-.home section .logo-sig{
-	text-align: left;
-	display: inline-block;
-	width: 100%;
-	height: 2em;
-
-	text-indent: -9999px;
-	
-	background-repeat: no-repeat;
-	background-position: center right;
-	background-size: auto 100%;
-}
-
 .home section:nth-child(odd)  .text{ float: left; }
 .home section:nth-child(even) .text{ float: right; }
 
@@ -298,10 +285,6 @@
 
 	.home section > .text p{
 		text-align: center;
-	}
-
-	.home section > .logo-sig{
-		background-position: center;
 	}
 
 	.home section > .move-link{
