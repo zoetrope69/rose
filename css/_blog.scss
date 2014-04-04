@@ -234,6 +234,19 @@ $markColour: transparentize(invert($roseRed), .85);
 	border-right-width: 5px;
 }
 
+.blog sup,
+.blog sub{
+	font-size: .7em;
+}
+
+.blog sup{
+	vertical-align: super;
+}
+
+.blog sub{
+	vertical-align: sub;
+}
+
 .blog .title{
 	margin-bottom: .25em;
 	
