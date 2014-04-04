@@ -5,28 +5,7 @@
 @import 'variables';
 @import 'animations';
 
-body{
-	padding: 0 1rem;
-	
-	font-family: $sans-serif;
-	font-weight: 400;
-	text-rendering: optimizeLegibility;
-	
-	background: $roseWhite;
-	color: $roseBlack;
-}
-
-@media (max-width: $breakPointMedium){
-	body{ padding: 0 .75rem; }
-}	
-
-main{ overflow: hidden; }
-
-@import 'header';
-@import 'logo';
-@import 'nav';
-@import 'home';
-@import 'blog';
+@import 'typography';
 @import 'code';
 
-@import 'footer';
+@import 'main';

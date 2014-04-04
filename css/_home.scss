@@ -8,9 +8,11 @@
 	width: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
+
+	font-size: .9em;
 }
 
-.home section:nth-child(2n){
+.home section:nth-child(even){
 	text-align: right;
 }
 
@@ -65,22 +67,19 @@
 	backface-visibility: hidden; // stops the animation white flash
 }
 
-.home section:nth-child(2n) > h1,
-.home section:nth-child(2n) > .text{
+.home section:nth-child(even) > h1,
+.home section:nth-child(even) > .text{
 	@include animateIn(right);
 }
 
-.home section:nth-child(2n) > h1{
+.home section:nth-child(even) > h1{
 	text-align: right;
 }
 
 .home section > h1{
 	margin-bottom: .5em;
 
-	font-weight: 300;
 	font-size: 7em;
-	font-style: italic;
-	font-family: 'Crete Round', Georgia, serif;
 
 	letter-spacing: -.025em;
 }
@@ -90,6 +89,7 @@
 
 	font-size: 2.25em;
 	font-weight: 600;
+	font-family: $sans-serif;
 	
 	text-transform: uppercase;
 }
@@ -100,9 +100,7 @@
 }
 
 .home section > .text p{
-	font-weight: 300;
 	line-height: 1.35;
-	margin-bottom: .75em;
 }
 
 .home section  > .text p strike{
@@ -124,13 +122,11 @@
 .home section:nth-child(even) .text{ float: right; }
 
 .home section > .text a{
-	font: inherit;
 	font-weight: 400;
 	
 	border-bottom: 1px solid;
 	color: inherit;
 	
-	text-decoration: none;
 	transition: border-color .15s;
 }
 
@@ -144,11 +140,10 @@
 	bottom: 15%;
 	padding: .25em;
 
-	font-family: "Crete Round", Georgia, serif;
+	font-family: $serif;
 	font-size: 2em;
 	font-weight: 400;
 	color: inherit;
-	text-decoration: none;
 
 	border-bottom: 2px solid;
 
@@ -163,135 +158,89 @@
 .home section:nth-child(odd)  > .move-link{ right: 5%; }
 .home section:nth-child(even) > .move-link{ left: 5%; }
 
-.home #blog{
+.home .latest-post{
 	position: absolute;
 	right: 0; bottom: 0; left: 0;
 	background: $roseBlack;
 }
 
-.home #blog a{
+.home .latest-post a{
 	display: block;
-	padding: 1em;
-	border: none;
+	padding: 1.5em;
 }
 
-.home #blog a:hover{ opacity: .8; }
+.home .latest-post a:hover{ opacity: .8; }
 
-.home #blog h1{
-	width: 100%;
-	display: inline-block;
-	
-	font-size: 1.75em;
+.home .latest-post h1{
+	margin: 0;
+
+	font-size: 2.5em;
 	font-weight: 300;
+	font-style: normal;
+	font-family: $sans-serif;
 	color: $roseWhite;
-	text-align: center
+	text-align: center;
 }
 
-.home #blog q{
+.home .latest-post q{
 	font-family: $serif;
 }
 
-.home #blog q::before,
-.home #blog q::after{
-	vertical-align: -0.25em;
-	margin: 0 2px;
-	
-	font-size: 2em;
-	color: darken($roseWhite, 70%);
+.home .latest-post q::before,
+.home .latest-post q::after{
+	font-size: 1.5em;
 }
 
-.home #blog q { quotes: "“" "”" "‘" "’"; }
-.home #blog q:before { content: open-quote; }
-.home #blog q:after{ content: close-quote; }
+@media (max-width: $breakPointExtraLarge){
+	
+	.home{ font-size: .8em; }
+	
+}
 
-@media screen and (max-width: $breakPointLarge){
-
-	.home section > h1{
-		font-size: 5.5em;
-	}
-
-	.home section > .text{
-		width: (100% * 3/4);
-		font-size: 1em;
-	}
-
-	.home section#intro{
-		background-position: -125% -500%;
-	}
-
-	.home #blog{
-		font-size: .85em;
-	}
-
-	.home #blog h1 q{
-		margin-top: .5em;
-		display: block;
-		line-height: 1.1em;
-
-		font-size: .9em;
-	}
+@media (max-width: $breakPointLarge){
+	
+	.home{ font-size: .7em; }
 
 }
 
-@media screen and (max-width: $breakPointMedium){
+@media (max-width: $breakPointMedium){
 	
-	.home section{
-		padding: 3em .75em;
-	}
-
-	.home section > h1{
-		font-size: 4.5em;
-	}
-
-	.home section > .text{
-		width: (100% * 3/4);
-		font-size: .85em;
-	}
-
-	.home section > .text p{
-		font-size: 1em;
-		line-height: 1.25;
-	}
+	.home{ font-size: .6em; }
 
 	.home section > .move-link{
 		font-size: 1.5em; 
 		bottom: 5%;
 	}
 
+	.home .latest-post q{
+		display: block;
+		margin-top: .25em;
+	}
+
 }
 
-@media screen and (max-width: $breakPointSmall){
+@media (max-width: $breakPointSmall){
+	
+	.home{ font-size: .55em; }
 
 	.home section#intro{
 		background-position: 50% -100%;
 	}
 
 	.home section > h1,
-	.home section:nth-child(2n) > h1{
+	.home section:nth-child(2n) > h1,
+	.home section > .text p,
+	.home section > .move-link{
 		text-align: center;
-		font-size: 2.25em;
-	}
-
-	.home section > h2{
-		text-align: center;
-		font-size: 1.85em;
 	}
 
 	.home section > .text{
 		width: 100%;
 		float: none;
-		font-size: .85em;
-	}
-
-	.home section > .text p{
-		text-align: center;
 	}
 
 	.home section > .move-link{
 		bottom: 5%; right: 5%; left: 5%;
-
-		font-size: 1.25em; 
-		text-align: center;
 	}
 
 }

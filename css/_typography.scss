@@ -1,0 +1,252 @@
+/*_typography.scss */
+
+main h1, main h2,
+main h3, main h4,
+main h5, main h6,
+main p{
+	margin-bottom: 1em;
+}
+
+main h1,
+main h2,
+main h3{
+	font-weight: 400;
+	font-family: $serif;
+}
+
+main h1,
+main h2{
+	font-style: italic;
+}
+
+main h1{
+	font-size: 3em;
+}
+
+main h2{
+	font-size: 2.5em;
+	color: lighten($roseBlack, 2.5%);
+}
+
+main h3{
+	font-size: 2em;
+	color: lighten($roseBlack, 5%);
+}
+
+main h4,
+main h5,
+main h6{
+	text-transform: uppercase;
+}
+
+main h4{
+	font-weight: 700;
+	font-size: 1.5em;
+	color: lighten($roseBlack, 7.5%);
+}
+
+main h5{ 
+	font-weight: 600;
+	font-size: 1.25em;
+	color: lighten($roseBlack, 10%);
+}
+
+main h6{
+	font-weight: 500;
+	font-size: .9em;
+	color: lighten($roseBlack, 12.5%);
+}
+
+main p{	
+	font-size: 1.45em;
+	font-weight: 300;
+	line-height: 1.45;
+}
+
+main a{
+	font-weight: 500;
+	
+	color: $roseBlack;
+	text-decoration: none;
+	
+	transition: opacity .15s;
+}
+
+main a:hover{
+	opacity: .9;
+}
+
+main em{
+	font-style: italic;
+}
+
+main strong{
+	font-weight: bolder;
+}
+
+main hr{
+	margin: 1.5em 0;
+
+	border: 0;
+	border-top: 2px solid lighten($roseBlack, 75%);
+}
+
+main ol:first-of-type,
+main ul:first-of-type{
+	margin: .5em 0;
+}
+
+main ol ol,
+main ol li,
+main li li,
+main li ol{
+	margin-left: 1em;
+}
+
+main li{
+	margin-bottom: .5em;
+
+	list-style: none;
+	font-size: 1.25rem;
+	font-family: $serif;
+	font-weight: 400;
+	color: lighten($roseBlack, 15%);
+}
+
+main li::before{
+	float: left;
+	margin: .25em 0;
+	margin-right: .5em;
+	
+	line-height: 1em;
+	font-size: .7em;
+	color: lighten($roseBlack, 50%);
+}
+
+main ul li::before{
+	content: '✿';
+}
+
+main ol{ counter-reset: section; }		
+main ol li{ counter-increment: section; }
+main ol li::before{ content: counters(section, '.') '.'; }
+
+main blockquote{
+	margin: 1.5em 1em;
+	padding: 0 .75em;
+	
+	font-size: 1.35em;
+	font-style: italic;
+	
+	border-left: 2px solid lighten($roseBlack, 50%);
+}
+
+main q{
+	font-style: italic;
+	quotes: "“" "”" "‘" "’";
+}
+
+main q::before,
+main q::after{
+	vertical-align: -.3em;
+	margin: 0 2px;
+	line-height: 0;
+
+	font-size: 1.25em;
+	font-style: normal;
+	font-family: "Crete Round",Georgia,serif;
+	color: #4e4e4e;
+}
+
+main q::before{ content: open-quote; }
+main q::after{ content: close-quote; }
+
+main cite::before{
+	content: '— ';
+}
+
+main cite a{ background: none; }
+
+
+main small{
+	font-variant: small-caps;
+	font-size: .85em;
+	font-family: $sans-serif;
+	text-transform: lowercase;
+}
+
+$markColour: transparentize(invert($roseRed), .85);
+
+main mark{
+	padding: 1px 0;
+	position: relative;
+	
+	background: $markColour;
+	color: lighten($roseBlack, 5%);
+}
+
+main mark::after,
+main mark::before{
+	position: absolute;
+	content: '';
+
+	border: 10px solid transparent;
+	
+}
+
+main mark::before{
+	left: -15px;
+	
+	border-bottom-color: $markColour;
+	border-top-width: 20px;
+	border-left-width: 5px;
+	border-right-color: $markColour;
+}
+
+main mark::after{
+	border-top-color: $markColour;
+	border-left-color: $markColour;
+	border-bottom-width: 20px;
+	border-right-width: 5px;
+}
+
+main sup,
+main sub{
+	font-size: .7em;
+}
+
+main sup{
+	vertical-align: super;
+}
+
+main sub{
+	vertical-align: sub;
+}
+
+main .gravatar{
+	border-radius: 50%;
+}
+
+@media all and (max-width: $breakPointLarge){
+
+	main{
+		font-size: .9em;
+	}
+
+}
+
+@media all and (max-width: $breakPointMedium){
+
+	main{
+		font-size: .85em;
+	}
+
+}
+
+@media all and (max-width: $breakPointSmall){
+
+	main{
+		font-size: .8em;
+	}
+
+}
