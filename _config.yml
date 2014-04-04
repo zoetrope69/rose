@@ -5,6 +5,7 @@ paginate: 3
 paginate_path: 'blog/page-:num'
 github: rosedigital
 twitter: rosedgtl
+snapchat: rosedigital
 authors:
   zac:
     name: Zac Colley
