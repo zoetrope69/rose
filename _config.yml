@@ -3,6 +3,8 @@ markdown: redcarpet
 pygments: true
 paginate: 3
 paginate_path: 'blog/page-:num'
+github: rosedigital
+twitter: rosedgtl
 authors:
   zac:
     name: Zac Colley
