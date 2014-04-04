@@ -2,6 +2,7 @@
 layout: post
 title:  "Markdown Test File!"
 date:   2014-04-03 23:31:09
+author: zac
 categories: blog
 ---
 

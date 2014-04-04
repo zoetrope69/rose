@@ -196,6 +196,7 @@
 	font-variant: small-caps;
 	font-size: .85em;
 	font-family: $sans-serif;
+	text-transform: lowercase;
 }
 
 $markColour: transparentize(invert($roseRed), .85);
@@ -257,10 +258,36 @@ $markColour: transparentize(invert($roseRed), .85);
 	cursor: help;
 }
 
-.blog img{
+.blog .meta small{ color: darken($roseWhite, 10%); }
+
+.blog .gravatar{
+	border-radius: 50%;
+}
+
+.blog .post img{
 	display: block;
 	max-width: 100%;
 	margin: .5em auto;
+}
+
+.blog .notes{
+	overflow: hidden;
+	padding: .5em;
+	
+	border-top: 2px solid darken($roseWhite, 10%);
+}
+
+.blog .notes h1{
+	float: left;
+	margin: .15em 0;
+	
+	font-size: 2.5em;
+	font-style: normal;
+	color: $roseRed;
+}
+
+.blog .notes .gravatar{
+	float: right;
 }
 
 @media all and (max-width: $breakPointLarge){

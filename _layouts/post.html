@@ -7,14 +7,25 @@ layout: default
 <article>
 	
 	<section class="top">
+		
+		{% assign author = site.authors[page.author] %}
+		
 		<h1 class="title">{{ page.title }}</h1>
-		<h2 class="meta"><time timestamp="{{ page.date }}" title="{{ page.date }}">{{ page.date | date_to_string }}</time></h2>
+		<h2 class="meta">
+			<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ page.date | date_to_string }}</time>
+			<small> by {{ author.display_name }}</small>
+		</h2>
 		
 		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quidem, assumenda, ullam fugiat hic voluptatem quos quia at perferendis dolor repellendus soluta aliquam consectetur ipsam ex ipsum veritatis. Suscipit, consectetur.</p>
 	</section>
 
 	<section class="post">
 		{{ content }}
+	</section>
+
+	<section class="notes">
+		<h1> by {{ author.display_name }}</h1>
+		<img class="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?d=img%2Fdefaultface.png&amp;s=48" alt="{{ {{ author.name }}'s ugly mug">
 	</section>
 
 </article>
