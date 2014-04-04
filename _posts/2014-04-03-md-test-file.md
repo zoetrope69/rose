@@ -6,6 +6,10 @@ author: zac
 categories: blog
 ---
 
+<p class="lead">
+    this is the lead. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, neque, eius, porro, alias quae magnam quos numquam beatae repellat earum adipisci obcaecati quas accusantium aspernatur similique dolorum maxime quis quibusdam.
+</p>
+
 # Markdown: Syntax
 
 **Note:** This document is itself written using Markdown; you
