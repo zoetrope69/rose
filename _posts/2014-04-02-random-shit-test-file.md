@@ -7,7 +7,7 @@ categories: blog
 ---
 
 <p class="lead">
-    this is the lead. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, neque, eius, porro, alias quae magnam quos numquam beatae repellat earum adipisci obcaecati quas accusantium aspernatur similique dolorum maxime quis quibusdam.
+    This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing. 
 </p>
 
 # Header 1
@@ -34,7 +34,7 @@ Lorem ipsum dolor <small>this is small text</small>. Accusamus, aspernatur, <mar
     2. Ordered list sub-sub item 2
 + Unordered list item 6
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aspernatur, nisi possimus dignissimos mollitia commodi facilis vitae nostrum voluptatibus nulla distinctio beatae nihil rem? Illo facere dolor vitae quibusdam nesciunt.
+Lorem ipsum dolor sit amet, www.consectetur.com http://www.adipisicing.com elit. Quos, ullam, similique neque eos consequuntur facere nostrum? Earum 1^(st) 2^(nd) 3^(rd) reprehenderit quidem voluptates laboriosam obcaecati nisi animi neque dolore expedita repudiandae? Magni, aut?
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aspernatur, nisi possimus dignissimos mollitia commodi facilis <q>this in an inline quote <cite>john smith</cite></q> vitae nostrum voluptatibus nulla distinctio beatae nihil rem? Illo facere dolor vitae quibusdam nesciunt.
 

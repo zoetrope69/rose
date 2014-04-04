@@ -7,7 +7,7 @@ categories: blog
 ---
 
 <p class="lead">
-    this is the lead. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, neque, eius, porro, alias quae magnam quos numquam beatae repellat earum adipisci obcaecati quas accusantium aspernatur similique dolorum maxime quis quibusdam.
+    This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing.
 </p>
 
 # Markdown: Syntax
@@ -46,8 +46,6 @@ as to look like what they mean. E.g., asterisks around a word actually
 look like \*emphasis\*. Markdown lists look like, well, lists. Even
 blockquotes look like quoted passages of text, assuming you've ever
 used email.
-
-
 
 <h3 id="html">Inline HTML</h3>
 
