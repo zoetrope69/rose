@@ -16,7 +16,7 @@ footer > nav{
 	width: 100%;
 }
 
-footer .details:first-of-type::before{
+footer .details:first-child::before{
 	display: inline-block;
 	content: '✿';
 	margin-right: .35em;
@@ -34,6 +34,17 @@ footer .details a{
 
 footer .details a:hover{
 	border-color: lighten($roseBlack, 25%);
+}
+
+$amountOfLinks: 3;
+
+footer .links li{
+	display: inline;
+}
+
+footer .links li:nth-child(-n+#{$amountOfLinks - 1})::after{
+	content: '•';
+	margin-left: .25em;
 }
 
 footer > nav li{

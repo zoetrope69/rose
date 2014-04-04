@@ -1,12 +1,18 @@
 <footer>
 
   <p class="details">ROSE Digital &copy; 2014</p>
-  <p class="details"><a title="{{ site.github }}" href="http://github.com/{{ site.github }}">GitHub</a> | <a title="@{{ site.twitter }}" href="http://twitter.com/{{ site.twitter}}">Twitter</a> | <a href="{{ root_url }}/snapchat">Snapchat</a></p>
-  
+  <ul class="details links">
+      <li><a title="{{ site.github }}" href="http://github.com/{{ site.github }}">GitHub</a></li>
+      <li><a title="@{{ site.twitter }}" href="http://twitter.com/{{ site.twitter}}">Twitter</a></li>
+      <li><a title="{{ site.snapchat }}" href="{{ root_url }}/snapchat">Snapchat</a></li>
+    </ul>
+  </p>
+
   <nav>
     <ul>
       <li><a href="{{ root_url }}/">Home</a></li>
       {% include nav.html %}
     </ul>
   </nav>
+
 </footer>
