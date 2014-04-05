@@ -9,4 +9,4 @@ rose website, will move this to rosedigital account
 4. start a watching jekyll server with draft posts - `jekyll serve --watch --drafts`
 5. build files and watch for changes - `grunt`
 
-✿
+:rose:
