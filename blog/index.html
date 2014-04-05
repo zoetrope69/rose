@@ -7,7 +7,7 @@ title: Blog ✿ ROSE Digital
 
 	{% for post in paginator.posts %}
 	<a href="{{ post.url }}" class="post">
-		{% assign author = site.authors[post.author] %}
+		{% assign author = site.data.authors[post.author] %}
 		
 		<h1 class="title">{{ post.title }}</h1>
 		<h2 class="meta">
