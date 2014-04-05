@@ -9,7 +9,7 @@ title: Blog ✿ ROSE Digital
 	<a href="{{ post.url }}" class="post">
 		{% assign author = site.data.authors[post.author] %}
 		
-		<h1 class="title">{{ post.title }}</h1>
+		<h1 class="title">{{ post.post_title }}</h1>
 		<h2 class="meta">
 			<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date_to_string }}</time>
 			<small> by {{ author.display_name }}</small>

@@ -10,7 +10,7 @@ layout: default
 		
 		{% assign author = site.data.authors[page.author] %}
 		
-		<h1 class="title">{{ page.title }}</h1>
+		<h1 class="title">{{ page.post_title }}</h1>
 		<h2 class="meta">
 			Posted on <time timestamp="{{ page.date }}" title="{{ page.date }}">{{ page.date | date_to_string }}</time> by {{ author.display_name }}
 		</h2>
