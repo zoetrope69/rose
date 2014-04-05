@@ -3,12 +3,12 @@ title: humans.txt
 ---
 
 /* TEAM */
-{% for author in site.data.authors %}
-Name: {{ author.name }}
-Title: {{ author.title }}
-Website: {{ author.web }}
-Twitter: {{ author.twitter }}
-Github: {{ author.github }}
+{% for author in site.data.authors %}{% assign author_details = author[1] %}
+Name: {{ author_details.name }}
+Title: {{ author_details.title }}
+Website: {{ author_details.web }}
+Twitter: {{ author_details.twitter }}
+Github: {{ author_details.github }}
 {% endfor %}
 
 /* THANKS */
@@ -16,6 +16,9 @@ Github: {{ author.github }}
 I wanna thank my mum and dad etc etc
 Zac thanks his mum and dad too
 
-/*SITE */
+/* SITE */
 
-CMS: Jekyll
+Last update: {{ site.time }}
+Doctype: HTML5
+Standards: HTML5, CSS3
+Software: Sublime Text, GIMP, Inkscape, Git, Grunt, SASS, Jekyll

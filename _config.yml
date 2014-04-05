@@ -1,10 +1,11 @@
 name: ROSE Digital
 url: http://rosedigital.co.uk
 desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, earum est tenetur laboriosam harum omnis quas numquam aliquid odio mollitia aut eius culpa quos rem unde ad facilis ipsam. Enim.'
+timezone: GMT
 
 markdown: redcarpet
 redcarpet:
-  extensions: [smart, no_intra_emphasis, autolink, tables, space_after_headers, superscript]
+  extensions: ['smart', 'no_intra_emphasis', 'autolink', 'tables', 'space_after_headers', 'superscript']
 pygments: true
 
 paginate: 3
@@ -12,4 +13,4 @@ paginate_path: blog/page-:num
 
 include: ['.htaccess']
 
-exclude: [package.json, node_modules, bower.json, Gruntfile.js, README.md, LICENSE]
+exclude: ['package.json', 'node_modules', 'bower.json', 'Gruntfile.js', 'README.md', 'LICENSE']
