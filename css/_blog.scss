@@ -64,8 +64,8 @@
 
 .blog .post .emoji{
 	display: inline-block;
-	width: 1.25em;
-	height: 1.25em;
+	max-width: 28px;
+	max-height: 28px;
 	margin-bottom: -.25em;
 }
 
