@@ -1,5 +1,4 @@
-zac:
-  name: Zac Colley
+- name: Zac Colley
   display_name: Zac
   title: MS Paint Artist
   gravatar: 26ab7600fc89f94711ec3b7db40d039b
@@ -8,8 +7,7 @@ zac:
   twitter: zaccolley
   github: zaccolley
 
-peter:
-  name: Peter Jones
+- name: Peter Jones
   display_name: Peter
   title: SEO CEO
   gravatar: #
