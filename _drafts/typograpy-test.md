@@ -95,6 +95,10 @@ Emojis:
 ##### Emoji :smile: Header 5
 ###### Emoji :smile: Header 6
 
+Lorem ipsum dolor :shit: sit amet, consectetur adipisicing elit. Incidunt, ipsam, architecto, culpa, :shit: deserunt accusamus deleniti ipsum doloribus cum reprehenderit aliquam dolorum :shit: alias eligendi nihil :shit: veniam repudiandae excepturi ea est eaque.
+
+Lorem ipsum dolor :shit: sit amet, consectetur adipisicing elit. Incidunt, ipsam, architecto, culpa, :shit: deserunt accusamus deleniti ipsum doloribus cum reprehenderit aliquam dolorum :shit: alias eligendi nihil :shit: veniam repudiandae excepturi ea est eaque.
+
 Gists:
 
 {% gist 5555251 %}
