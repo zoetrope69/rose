@@ -69,15 +69,6 @@ module.exports = function(grunt) {
             }   
         },
 
-        exec: {
-            build: {
-                cmd: 'jekyll build'
-            },
-            serve: {
-                cmd: 'jekyll serve'
-            }
-        },
-
         watch: {
 
             options: {
@@ -87,7 +78,7 @@ module.exports = function(grunt) {
 
             scripts: {
                 files: ['js/*.js'],
-                tasks: ['concat', 'uglify', 'exec:build'],
+                tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false
                 }
@@ -95,20 +86,15 @@ module.exports = function(grunt) {
 
             css: {
                 files: ['css/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'csso', 'exec:build'],
+                tasks: ['sass', 'autoprefixer', 'csso'],
                 options: {
                     spawn: false
                 }
             },
 
-            jekyll: {
-                files: ['_config.yml', '**/*.html', '_posts/*.md', '_drafts_*.md'],
-                tasks: ['exec:build']
-            },
-
             images: {
                 files: ['images/*.{png,jpg,gif}'],
-                tasks: ['imagemin', 'exec:build'],
+                tasks: ['imagemin'],
                 options: {
                     spawn: false
                 }
@@ -137,11 +123,9 @@ module.exports = function(grunt) {
     // watch for changes in files
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.loadNpmTasks('grunt-exec');
-
     // command line usage
-    grunt.registerTask('default', ['concat', 'uglify','sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt'
+    grunt.registerTask('build', ['concat', 'uglify','sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt build'
     grunt.registerTask('lint', ['jshint', 'htmllint']); // 'grunt lint'
-    grunt.registerTask('dev', ['watch']); // 'grunt dev'
+    grunt.registerTask('default', ['build', 'watch']); // 'grunt'
 
 };
