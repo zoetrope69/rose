@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "Random shit test file"
-date:   2014-04-02 23:31:09
+title:  "Typography Testing"
 author: zac
 categories: blog
 ---
@@ -9,6 +8,8 @@ categories: blog
 <p class="lead">
     This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing. 
 </p>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, tempora, atque delectus quia alias similique tempore temporibusbeatae namprovident assumenda eaque dicta libero earum facilis esse consectetur enim nesciunt.
 
 # Header 1
 ## Header 2
@@ -48,6 +49,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aspernatur,
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ipsum, laboriosam maiores totam eaque beatae repellat. Molestiae, vero, amet, aliquam explicabo rem sit quis impedit facere reiciendis quaerat enim autem.
 
+Blockquotes:
+
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -80,6 +83,23 @@ id sem consectetuer libero luctus adipiscing.
 ![wot](http://fillmurray.com/1000/200)
 
 ![wot](http://placekitten.com/100/500)
+
+Emojis:
+
+:rose: :+1: :smile:
+
+# Emoji :smile: Header 1
+## Emoji :smile: Header 2
+### Emoji :smile: Header 3
+#### Emoji :smile: Header 4
+##### Emoji :smile: Header 5
+###### Emoji :smile: Header 6
+
+Gists:
+
+{% gist 5555251 %}
+
+Code:
 
 {% highlight html %}
 ---

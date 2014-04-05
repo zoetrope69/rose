@@ -1,36 +1,15 @@
 name: ROSE Digital
+url: http://rosedigital.co.uk
+desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, earum est tenetur laboriosam harum omnis quas numquam aliquid odio mollitia aut eius culpa quos rem unde ad facilis ipsam. Enim.'
 
 markdown: redcarpet
 redcarpet:
-  extensions: ["smart", "no_intra_emphasis", "autolink", "tables", "space_after_headers", "superscript"]
+  extensions: [smart, no_intra_emphasis, autolink, tables, space_after_headers, superscript]
 pygments: true
 
 paginate: 3
-paginate_path: 'blog/page-:num'
+paginate_path: blog/page-:num
 
 include: ['.htaccess']
 
-social:
-  github: rosedigital
-  twitter: rosedgtl
-  snapchat: rosedigital
-
-authors:
-  zac:
-    name: Zac Colley
-    display_name: Zac
-    title: MS Paint Artist
-    gravatar: 26ab7600fc89f94711ec3b7db40d039b
-    email: zac@rosedigital.co.uk
-    web: http://zaccolley.com
-    twitter: zaccolley
-    github: zaccolley
-  peter:
-    name: Peter Jones
-    display_name: Peter
-    title: SEO CEO
-    gravatar: #
-    email: peter@rosedigital.co.uk
-    web: http://peterjones.io
-    twitter: peterjonesio
-    github: kephail
+exclude: [package.json, node_modules, bower.json, Gruntfile.js, README.md, LICENSE]
