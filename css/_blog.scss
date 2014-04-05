@@ -1,6 +1,7 @@
 /* _blog.scss */
 
 .blog .top{
+	overflow: hidden;
 	padding: 1.5em 2.5em;
 	
 	background: #282828;
@@ -23,7 +24,7 @@
 }
 
 .blog .top .meta{
-	display: inline-block;
+	float: left;
 
 	font-size: 1.5em;
 	font-style: normal;
@@ -32,7 +33,11 @@
 	cursor: help;
 }
 
-.blog .top .meta small{ color: darken($roseWhite, 10%); }
+.blog .top small{
+	font-size: 1em;
+	float: right;
+	color: darken($roseWhite, 10%);
+}
 
 .blog .post{
 	max-width: 45em;
