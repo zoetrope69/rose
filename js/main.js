@@ -14,6 +14,8 @@ function loaded(){
 	anchorPageScrolling();
 
 	readingTime();
+
+	emoji();
 	
 }
 
@@ -38,4 +40,9 @@ function readingTime(){
 
 		$('.blog .top').append('<small>~'+ readingTime +' min read</small>');
 	}
+}
+
+function emoji(){
+	emojify.setConfig({ img_dir: '/img/emoji'	});
+	emojify.run($('.blog .post')[0]);
 }
