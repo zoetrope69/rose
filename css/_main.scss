@@ -19,6 +19,8 @@ body{
 
 main{ overflow: hidden; }
 
+@import 'error';
+
 @import 'header';
 @import 'logo';
 @import 'nav';
