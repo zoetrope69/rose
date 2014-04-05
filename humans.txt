@@ -1,0 +1,21 @@
+---
+title: humans.txt
+---
+
+/* TEAM */
+{% for author in site.data.authors %}
+Name: {{ author.name }}
+Title: {{ author.title }}
+Website: {{ author.web }}
+Twitter: {{ author.twitter }}
+Github: {{ author.github }}
+{% endfor %}
+
+/* THANKS */
+
+I wanna thank my mum and dad etc etc
+Zac thanks his mum and dad too
+
+/*SITE */
+
+CMS: Jekyll
