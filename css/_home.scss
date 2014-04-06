@@ -128,7 +128,6 @@
 	font-weight: 400;
 	
 	border-bottom: 1px solid;
-	color: inherit;
 	
 	transition: border-color .15s;
 }
@@ -144,7 +143,6 @@
 	
 	font-family: "Crete Round",Georgia,serif;
 	font-size: 2.25em;
-	color: inherit;
 	
 	border-bottom: 2px solid;
 	border-radius: 2px;
@@ -160,20 +158,20 @@
 .home section:nth-child(odd)  .move-link{ right: 5%; }
 .home section:nth-child(even) .move-link{ left: 5%; }
 
-.home .latest-post{
+.home section .latest-post{
 	position: absolute;
 	right: 0; bottom: 0; left: 0;
 	background: $roseBlack;
 }
 
-.home .latest-post a{
+.home section .latest-post a{
 	display: block;
 	padding: 1.5em;
 }
 
-.home .latest-post a:hover{ opacity: .8; }
+.home section .latest-post a:hover{ opacity: .8; }
 
-.home .latest-post h1{
+.home section .latest-post h1{
 	margin: 0;
 
 	font-size: 2.5em;
@@ -184,12 +182,12 @@
 	text-align: center;
 }
 
-.home .latest-post q{
+.home section .latest-post q{
 	font-family: $serif;
 }
 
-.home .latest-post q::before,
-.home .latest-post q::after{
+.home section .latest-post q::before,
+.home section .latest-post q::after{
 	font-size: 1.5em;
 }
 
@@ -213,7 +211,7 @@
 		bottom: 5%;
 	}
 
-	.home .latest-post q{
+	.home section .latest-post q{
 		display: block;
 		margin-top: .25em;
 	}
