@@ -30,7 +30,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'compressed'
+                    style: 'compressed',
+                    sourcemap: true
                 },
                 files: {
                     'css/build/style.css': 'css/rose.scss'
@@ -39,6 +40,10 @@ module.exports = function(grunt) {
         },
 
         autoprefixer: {
+            options: {
+                browsers: ['last 2 version'],
+                map: true
+            },
             dist: {
                 files: {
                     'css/build/style.css': 'css/build/style.css'
