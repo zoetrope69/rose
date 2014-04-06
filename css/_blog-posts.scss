@@ -10,7 +10,7 @@
 	padding: 1.5em 0;
 }
 
-.blog-posts .post:nth-child(even){
+.blog-posts .post:hover{
 	background: darken($roseWhite, 5%);
 }
 
@@ -52,7 +52,7 @@
 	background-image: linear-gradient(to top, white, transparent);
 }
 
-.blog-posts .post:nth-child(even) .excerpt::after{
+.blog-posts .post:hover .excerpt::after{
 	background-image: linear-gradient(to top, darken($roseWhite, 5%), transparent);
 }
 
