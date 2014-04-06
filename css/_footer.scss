@@ -51,18 +51,31 @@ footer .links li:last-child::after{
 	content: '';
 }
 
-footer > nav li{
+footer nav li{
 	display: inline-block;
 	margin-left: 1em;
 	font-size: 1em;
 }
 
-footer > nav li a{	
+footer nav li a{	
 	font-size: 1em;
 	color: lighten($roseBlack, 10%);
 	text-align: right;
 }
 
-footer > nav li a:hover{
+footer nav li a:hover{
 	color: $roseRed;
+}
+
+@media (max-width: $breakPointSmall){
+
+	footer nav,
+	footer .links li{
+		text-align: center;
+	}
+
+	footer nav li{
+		font-size: .75em;
+	}
+
 }
