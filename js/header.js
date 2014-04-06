@@ -17,13 +17,13 @@ function elementResize(){
 
 // so anchor links do a smooth scroll
 function anchorPageScrolling(){
-	$('.move-link').click(function(){ scrollPage(this) });
+	$('.move-link').click(function(){ scrollPage(this); });
 }
 
 function scrollPage(clicked){
 	console.log('scrollPage');
 		// Speed of the animation in ms
-		var animationSpeed = 500
+		var animationSpeed = 500;
 
 		var host = window.location.protocol + "//" + window.location.host;
 		var url = host + window.location.pathname; // Get current URL
