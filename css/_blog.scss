@@ -81,17 +81,43 @@
 }
 
 .blog .notes h1{
-	float: left;
-	margin: .15em 0;
+	margin: .25em 0;
 	
 	font-size: 2.5em;
 	font-style: normal;
-	color: $roseRed;
+	color: $roseGreen;
+}
+
+.blog .notes p{
+	float: left;
+	width: 85%;
+	padding-right: 1em;
+
+	font-size: 1.15em;
 }
 
 .blog .notes .gravatar{
 	float: right;
+	overflow: hidden;
+	width: 10%;
+	margin: 1em;
+	border-radius: 10px;
+
+	transition: transform .25s;
 }
+
+.blog .notes .gravatar:hover{ transform: rotate(0); }
+
+.blog .notes .gravatar img{
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	transition: transform .25s;
+	transform: scale(1.5) rotate(-45deg);
+}
+
+.blog .notes .gravatar:hover img{ transform: scale(1) rotate(0); }
 
 @media all and (max-width: $breakPointMedium){
 

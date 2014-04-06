@@ -29,9 +29,15 @@ layout: default
 
 	<section class="notes">
 	<div class="wrapper">
+
+		{% if author.gravatar %}
+		<div class="gravatar">
+			<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=200" alt="{{ {{ author.name }}'s ugly mug">
+		</div>
+		{% endif %}
 		
-		<h1> by {{ author.display_name }}</h1>
-		<img class="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?d=img%2Fdefaultface.png&amp;s=48" alt="{{ {{ author.name }}'s ugly mug">
+		<h1>by {{ author.display_name }}</h1>
+		{% if author.bio %}<p>{{ author.bio }}</p>{% endif %}
 
 	</div>
 	</section>

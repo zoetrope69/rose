@@ -7,12 +7,12 @@ zac:
   web: http://zaccolley.com
   twitter: zaccolley
   github: zaccolley
+  bio: "Zac is the front-end dude at ROSE and enjoys fiddling with CSS, watching YouTube videos and being a dickhead"
 
 peter:
   name: Peter Jones
   display_name: Peter
   title: SEO CEO
-  gravatar: #
   email: peter@rosedigital.co.uk
   web: http://peterjones.io
   twitter: peterjonesio
