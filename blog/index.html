@@ -20,7 +20,7 @@ title: Blog ✿ ROSE Digital
 			
 		<h1 class="title">{{ post.post_title }}</h1>
 			<h2 class="meta">
-				<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date_to_string }}</time>
+				<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%d-%m-%Y" }}</time>
 				<small> by {{ author.display_name }}</small>
 			</h2>
 		</div>
