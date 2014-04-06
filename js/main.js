@@ -44,5 +44,5 @@ function readingTime(){
 
 function emoji(){
 	emojify.setConfig({ img_dir: '/img/hangouts-emoji'	});
-	emojify.run($('.blog .post')[0]);
+	emojify.run($('main')[0]);
 }
