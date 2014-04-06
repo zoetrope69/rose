@@ -54,6 +54,15 @@ module.exports = function(grunt) {
             }
         },
 
+        csslint: {
+            dist: {
+                options: {
+                import: false
+                },
+                src: ['css/build/style.css']
+            }
+        },
+
         htmllint: {
             all: ["*.html", "*.html"]
         },
@@ -116,6 +125,7 @@ module.exports = function(grunt) {
     // linters
     grunt.loadNpmTasks('grunt-html');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-csslint');
 
     // image compression
     grunt.loadNpmTasks('grunt-contrib-imagemin');
@@ -125,7 +135,7 @@ module.exports = function(grunt) {
 
     // command line usage
     grunt.registerTask('build', ['concat', 'uglify','sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt build'
-    grunt.registerTask('lint', ['jshint', 'htmllint']); // 'grunt lint'
+    grunt.registerTask('lint', ['jshint', 'htmllint', 'csslint']); // 'grunt lint'
     grunt.registerTask('default', ['build', 'watch']); // 'grunt'
 
 };
