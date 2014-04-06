@@ -20,13 +20,6 @@
 	color: $roseWhite;
 }
 
-.blog .top .lead{
-	line-height: 1.5;
-	font-weight: 400;
-	font-size: 1.5em;
-	color: darken($roseWhite, 50%);
-}
-
 .blog .top .meta{
 	float: left;
 
@@ -47,6 +40,13 @@
 	padding: 1.5em 0;
 
 	@include animateIn(fade);
+}
+
+.blog .post .lead{
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: darken($roseWhite, 50%);
 }
 
 .blog .post a{
