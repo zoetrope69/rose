@@ -139,7 +139,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // command line usage
-    grunt.registerTask('build', ['concat', 'uglify','sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt build'
+    grunt.registerTask('build', ['concat', 'uglify', 'sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt build'
     grunt.registerTask('lint', ['jshint', 'htmllint', 'csslint']); // 'grunt lint'
     grunt.registerTask('default', ['build', 'watch']); // 'grunt'
 
