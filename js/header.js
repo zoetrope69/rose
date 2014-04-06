@@ -21,7 +21,6 @@ function anchorPageScrolling(){
 }
 
 function scrollPage(clicked){
-	console.log('scrollPage');
 		// Speed of the animation in ms
 		var animationSpeed = 500;
 
