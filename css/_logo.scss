@@ -40,14 +40,20 @@
 	background-size: auto 100%;
 }
 
-.logo-default-svg{ background-image: url('../../img/logo/default.svg'); }
-.logo-default-png{ background-image: url('../../img/logo/default.png'); }
- 
-.logo-black-svg{ background-image: url('../../img/logo/black.svg'); }
-.logo-black-png{ background-image: url('../../img/logo/black.png'); }
+.logo-img-default{
+	background-image: url('../../img/logo/default.png');
+	background-image: url('../../img/logo/default.svg'), none;
+}
 
-.logo-white-svg{ background-image: url('../../img/logo/white.svg'); }
-.logo-white-png{ background-image: url('../../img/logo/white.png'); }
+.logo-img-black{
+	background-image: url('../../img/logo/black.png');
+	background-image: url('../../img/logo/black.svg'), none;
+}
+
+.logo-img-white{
+	background-image: url('../../img/logo/white.png');
+	background-image: url('../../img/logo/white.svg'), none;
+}
 
 .logo .petals{
 	position: relative;
