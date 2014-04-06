@@ -38,7 +38,7 @@ function readingTime(){
 
 		var readingTime = Math.ceil(wordCount / wordsPerMinute);
 
-		$('.blog .top').append('<small>~'+ readingTime +' min read</small>');
+		$('.blog .top .meta').after('<small>~'+ readingTime +' min read</small>');
 	}
 }
 
