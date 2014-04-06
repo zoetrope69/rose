@@ -6,8 +6,6 @@
 	height: 100vh;
 	padding: 5em 1.5em;
 	width: 100%;
-	max-width: 1400px;
-	margin: 0 auto;
 
 	font-size: .9em;
 }
@@ -61,27 +59,27 @@
 	}
 }
 
-.home section > h1,
-.home section > .text{
+.home section h1,
+.home section .text{
 	@include animateIn(left);
 	backface-visibility: hidden; // stops the animation white flash
 }
 
-.home section:nth-child(even) > h1,
-.home section:nth-child(even) > .text{
+.home section:nth-child(even) h1,
+.home section:nth-child(even) .text{
 	@include animateIn(right);
 }
 
-.home section:nth-child(even) > h1{
+.home section:nth-child(even) h1{
 	text-align: right;
 }
 
-.home section > h1,
-.home section > h2{
+.home section h1,
+.home section h2{
 	color: inherit;
 }
 
-.home section > h1{
+.home section h1{
 	margin-bottom: .5em;
 
 	font-size: 7em;
@@ -89,7 +87,7 @@
 	letter-spacing: -.025em;
 }
 
-.home section > h2{
+.home section h2{
 	margin-bottom: .25em;
 
 	font-size: 2.25em;
@@ -99,21 +97,21 @@
 	text-transform: uppercase;
 }
 
-.home section > .text{
+.home section .text{
 	width: (100% * 2/3);
 	font-size: 1.5em;
 }
 
-.home section > .text p{
+.home section .text p{
 	line-height: 1.35;
 }
 
-.home section  > .text p strike{
+.home section  .text p strike{
 	position: relative;
 	text-decoration: none;
 }
 
-.home section  > .text p strike::after{
+.home section  .text p strike::after{
 	position: absolute;
 	left: -5%; top: 50%;
 	width: 110%;
@@ -126,7 +124,7 @@
 .home section:nth-child(odd)  .text{ float: left; }
 .home section:nth-child(even) .text{ float: right; }
 
-.home section > .text a{
+.home section .text a{
 	font-weight: 400;
 	
 	border-bottom: 1px solid;
@@ -135,11 +133,11 @@
 	transition: border-color .15s;
 }
 
-.home section > .text a:hover{
+.home section .text a:hover{
 	border-color: transparent;
 }
 
-.home section > .move-link{
+.home section .move-link{
 	position: absolute;
 	display: block;
 	bottom: 15%;
@@ -156,12 +154,12 @@
 	transition: border-color .15s;
 }
 
-.home section > .move-link:hover{
+.home section .move-link:hover{
 	border-color: transparent;
 }
 
-.home section:nth-child(odd)  > .move-link{ right: 5%; }
-.home section:nth-child(even) > .move-link{ left: 5%; }
+.home section:nth-child(odd)  .move-link{ right: 5%; }
+.home section:nth-child(even) .move-link{ left: 5%; }
 
 .home .latest-post{
 	position: absolute;
@@ -212,7 +210,7 @@
 	
 	.home{ font-size: .6em; }
 
-	.home section > .move-link{
+	.home section .move-link{
 		font-size: 1.5em; 
 		bottom: 5%;
 	}
@@ -232,20 +230,20 @@
 		background-position: 50% -100%;
 	}
 
-	.home section > h1,
-	.home section:nth-child(2n) > h1,
-	.home section > .text p,
-	.home section > .move-link{
+	.home section h1,
+	.home section:nth-child(2n) h1,
+	.home section .text p,
+	.home section .move-link{
 		text-align: center;
 	}
 
-	.home section > .text{
+	.home section .text{
 		width: 100%;
 		float: none;
 	}
 
-	.home section > .move-link{
-		bottom: 5%; right: 5%; left: 5%;
+	.home section .move-link{
+		right: 5%; left: 5%;
 	}
 
 }

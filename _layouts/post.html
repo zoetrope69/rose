@@ -7,6 +7,7 @@ layout: default
 <article>
 	
 	<section class="top">
+	<div class="wrapper">
 		
 		{% assign author = site.data.authors[page.author] %}
 		
@@ -15,6 +16,7 @@ layout: default
 			Posted on <time timestamp="{{ page.date }}" title="{{ page.date }}">{{ page.date | date_to_string }}</time> by {{ author.display_name }}
 		</h2>
 		
+	</div>
 	</section>
 
 	<section class="post">
@@ -22,8 +24,12 @@ layout: default
 	</section>
 
 	<section class="notes">
+	<div class="wrapper">
+		
 		<h1> by {{ author.display_name }}</h1>
 		<img class="gravatar" src="http://www.gravatar.com/avatar/{{ author.gravatar }}?d=img%2Fdefaultface.png&amp;s=48" alt="{{ {{ author.name }}'s ugly mug">
+
+	</div>
 	</section>
 
 </article>
