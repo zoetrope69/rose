@@ -31,7 +31,8 @@
 .logo:hover{ opacity: .8; }
 
 .logo-img{
-	height: 1.5em;
+	margin-top: 10px;
+	height: 35px;
 
 	text-indent: -9999px;
 	
@@ -52,14 +53,14 @@
 	position: relative;
 	display: inline-block;
 	width: 2.25rem;
-	height: 2.15rem;
+	height: 2rem;
 }
 
 // each petal is absolute positioned so they're over each other
 .logo .petals li{
 	position: absolute;
-	height: 1.75rem;
-	width: 1.75rem;
+	height: 1.7rem;
+	width: 1.7rem;
 	line-height: .5rem;
 
 	border: 2px solid $roseRed;
