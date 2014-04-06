@@ -1,7 +1,8 @@
 <footer>
 <div class="wrapper">
 
-  <p class="details">ROSE Digital &copy; 2014</p>
+  <p class="details">ROSE Digital &copy; {{ page.date | date: "%Y" }}</p>
+
   <ul class="details links">
       <li><a title="{{ site.data.social.github }}" href="http://github.com/{{ site.data.social.github }}">GitHub</a></li>
       <li><a title="@{{ site.data.social.twitter }}" href="http://twitter.com/{{ site.data.social.twitter }}">Twitter</a></li>
@@ -16,6 +17,20 @@
       {% include nav.html %}
     </ul>
   </nav>
+
+  {% if page.post_title %}
+  <p class="details cc">
+    
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"{{ page.post_title }}"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://rosedigital.co.uk" property="cc:attributionName" rel="cc:attributionURL">ROSE Digital</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+    <a class="license-icons" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+      <img src="http://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="cc">
+      <img src="http://mirrors.creativecommons.org/presskit/icons/by.svg" alt="by">
+      <img src="http://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="sa">
+    </a>
+
+  </p>
+  {% endif %}
 
 </div>
 </footer>
