@@ -7,7 +7,7 @@ function loaded(){
 
 	elementResize();
 
-	$(window).resize(function(){
+	$(window).on('debouncedresize', function(){
 		elementResize();
 	});
 
