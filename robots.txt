@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://rosedigital.co.uk/sitemap.xml
+Host: rosedigital.co.uk
