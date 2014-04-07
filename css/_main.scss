@@ -1,5 +1,12 @@
 /* _main.scss */
 
+*::after::selection,
+*::before::selection,
+*::selection{
+	background: transparentize($roseRed, .1);
+	color: $roseWhite;
+}
+
 body{
 	padding: 0 1rem;
 	
