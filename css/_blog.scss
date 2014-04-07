@@ -103,10 +103,15 @@
 	margin: 1em;
 	border-radius: 10px;
 
-	transition: transform .25s;
+	transition: all .25s;
+	transform: rotate(45deg);
+	filter: grayscale(1);
 }
 
-.blog .notes .gravatar:hover{ transform: rotate(0); }
+.blog .notes .gravatar:hover{
+	transform: rotate(0);
+	filter: grayscale(0);
+}
 
 .blog .notes .gravatar img{
 	display: block;
