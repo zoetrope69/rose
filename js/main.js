@@ -1,14 +1,16 @@
-$(document).ready(loaded());
-
-function loaded(){
+$(document).ready(function(){
 	consoleSleuths();
 
 	logoInit();
 
 	elementResize();
 
+	var initialWidth = $(window).width();
+
 	$(window).on('debouncedresize', function(){
-		elementResize();
+	    if($(window).width() !== initialWidth){	
+			elementResize();
+	    };
 	});
 
 	anchorPageScrolling();
@@ -16,8 +18,19 @@ function loaded(){
 	readingTime();
 
 	emoji();
+
+	$("header").headroom({
+		"offset": $('header').outerHeight() / 2,
+		"classes":{
+		    "initial": "header",
+		    "pinned": "header--pinned",
+		    "unpinned": "header--unpinned",
+		    "top": "header--top",
+		    "notTop": "header--not-top"
+		}
+    });
 	
-}
+});
 
 // if anyone pokes into the console display this
 function consoleSleuths(){

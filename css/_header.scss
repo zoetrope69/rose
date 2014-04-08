@@ -2,14 +2,34 @@
 
 header{
 	z-index: 1337;
-	position: fixed;
-	top: 0; right: 0; left: 0;
 	overflow: hidden;
-	padding: .75em 1rem;
+	padding: .75em 0;
+	position: absolute;
+	top: 0; right: 1rem; left: 1rem;
 	
 	background-color: $roseWhite; 
 	background-color: transparentize(white, .05);
 	color: $roseWhite;
+
+	transform: translateY(0%);
+}
+
+@media (max-width: $breakPointMedium){
+	header{
+		right: .75rem; left: .75rem;
+	}
+}
+
+header.header--not-top{
+	transition: transform .15s;
+}
+
+header.header--unpinned{
+	transform: translateY(-100%);
+}
+
+header.header--not-top.header--pinned{
+	position: fixed;
 }
 
 header .logo{
@@ -45,9 +65,9 @@ header nav li a:hover{
 }
 
 @media screen and (max-width: $breakPointMedium){
-	header{
-		padding: .25em 1rem;
-	}
+	
+	header{ padding: 0; }
+
 }
 
 @media screen and (max-width: $breakPointSmall){

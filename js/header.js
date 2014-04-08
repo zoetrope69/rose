@@ -12,7 +12,7 @@ function elementResize(){
 	var headerHeight = $('header').outerHeight();
 
 	var sectionHeight = $(window).height() - headerHeight;
-	$('.home section').css('height', sectionHeight);
+	$('.home section#intro').css('height', sectionHeight);
 
 	$('body').css('padding-top', headerHeight);
 }
@@ -32,13 +32,9 @@ function scrollPage(clicked){
 		var id = String(clicked).substr(url.length); // Take the URL and leave the # part
 
 		var postPosition = $(id).position().top; // Finds the position from the top of the window for the heading with the ID 'hrefValue'
-		
-		var headerHeight = $('header').outerHeight();
-		
-		// How far scrolled down minus the height of the header
-		var scrollAmount = postPosition - headerHeight;
+	
 		// Moves to the top of the post in 'animationSpeed'ms
-		$('body').animate({ scrollTop: scrollAmount }, animationSpeed);
+		$('body').animate({ scrollTop: postPosition }, animationSpeed);
 		
 		event.preventDefault(); // Stops the link's normal behaviour
 }
