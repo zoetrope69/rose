@@ -55,6 +55,16 @@ header nav li.menu-link{
 	width: 100%;
 }
 
+header nav li.menu-link a{
+	float: right;
+	padding: .75em;
+	width: 50%;
+	margin: 1em auto;
+	
+	border: 1px solid;
+	border-radius: 5px;
+}
+
 header nav li a{
 	padding: 1.5em 0;
 	@include animateIn(fade);
@@ -71,9 +81,9 @@ header nav li a:hover{
 }
 
 @media screen and (max-width: $breakPointSmall){
-	header .logo{
-		width: 100%;
-	}
+	
+	header nav li.menu-link{ display: block; }
+
 }
 
 @import 'logo';
