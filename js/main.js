@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(document).ready(loaded());
+
+function loaded(){
 	consoleSleuths();
 
 	logoInit();
@@ -7,12 +9,8 @@ $(document).ready(function(){
 
 	elementResize();
 
-	var initialWidth = $(window).width();
-
 	$(window).on('debouncedresize', function(){
-	    if($(window).width() !== initialWidth){	
-			elementResize();
-	    };
+		elementResize();
 	});
 
 	anchorPageScrolling();
@@ -20,19 +18,8 @@ $(document).ready(function(){
 	readingTime();
 
 	emoji();
-
-	$("header").headroom({
-		"offset": $('header').outerHeight() / 2,
-		"classes":{
-		    "initial": "header",
-		    "pinned": "header--pinned",
-		    "unpinned": "header--unpinned",
-		    "top": "header--top",
-		    "notTop": "header--not-top"
-		}
-    });
 	
-});
+}
 
 // if anyone pokes into the console display this
 function consoleSleuths(){

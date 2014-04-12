@@ -2,27 +2,15 @@
 
 header{
 	z-index: 1337;
+	position: fixed;
+	top: 0; right: 0; left: 0;
 	overflow: hidden;
 	padding: .75em 1rem;
-	position: absolute;
-	top: 0; right: 0; left: 0;
 	
 	background-color: $roseWhite; 
 	background-color: transparentize(white, .05);
 	color: $roseWhite;
-	
-	transform: translateY(0%);
 }
-
-header.header--not-top{
-	position: fixed;
-
-	transition: transform .3s;
-}
-
-header.header--unpinned{ transform: translateY(-100%); }
-
-header.header--stay{ transform: translateY(0); }
 
 header .logo{
 	float: left;

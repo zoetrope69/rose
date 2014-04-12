@@ -9,7 +9,6 @@ function initMenuButton(){
 		}
 
 		$('.small-nav').toggleClass('small-nav--hidden');
-		$('header').toggleClass('header--stay');
 
 	});
 
