@@ -25,33 +25,36 @@ nav li a{
 	z-index: 100;
 	position: fixed;
 	top: 0; right: .75em; bottom: 0; left: .75em;
-	padding: 1em;
 	
 	transition: opacity .25s, transform .25s;
 	background: transparentize($roseGreen, .1);
 
-	transform-origin: center;
-	transform: scale(1);
+	transform-origin: top;
+	transform: none;
 }
 
 .small-nav--hidden{
-	height: 0;
-	padding: 0;
 	opacity: 0;
-	transform: scale(1.5);
+	transform: rotateX(90deg);
 	transition: opacity .25s, transform .25s .5s;
 }
 
-.small-nav li a {
+.small-nav li a{
 	display: block;
 	padding: 1em;
 	
-	font-weight: 600;
-	font-size: 1.5em;
+	font-family: $serif;
+	font-weight: 400;
+	font-size: 1.75em;
 	color: white;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
+
+	-webkit-tap-highlight-color: rgba(0,0,0,0); // remove default highlight
+}
+
+.small-nav li a:hover{
+	background: transparentize($roseWhite, .9);
 }
 
 @media screen and (max-width: $breakPointMedium){
