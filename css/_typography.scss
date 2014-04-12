@@ -162,7 +162,7 @@ main q::before{ content: open-quote; }
 main q::after{ content: close-quote; }
 
 main cite::before{
-	content: '— ';
+	content: '—';
 }
 
 main cite a{ background: none; }

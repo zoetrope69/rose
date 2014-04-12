@@ -34,6 +34,21 @@ main{
 	overflow: hidden;
 }
 
+main .page .wrapper{
+	max-width: 50em;
+}
+
+main .page-title{
+	padding: .25em;
+	
+	text-align: center;
+	font-size: 4em;
+	font-style: normal;
+	color: $roseGreen;
+
+	@include animateIn(fade);
+}
+
 @import 'error';
 
 @import 'header';
