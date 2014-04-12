@@ -38,13 +38,10 @@ main .page .wrapper{
 	max-width: 50em;
 }
 
-main .page-title{
-	padding: .25em;
-	
-	text-align: center;
+main .page-title{	
 	font-size: 4em;
 	font-style: normal;
-	color: $roseGreen;
+	color: $roseRed;
 
 	@include animateIn(fade);
 }
