@@ -47,11 +47,11 @@ title: Blog ✿ ROSE Digital
 
 			<li>
 			{% if page == paginator.page %}
-				<em>{{ page }}</em>
+				<em class="page-no">{{ page }}</em>
 			{% elsif page == 1 %}
-				<a href="{{ '/blog' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+				<a class="page-no" href="{{ '/blog' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
 			{% else %}
-				<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				<a class="page-no" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 			{% endif %}
 			</li>
 
