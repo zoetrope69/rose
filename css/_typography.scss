@@ -177,39 +177,11 @@ main small{
 	text-transform: lowercase;
 }
 
-$markColour: transparentize(invert($roseRed), .85);
+$markColour: transparentize(invert($roseRed), .3);
 
-main mark{
-	padding: 1px 0;
-	position: relative;
-	
+main mark{	
 	background: $markColour;
-	color: lighten($roseBlack, 5%);
-}
-
-main mark::after,
-main mark::before{
-	position: absolute;
-	content: '';
-
-	border: 10px solid transparent;
-	
-}
-
-main mark::before{
-	left: -15px;
-	
-	border-bottom-color: $markColour;
-	border-top-width: 20px;
-	border-left-width: 5px;
-	border-right-color: $markColour;
-}
-
-main mark::after{
-	border-top-color: $markColour;
-	border-left-color: $markColour;
-	border-bottom-width: 20px;
-	border-right-width: 5px;
+	color: $roseBlack;
 }
 
 main sup,
