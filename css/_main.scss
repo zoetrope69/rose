@@ -24,16 +24,15 @@ body{
 
 }
 
-h1, h2, h3, .logo{
-	text-shadow: 0 0 1px rgba(255,255,255,.0001);
-}
-
 .wrapper{
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
-main{ overflow: hidden; }
+main{
+	position: relative;
+	overflow: hidden;
+}
 
 @import 'error';
 

@@ -3,6 +3,8 @@ $(document).ready(function(){
 
 	logoInit();
 
+	initMenuButton();
+
 	elementResize();
 
 	var initialWidth = $(window).width();
