@@ -20,18 +20,18 @@ header.header--not-top{
 	transition: transform .3s;
 }
 
-header.header--unpinned{
-	transform: translateY(-100%);
-}
+header.header--unpinned{ transform: translateY(-100%); }
+
+header.header--stay{ transform: translateY(0); }
 
 header .logo{
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 
 header nav{
 	float: left;
-	width: 50%;
+	width: 60%;
 }
 
 header nav li{

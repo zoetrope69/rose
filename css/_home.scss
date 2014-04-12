@@ -8,7 +8,6 @@
 	width: 100%;
 
 	font-size: .9em;
-	transition: height .25s;
 }
 
 .home section:nth-child(even){
@@ -143,7 +142,7 @@
 	padding: .25em;
 	
 	font-family: "Crete Round",Georgia,serif;
-	font-size: 2.25em;
+	font-size: 2.5em;
 	
 	border-bottom: 2px solid;
 	border-radius: 2px;
@@ -221,7 +220,7 @@
 
 @media (max-width: $breakPointSmall){
 	
-	.home{ font-size: .55em; }
+	.home{ font-size: .5em; }
 
 	.home section{ padding: 3.5em 1.5em; }
 
