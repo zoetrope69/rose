@@ -1,6 +1,5 @@
-$(document).ready(loaded());
+$(document).ready(function(){
 
-function loaded(){
 	consoleSleuths();
 
 	logoInit();
@@ -19,7 +18,7 @@ function loaded(){
 
 	emoji();
 	
-}
+});
 
 // if anyone pokes into the console display this
 function consoleSleuths(){
