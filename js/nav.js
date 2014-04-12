@@ -1,6 +1,6 @@
 function initMenuButton(){
 
-	$('header .menu-link').click(function(){
+	$('header .menu-link').click(function(e){
 		
 		if($('header .menu-link a').text() == 'Menu'){
 			$('header .menu-link a').text('Close');
@@ -9,6 +9,8 @@ function initMenuButton(){
 		}
 
 		$('.small-nav').toggleClass('small-nav--hidden');
+
+		e.preventDefault();
 
 	});
 
