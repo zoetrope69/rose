@@ -99,7 +99,7 @@
 .pagination .no-link::before,
 .pagination .no-link::after,
 .pagination .no-link{
-	color: darken($roseWhite, 50%);
+	color: darken($roseWhite, 40%);
 	cursor: not-allowed;
 }
 
@@ -118,16 +118,7 @@
 
 .pagination .page-links li::before{ display: none; }
 
-.pagination .page-links li em{
-	font-style: normal;
-	color: $roseRed;
-}
-
-.pagination .page-links li em::after{
-	color: desaturate($roseRed, 15%)
-}
-
-.pagination .page-links li a{
+.pagination .page-links .page-no{
 	display: block;
 	padding: .5em;
 
@@ -137,17 +128,7 @@
 	transition: background .15s, color .15s;
 }
 
-.pagination a.page-no:hover{
-	opacity: 1;
-	background: $roseBlack;
-	color: $roseWhite;
-}
-
-.pagination em.page-no{
-	cursor: default;
-}
-
-.pagination .page-no::after{
+.pagination .page-links .page-no::after{
 	display: block;
 	margin-top: .5em;
 	height: 1em;
@@ -162,3 +143,28 @@
 .pagination .page-links li:nth-child(3n) .page-no::after{ content: '❁' }
 .pagination .page-links li:nth-child(4n) .page-no::after{ content: '❃' }
 .pagination .page-links li:nth-child(5n) .page-no::after{ content: '❀' }
+
+.pagination .page-links a.page-no:hover{
+	color: $roseWhite;
+	
+	background: lighten($roseBlack, 15%);
+	
+	opacity: 1;
+}
+
+.pagination .page-links a.page-no:hover::after{
+	color: desaturate($roseWhite, 15%)
+}
+
+.pagination .page-links em.page-no{
+	font-style: normal;
+	color: $roseRed;
+	
+	background: lighten($roseBlack, 75%);
+	
+	cursor: default;
+}
+
+.pagination .page-links em.page-no::after{
+	color: desaturate($roseRed, 15%)
+}
