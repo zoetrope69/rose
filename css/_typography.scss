@@ -165,8 +165,10 @@ main cite::before{
 	content: '—';
 }
 
-main cite a{ background: none; }
-
+main cite a{
+	color: inherit;
+	background: none;
+}
 
 main small{
 	font-variant: small-caps;

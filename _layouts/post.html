@@ -31,9 +31,9 @@ layout: default
 	<div class="wrapper">
 
 		{% if author.gravatar %}
-		<div class="gravatar">
+		<a href="{{ root_url}}/about/#{{ author.display_name }}" class="gravatar">
 			<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=200" alt="{{ {{ author.name }}'s ugly mug">
-		</div>
+		</a>
 		{% endif %}
 		
 		<h1>by {{ author.display_name }}</h1>
