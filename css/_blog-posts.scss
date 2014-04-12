@@ -7,7 +7,7 @@
 .blog-posts .post{
 	display: block;
 	overflow: hidden;
-	padding: 1.5em 0;
+	padding: .5em 0;
 }
 
 .blog-posts .post:hover{
@@ -21,14 +21,14 @@
 
 .blog-posts .post .top .title{
 	float: left;
-	width: 60%;
+	width: 55%;
 	margin-bottom: .25em;
 }
 
 .blog-posts .post .top .meta{
 	float: left;
-	width: 40%;
-	margin: .5em 0;
+	width: 45%;
+	padding: .5em;
 
 	font-size: 1.5em;
 	text-align: right;
@@ -94,7 +94,7 @@
 .pagination .next a::after{ content: '→' }
 
 .pagination .previous .no-link::before,
-.pagination .next .no-link::after{ content: 'ˣ' }
+.pagination .next .no-link::after{ content: '—' }
 
 .pagination .no-link::before,
 .pagination .no-link::after,
