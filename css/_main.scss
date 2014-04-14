@@ -34,12 +34,10 @@ main{
 	overflow: hidden;
 }
 
-main .page .wrapper{
-	max-width: 50em;
-}
-
-main .page-title{	
-	font-size: 4em;
+main .page-title{
+	margin-bottom: .5em;
+	
+	font-size: 5em;
 	font-style: normal;
 	color: $roseRed;
 
