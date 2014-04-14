@@ -9,8 +9,52 @@ title: About ✿ ROSE Digital
 	<div class="wrapper">
 		
 		<h1 class="page-title">About</h1>
+
+		<p>ROSE is a Portsmouth based partnership. We strive for the best experience for the users of our products.</p>
+
+		<p>We stick to modern web standards and care about making products that humans can use but also are super fast and efficient on machines too. We make things we're truly proud of.</p>
 	
 	</div>
 	</section>
+
+	
+	{% for author in site.data.authors %}{% assign author_details = author[1] %}
+	<section class="team-member" id="{{ author_details.display_name }}">
+	<div class="wrapper">
+
+		<div class="photo">
+			<img src="{{ root_url }}/img/{{ author_details.display_name }}-head.png" alt="Image of {{  author_details.display_name }}">
+		</div>
+
+		<div class="details">
+			
+			<h1 class="name">{{ author_details.name }}</h1>
+			{% if author_details.title %}
+			<h2 class="title"><small>{{ author_details.title }}</small></h2>
+			{% endif %}
+			
+			{% if author_details.bio %}
+			<p class="bio">{{ author_details.bio }}</p>
+			{% endif %}
+	
+			{% for post in site.posts %}
+			{% include latest-member-post.html %}
+			{% endfor %}
+
+			{% if author_details.web or author_details.twitter or author_details.github or author_details.email %}
+			<ul>
+				{% if author_details.web %}<li>Personal site: <a href="{{ author_details.web }}">{{ author_details.web }}</a></li>{% endif %}
+				{% if author_details.twitter %}<li>Twitter: <a href="{{ author_details.twitter }}">@{{ author_details.twitter }}</a></li>{% endif %}
+				{% if author_details.github %}<li>Github: <a href="{{ author_details.github }}">{{ author_details.github }}</a></li>{% endif %}
+				{% if author_details.email %}<li>Email: <a href="mailto:{{ author_details.email }}">{{ author_details.email }}</a></li>{% endif %}
+			</ul>
+			{% endif %}
+
+		</div>
+
+	</div>
+	</section>
+	{% endfor %}
+
 
 </main>

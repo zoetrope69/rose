@@ -1,0 +1,7 @@
+{% if post.title and post.author == author[0] %}
+<p class="latest-post">
+	<a href="{{ root_url }}{{ post.url }}">{{ author_details.display_name }} recently wrote: <q>{{ post.post_title }}</q></h3>
+	</a>
+</p>
+{% break %} 
+{% endif %}

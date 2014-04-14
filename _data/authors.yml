@@ -1,7 +1,7 @@
 zac:  
   name: Zac Colley
   display_name: Zac
-  title: MS Paint Artist
+  title: Front-end Dev and Graphic Designer
   gravatar: 26ab7600fc89f94711ec3b7db40d039b
   email: zac@rosedigital.co.uk
   web: http://zaccolley.com
@@ -12,8 +12,8 @@ zac:
 peter:
   name: Peter Jones
   display_name: Peter
-  title: SEO CEO
+  title: Back-end Dev and Miscreant
   email: peter@rosedigital.co.uk
-  web: http://peterjones.io
   twitter: peterjonesio
   github: kephail
+  bio: "Pete is the back-end dude at ROSE, looks after various pets and owns multiple red shirts"
