@@ -7,9 +7,7 @@ author: zac
 categories: blog
 ---
 
-<p class="lead">
-    This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing.
-</p>
+This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing.
 
 # Markdown: Syntax
 

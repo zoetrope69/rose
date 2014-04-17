@@ -30,7 +30,7 @@ title: Blog ✿ ROSE Digital
 			</h2>
 		</div>
 
-		<p class="excerpt">{{ post.excerpt | remove: '<p class="lead">' | remove: '</p>' | strip_html | replace: '&nbsp;', ' ' | truncate: 250 }}</p>
+		<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | replace: '&nbsp;', ' ' | truncate: 250 }}</p>
 		</div>
 	</a>
 	{% endfor %}
