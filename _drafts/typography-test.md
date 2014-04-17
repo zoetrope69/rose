@@ -6,9 +6,7 @@ author: zac
 categories: blog
 ---
 
-<p class="lead">
-    This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing. 
-</p>
+This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing. 
 
 Lorem ipsum dolor sit "amet, 'consectetur' adipisicing elit". Vero, tempora, atque delectus quia alias similique tempore temporibusbeatae namprovident assumenda eaque dicta libero earum facilis 'esse consectetur' enim nesciunt.
 
