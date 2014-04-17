@@ -91,19 +91,22 @@ main hr{
 	border-top: 2px solid lighten($roseBlack, 75%);
 }
 
-main ol:first-of-type,
-main ul:first-of-type{
-	margin: .5em 0;
+main ol, main ul{
+	margin-top: .5em;
 }
 
-main ol ol,
-main ol li,
-main li li,
-main li ol{
+main .wrapper > ol,
+main .wrapper > ul{
+	margin: 2em 0;
+}
+
+main ul ol,main ul ul,
+main ol ul, main ol ol{
 	margin-left: 1em;
 }
 
 main li{
+	margin-left: 1em;
 	margin-bottom: .5em;
 
 	list-style: none;
@@ -132,13 +135,28 @@ main ol li{ counter-increment: section; }
 main ol li::before{ content: counters(section, '.') '.'; }
 
 main blockquote{
-	margin: 1.5em 1em;
+	margin: 1.5em 0;
 	padding: 0 .75em;
-	
+	font-size: 1.35em;
+
 	font-size: 1.35em;
 	font-style: italic;
-	
-	border-left: 2px solid lighten($roseBlack, 50%);
+	font-family: $serif;
+	text-align: center;
+}
+
+main blockquote p{
+	font-size: 2em;
+	line-height: 1.25em;
+	color: lighten(desaturate($roseRed, 25%), 5%);
+}
+
+main blockquote cite{
+	display: block;
+
+	font-size: .65em;
+	color: lighten(desaturate($roseRed, 25%), 5%);
+	text-align: right;
 }
 
 main q{
@@ -163,6 +181,8 @@ main q::after{ content: close-quote; }
 
 main cite::before{
 	content: '—';
+
+	color: inherit;
 }
 
 main cite a{

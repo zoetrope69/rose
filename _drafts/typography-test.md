@@ -50,10 +50,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ipsum, laborios
 
 Blockquotes:
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> <cite>[Bruce Lawson](http://www.brucelawson.co.uk/2013/on-citing-quotations-again/)</cite>
+>It is during our darkest moments that we must focus to see the light.
+> <cite>Aristotle Onassis</cite>
 
 * * *
 

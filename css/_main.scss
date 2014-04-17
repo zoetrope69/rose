@@ -5,6 +5,7 @@
 *::selection{
 	background: transparentize($roseRed, .1);
 	color: $roseWhite;
+	text-shadow: none;
 }
 
 body{
@@ -13,8 +14,8 @@ body{
 	font-family: $sans-serif;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
-	
-	background: $roseWhite;
+
+	background: $bg-color;
 	color: $roseBlack;
 }
 
