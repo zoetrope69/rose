@@ -178,11 +178,12 @@
 	font-weight: 300;
 	font-style: normal;
 	font-family: $sans-serif;
-	color: $roseWhite;
+	color: lighten($roseWhite, 5%);
 	text-align: center;
 }
 
 .home section .latest-post q{
+	color: $roseWhite;
 	font-family: $serif;
 }
 

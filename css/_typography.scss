@@ -160,8 +160,10 @@ main blockquote cite{
 }
 
 main q{
-	font-style: italic;
 	quotes: "“" "”" "‘" "’";
+	
+	font-weight: 500;
+	color: lighten($roseBlack, 10%);
 }
 
 main q::before,
@@ -172,8 +174,9 @@ main q::after{
 
 	font-size: 1.25em;
 	font-style: normal;
-	font-family: "Crete Round",Georgia,serif;
-	color: #4e4e4e;
+	font-weight: 400;
+	font-family: $serif;
+	color: inherit;
 }
 
 main q::before{ content: open-quote; }
