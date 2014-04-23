@@ -15,33 +15,20 @@ function elementResize(){
 	$('.home section').css('height', sectionHeight);
 
 	$('body').css('padding-top', headerHeight);
-	$('.small-nav').css('padding-top', headerHeight);
 }
 
 // so anchor links do a smooth scroll
 function anchorPageScrolling(){
-	$('.move-link').click(function(){ scrollPage(this); });
+	$('.move-link').click(function(e){
+		scrollToAnchor($(this).attr("href"));	
+		e.preventDefault(); // Stops the link's normal behaviour
+	});
 }
 
-function scrollPage(clicked){
-		// Speed of the animation in ms
-		var animationSpeed = 500;
+function scrollToAnchor(id){
+	var animationSpeed = 500; // Speed of the animation in ms
 
-		var host = window.location.protocol + "//" + window.location.host;
-		var url = host + window.location.pathname; // Get current URL
-
-		var id = String(clicked).substr(url.length); // Take the URL and leave the # part
-
-		var postPosition = $(id).position().top; // Finds the position from the top of the window for the heading with the ID 'hrefValue'
-		
-		var headerHeight = $('header').outerHeight();
-		
-		// How far scrolled down minus the height of the header
-		var scrollAmount = postPosition - headerHeight;
-		// Moves to the top of the post in 'animationSpeed'ms
-		$('body').animate({ scrollTop: postPosition }, animationSpeed);
-		
-		event.preventDefault(); // Stops the link's normal behaviour
+    $('html, body').animate({ scrollTop: $(id).position().top }, animationSpeed);
 }
 
 function capsString(string){

@@ -10,10 +10,6 @@
 	font-size: .9em;
 }
 
-.home section:nth-child(even){
-	text-align: right;
-}
-
 .home section:nth-child(3n+1){
 	color: $roseWhite;
 	background-color: $roseRed;
@@ -65,15 +61,6 @@
 	backface-visibility: hidden; // stops the animation white flash
 }
 
-.home section:nth-child(even) h1,
-.home section:nth-child(even) .text{
-	@include animateIn(right);
-}
-
-.home section:nth-child(even) h1{
-	text-align: right;
-}
-
 .home section h1,
 .home section h2{
 	color: inherit;
@@ -98,6 +85,7 @@
 }
 
 .home section .text{
+	float: left;
 	width: (100% * 2/3);
 	font-size: 1.5em;
 }
@@ -121,9 +109,6 @@
 	transform: rotate(-2.5deg);
 }
 
-.home section:nth-child(odd)  .text{ float: left; }
-.home section:nth-child(even) .text{ float: right; }
-
 .home section .text a{
 	font-weight: 400;
 	
@@ -138,7 +123,7 @@
 
 .home section .move-link{
 	position: absolute;
-	bottom: 15%;
+	bottom: 15%; right: 5%;
 	padding: .25em;
 	
 	font-family: "Crete Round",Georgia,serif;
@@ -154,9 +139,6 @@
 .home section .move-link:hover{
 	border-color: transparent;
 }
-
-.home section:nth-child(odd)  .move-link{ right: 5%; }
-.home section:nth-child(even) .move-link{ left: 5%; }
 
 .home section .latest-post{
 	position: absolute;
