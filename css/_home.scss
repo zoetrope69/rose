@@ -72,6 +72,9 @@
 	font-size: 7.5em;
 
 	letter-spacing: -.025em;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .home section h2{

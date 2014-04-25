@@ -12,6 +12,9 @@ main h2,
 main h3{
 	font-weight: 400;
 	font-family: $serif;
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 main h1,
