@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Test ✏ Blog ✿ ROSE Digital'
+title:  'Test 3 - Blog · ROSE Digital ✏'
 post_title: 'Test 3'
 author: zac
 categories: blog

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Typography Testing ✏ Blog ✿ ROSE Digital'
+title:  'Typography Testing - Blog · ROSE Digital ✏'
 post_title: 'Typography Testing'
 author: zac
 categories: blog

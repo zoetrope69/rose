@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Emoji Test ✏ Blog ✿ ROSE Digital'
+title:  'Emoji Test - Blog · ROSE Digital ✏'
 post_title: 'Emoji Test'
 author: zac
 categories: blog
