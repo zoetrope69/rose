@@ -1,0 +1,74 @@
+/* _project-planner.scss */
+
+.project-planner{
+	width: 70%;
+
+	@media (max-width: $breakPointExtraLarge){ width: 80%; }
+	@media (max-width: $breakPointLarge){      width: 90%; }
+	@media (max-width: $breakPointMedium){     width: 100%; }
+}
+
+.project-planner .required{
+	color: desaturate($roseGreen, 25%);
+}
+
+.project-planner label,
+.project-planner__input,
+.project-planner__submit{
+	display: block;
+	width: 100%;
+}
+
+.project-planner label{
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+.project-planner textarea{
+	max-width: 100%;
+}
+
+.project-planner__input{
+	padding: .5em;
+	margin-bottom: 1em;
+
+	font-size: 1.25em;
+
+	border: 2px solid darken($roseWhite, 15%);
+
+	outline: none;
+
+	transition: border-color .25s;
+	margin-bottom: .5em;
+}
+
+.project-planner__input--dirty:not(:focus):invalid{
+	border-color: desaturate($roseRed, 25%);
+}
+
+.project-planner__input:focus{
+	border-color: darken($roseWhite, 25%);
+}
+
+.project-planner__submit{
+	padding: 1em;
+	margin: 1.5em 0;
+
+	font-size: 2em;
+	color: $roseGreen;
+
+	background-color: transparent;
+	
+	border: 2px solid $roseGreen;
+	border-radius: 4px;
+
+	transition: background-color .25s, color .25s;
+}
+
+.project-planner__submit:hover{
+	color: $roseWhite;
+
+	background-color: $roseGreen;
+
+	cursor: pointer;
+}

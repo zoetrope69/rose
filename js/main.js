@@ -17,8 +17,25 @@ $(document).ready(function(){
 	readingTime();
 
 	emoji();
+
+	projectPlannerForm();
 	
 });
+
+function projectPlannerForm(){
+
+	if($('.project-planner')){
+
+		$('.project-planner__input').blur(function(e){
+			console.log("test");
+			$(this).addClass('project-planner__input--dirty');
+		});
+
+		// $('.project-planner__submit').click(function(e){ e.preventDefault(); });
+
+	}
+
+}
 
 // if anyone pokes into the console display this
 function consoleSleuths(){
