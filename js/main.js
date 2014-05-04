@@ -16,8 +16,6 @@ $(document).ready(function(){
 
 	readingTime();
 
-	emoji();
-
 	projectPlannerForm();
 	
 });
@@ -58,9 +56,4 @@ function readingTime(){
 
 		$('.blog .top .meta').after('<small>~'+ readingTime +' min read</small>');
 	}
-}
-
-function emoji(){
-	emojify.setConfig({ img_dir: '/img/hangouts-emoji'	});
-	emojify.run($('main')[0]);
 }

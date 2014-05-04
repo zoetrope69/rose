@@ -15,3 +15,5 @@ paginate_path: blog/page-:num
 include: ['.htaccess']
 
 exclude: ['package.json', 'node_modules', 'bower.json', 'Gruntfile.js', 'README.md', 'LICENSE']
+
+emoji-image-path: '/img/hangouts-emoji/'
