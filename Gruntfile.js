@@ -83,6 +83,32 @@ module.exports = function(grunt) {
             }   
         },
 
+        jekyll: {
+            build: {
+                options: {
+                    drafts: true
+                }
+            },
+            serve: {
+                options: {
+                    drafts: true
+                }
+            }
+        },
+
+        connect: {
+            server: {
+                options: {
+                    port: 4000,
+                    hostname: 'localhost',
+                    base: './_site',
+                    open: {
+                        target: 'http://localhost:4000'
+                    }
+                }
+            }
+        },
+
         watch: {
 
             options: {
@@ -114,6 +140,15 @@ module.exports = function(grunt) {
                 }
             },
 
+            jekyll: {
+                files: ['css/build/*', 'js/build/*', '**/*.html', '_config.yml',
+                        '_data/*', '*.txt', '_posts/*', '_drafts/*', '_plugins/*'],
+                tasks: ['jekyll:build'],
+                options: {
+                    spawn: false
+                }
+            }
+
         },
 
     });
@@ -135,12 +170,14 @@ module.exports = function(grunt) {
     // image compression
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-    // watch for changes in files
+    // build, serve and watch
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-jekyll');
 
     // command line usage
     grunt.registerTask('build', ['concat', 'uglify', 'sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt build'
     grunt.registerTask('lint', ['jshint', 'htmllint', 'csslint']); // 'grunt lint'
-    grunt.registerTask('default', ['build', 'watch']); // 'grunt'
+    grunt.registerTask('default', ['build', 'connect', 'watch']); // 'grunt'
 
 };
