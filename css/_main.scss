@@ -35,12 +35,25 @@ main{
 	overflow: hidden;
 }
 
-main .page-title{
+.page-desc{
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 2em;
+
+	text-align: center;
+
+	@media (max-width: $breakPointExtraLarge){  width: 70%;	}
+	@media (max-width: $breakPointLarge){ 		width: 80%;	}
+	@media (max-width: $breakPointMedium){ 		width: 90%;	}
+}
+
+.page-desc h1{
 	margin: .5em 0;
 	
 	font-size: 5em;
 	font-style: normal;
 	color: $roseRed;
+	text-align: center;
 
 	@include animateIn(fade);
 }
