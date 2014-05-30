@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generate more at icons.mysitemyway.com -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="facebook-square-icon"
+   class="custom-icon"
+   version="1.1"
+   viewBox="0 0 100 100"
+   style="height:100px;width:100px;"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="facebook.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="2.36"
+     inkscape:cx="50"
+     inkscape:cy="50"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="facebook-square-icon" />
+  <path
+     class="inner-shape"
+     style="opacity:1;fill:#fff;"
+     transform="translate(25,25) scale(0.5)"
+     d="M83.334 0h-66.666c-9.167 0-16.668 7.501-16.668 16.669v66.663c0 9.174 7.501 16.669 16.668 16.669l66.666-0c9.168 0 16.666-7.495 16.666-16.669v-66.662c0-9.167-7.498-16.669-16.666-16.669zM85.019 50h-16.269v43.75h-18.75v-43.75h-9.036v-14.313h9.036v-9.296c0-12.631 5.448-20.142 20.3-20.142h17.114v15.485h-13.978c-4.149-0.007-4.663 2.163-4.663 6.202l-0.023 7.749h18.75l-2.481 14.313z"
+     id="path5" />
+</svg>

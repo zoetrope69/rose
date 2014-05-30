@@ -12,43 +12,17 @@ title: Contact · ROSE Digital ✿
 
 			<h1 >Contact</h1>
 
-			<p>You can email us at <a href="mailto:hello@rosedigital.co.uk">hello@rosedigital.co.uk</a> or <a class="move-link" href="#project-planner">tell us about your project below</a>.</p>
+			<p>You can email us at <a href="mailto:hello@rosedigital.co.uk">hello@rosedigital.co.uk</a> or if you'd prefer <a href="{{ root_url}}/about">you can contact one us directly</a>.</p>
 
 			<p>We're dotted around the internet too, here some places you can find us:</p>
 
-			<ul>
-				<li><a title="{{ site.data.social.github }}" href="http://github.com/{{ site.data.social.github }}">GitHub</a></li>
-				<li><a title="@{{ site.data.social.twitter }}" href="http://twitter.com/{{ site.data.social.twitter }}">Twitter</a></li>
-				<li><a title="{{ site.data.social.googleplus }}" href="https://plus.google.com/{{ site.data.social.googleplus }}" rel="publisher">Google+</a></li>
+			<ul class="social-icons">
+				<li><a class="social-icon social-icon--github" title="{{ site.data.social.github }}" href="http://github.com/{{ site.data.social.github }}">GitHub</a></li>
+				<li><a class="social-icon social-icon--twitter" title="@{{ site.data.social.twitter }}" href="http://twitter.com/{{ site.data.social.twitter }}">Twitter</a></li>
+				<li><a class="social-icon social-icon--googleplus" title="{{ site.data.social.googleplus }}" href="https://plus.google.com/{{ site.data.social.googleplus }}" rel="publisher">Google+</a></li>
 			</ul>
 
 		</div>
-
-		<form method="post" id="project-planner" class="project-planner">
-		
-			<h1>Project planner</h1>
-
-			<label for="client-name">What is your name? <span class="required">*</span></label>
-			<input class="project-planner__input" type="text" name="client-name" id="client-name"
-				   placeholder="Full name" required autocomplete="name" />
-
-			<label for="client-email">What's your email? <span class="required">*</span></label>
-			<input class="project-planner__input" type="email" name="client-email" id="client-email"
-				   placeholder="name@example.com" required autocomplete="email" />
-
-			<label for="client-phone">What's yo number?</label>
-			<input class="project-planner__input" type="tel" name="client-phone" id="client-phone"
-				   placeholder="+1-555-555-1212" autocomplete="tel" />
-
-			<label for="project-desc">Project Description <span class="required">*</span></label>
-			<textarea class="project-planner__input" name="project-desc" id="project-desc"
-					  placeholder="Tell us a bit about your project" required rows="5"></textarea>
-
-			<button class="project-planner__submit" type="submit">Send</button>
-
-			<p class="required">* We need this! :¬)</p>
-			
-		</form>
 
 	</div>
 	</section>
