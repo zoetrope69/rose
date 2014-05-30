@@ -8,44 +8,42 @@
 	width: 100%;
 
 	font-size: .9em;
-}
 
-.home section:nth-child(3n+1){
-	color: $roseWhite;
-	background-color: $roseRed;
-}
-
-.home section:nth-child(3n+1) *::selection{
-	background-color: $roseWhite;
-	color: $roseRed;
-}
-
-.home section:nth-child(3n+2){
-	color: $roseWhite;
-	background-color: $roseBlack;
-}
-
-.home section:nth-child(3n+2) *::selection{
-	background-color: $roseWhite;
-	color: $roseBlack;
-}
-
-.home section:nth-child(3n+3){
-	color: $roseBlack;
-	background-color: $roseWhite;
-}
-
-.home section:nth-child(3n+3) *::selection{
-	background-color: $roseBlack;
-	color: $roseWhite;
-}
-
-.home section#intro{
 	background-image: url('../../img/poly-rose.png');
 	background-repeat: no-repeat;
 	background-position: 125% 100%;
 
 	animation: introIn $animationSpeed;
+}
+
+.home .section--red{
+	color: $roseWhite;
+	background-color: $roseRed;
+}
+
+.home .section--red *::selection{
+	background-color: $roseWhite;
+	color: $roseRed;
+}
+
+.home .section--black{
+	color: $roseWhite;
+	background-color: $roseBlack;
+}
+
+.home .section--black *::selection{
+	background-color: $roseWhite;
+	color: $roseBlack;
+}
+
+.home .section--white{
+	color: $roseBlack;
+	background-color: $roseWhite;
+}
+
+.home .section--white *::selection{
+	background-color: $roseBlack;
+	color: $roseWhite;
 }
 
 @keyframes introIn{
@@ -132,8 +130,8 @@
 	font-family: "Crete Round",Georgia,serif;
 	font-size: 2.5em;
 	
-	border-bottom: 2px solid;
-	border-radius: 2px;
+	border: 2px solid transparentize($roseWhite, .75);
+	border-radius: 5px;
 
 	@include animateIn(top);
 	transition: border-color .15s;
@@ -208,9 +206,8 @@
 	
 	.home{ font-size: .5em; }
 
-	.home section{ padding: 3.5em 1.5em; }
-
-	.home section#intro{
+	.home section{
+		padding: 3.5em 1.5em;
 		background-position: 50% -100%;
 	}
 

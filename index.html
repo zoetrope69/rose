@@ -5,77 +5,25 @@ title: ROSE Digital
 
 <main class="home">
 
-<section id="intro">
+<section class="section--red">
 <div class="wrapper">
 
-	<h1>What are you growing on the web?</h1>
+	<h1>We grow businesses with the web</h1>
+
 	<div class="text">
 
-		<p>ROSE Digital are a future-thinking partnership offering website design, development and graphic design.</p>
+		<p>ROSE Digital are helping businesses do some crazy shit on the web at the moment. You don't want to miss out. Buy now. £19.99</p>
+
+		<p>Feel free to send us a message at <a href="mailto:{{ site.email }}">{{ site.email }}</a>. :¬)</p>
 	
 	</div>
-	
-	<a class="move-link" href="#work">What can we offer?</a>
-
-</div>
-</section><!-- end of intro section -->
-
-<section id="work">
-<div class="wrapper">
-
-	<h1>We offer</h1>
-
-	<div class="text">
-
-		<p>Our clients get future-proof, beautiful and human usable websites. We also specialise in graphic design.</p>
-
-		<p>See what we did for <a href="http://thegamingsociety.co.uk">the University of Portsmouth's Gaming Society</a> or our <a href="{{ root_url }}/work"> portfolio of work</a>.</p>
-
-	</div>
-
-	<a class="move-link" href="#about">Who are we?</a>
-
-</div>
-</section><!-- end of work section -->
-
-<section id="about">
-<div class="wrapper">
-
-	<h1>We're Peter &amp; Zac</h1>
-
-	<div class="text">
-
-		<p>ROSE is a Portsmouth based partnership. We strive for the best experience for the users of our products.</p>
-
-		<p>We stick to modern web standards and care about making products that humans can use but also are super fast and efficient on machines too. We make things we're truly proud of.</p>
-
-		<p><a href="{{ root_url }}/about">Learn more about us&hellip;</a></p>
-
-	</div>
-
-	<a class="move-link" href="#contact">Want to contact us?</a>
-
-</div>
-</section><!-- end of about section -->
-
-<section id="contact">
-<div class="wrapper">
-
-	<h1>Let's chat</h1>
-
-	<div class="text">
-
-		<p>You can email us at <a href="mailto:{{ site.email }}">hello@rosedigital.co.uk</a> or <a href="#">tell us about your project</a>.</p>
-
-		<p>Also, you can <a title="@{{ site.data.social.twitter }}" href="http://twitter.com/{{ site.data.social.twitter }}">follow us on Twitter</a> to keep an eye on what we're doing.</p>
-
-		<p>P &amp; Z :¬)</p>
-	</div>
+		
+	<a class="move-link" href="{{ root_url }}/contact">Let's get started</a>
 	
 	{% assign post = site.posts.first %}
 	{% include latest-post.html %}
 	
 </div>
-</section><!-- end of contact section -->
+</section>
 
 </main>
