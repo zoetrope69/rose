@@ -1,8 +1,7 @@
 /* _footer.scss */
 
 footer{
-	padding: 1.25em;
-	padding-top: 4em;
+	padding: 4em .5em 1.25em;
 
 	font-size: .75em;
 	font-weight: 300;
@@ -12,6 +11,7 @@ footer{
 
 footer .details,
 footer nav{
+		text-align: center;
 	display: inline-block;
 	padding: .5em 0;
 	width: 100%;
@@ -35,6 +35,10 @@ footer .details a{
 
 footer .details a:hover{
 	border-color: lighten($roseBlack, 25%);
+}
+
+footer .links{
+	text-align: center;
 }
 
 footer .links li{
@@ -70,7 +74,7 @@ footer nav li a:hover{
 
 footer .cc{
 	display: block;
-	float: right;
+	margin: 0 auto;
 	width: 40%;
 	line-height: 1.5em;
 	
@@ -98,28 +102,10 @@ footer .cc .license-icons img{
 	height: 1.25em;
 }
 
-
 @media (max-width: $breakPointMedium){
 	
 	footer .cc{ width: 70%; }
 	
 	footer nav li{ font-size: .9em; }
-
-}
-
-@media (max-width: $breakPointSmall){
-
-	footer{ padding: 4em .5em 1.25em; }
-
-	footer nav,
-	footer .links,
-	footer .details{
-		text-align: center;
-	}
-
-	footer .cc{
-		float: none;
-		margin: 0 auto;
-	}
 
 }
