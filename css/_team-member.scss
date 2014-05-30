@@ -32,8 +32,17 @@
 }
 
 .team-member .details .bio{
-	border-bottom: 2px solid lighten($roseBlack, 50%);
+	border-bottom: 5px solid lighten($roseBlack, 75%);
 	padding-bottom: .75em;
+}
+
+.team-member ul li{
+	font-size: 1.35em;
+	padding: .25em 0;
+}
+
+.team-member ul li a{
+	color: $roseRed;
 }
 
 .team-member .details .latest-post{

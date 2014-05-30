@@ -70,6 +70,40 @@
 	background-size: 0;
 }
 
+.blog .post ul ol,.blog .post ul ul,
+.blog .post ol ul, .blog .post ol ol{
+	margin-left: 1em;
+}
+
+.blog .post li{
+	margin-left: 1em;
+	margin-bottom: .5em;
+
+	list-style: none;
+	font-size: 1.25rem;
+	font-family: $serif;
+	font-weight: 400;
+	color: lighten($roseBlack, 15%);
+}
+
+.blog .post li::before{
+	float: left;
+	margin: .25em 0;
+	margin-right: .5em;
+	
+	line-height: 1em;
+	font-size: .7em;
+	color: lighten($roseBlack, 50%);
+}
+
+.blog .post ul li::before{
+	content: '✿';
+}
+
+.blog .post ol{ counter-reset: section; }		
+.blog .post ol li{ counter-increment: section; }
+.blog .post ol li::before{ content: counters(section, '.') '.'; }
+
 .blog .post blockquote cite a{
 	color: inherit;
 

@@ -103,40 +103,6 @@ main .wrapper > ul{
 	margin: 2em 0;
 }
 
-main ul ol,main ul ul,
-main ol ul, main ol ol{
-	margin-left: 1em;
-}
-
-main li{
-	margin-left: 1em;
-	margin-bottom: .5em;
-
-	list-style: none;
-	font-size: 1.25rem;
-	font-family: $serif;
-	font-weight: 400;
-	color: lighten($roseBlack, 15%);
-}
-
-main li::before{
-	float: left;
-	margin: .25em 0;
-	margin-right: .5em;
-	
-	line-height: 1em;
-	font-size: .7em;
-	color: lighten($roseBlack, 50%);
-}
-
-main ul li::before{
-	content: '✿';
-}
-
-main ol{ counter-reset: section; }		
-main ol li{ counter-increment: section; }
-main ol li::before{ content: counters(section, '.') '.'; }
-
 main blockquote{
 	margin: 1.5em 0;
 	padding: 0 .75em;
