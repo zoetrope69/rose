@@ -58,6 +58,10 @@ main{
 	@include animateIn(fade);
 }
 
+.page-desc a{
+	color: $roseGreen;
+}
+
 @import 'error';
 
 @import 'header';

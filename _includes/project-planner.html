@@ -1,0 +1,25 @@
+<form method="post" id="project-planner" class="project-planner">
+
+	<h1>Project planner</h1>
+
+	<label for="client-name">What is your name? <span class="required">*</span></label>
+	<input class="project-planner__input" type="text" name="client-name" id="client-name"
+		   placeholder="Full name" required autocomplete="name" />
+
+	<label for="client-email">What's your email? <span class="required">*</span></label>
+	<input class="project-planner__input" type="email" name="client-email" id="client-email"
+		   placeholder="name@example.com" required autocomplete="email" />
+
+	<label for="client-phone">What's yo number?</label>
+	<input class="project-planner__input" type="tel" name="client-phone" id="client-phone"
+		   placeholder="+1-555-555-1212" autocomplete="tel" />
+
+	<label for="project-desc">Project Description <span class="required">*</span></label>
+	<textarea class="project-planner__input" name="project-desc" id="project-desc"
+			  placeholder="Tell us a bit about your project" required rows="5"></textarea>
+
+	<button class="project-planner__submit" type="submit">Send</button>
+
+	<p class="required">* We need this! :¬)</p>
+	
+</form>
