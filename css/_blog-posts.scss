@@ -1,9 +1,20 @@
 /* _blog-posts.scss */
 
+.category-link{
+	color: purple;
+	border-bottom: 2px solid;
+}
+
 .blog-posts .post{
 	display: block;
 	overflow: hidden;
-	padding: .5em 0;
+	padding: 1em;
+	width: 60%;
+	margin: 0 auto;
+
+	@media (max-width: $breakPointLarge){ width: 80%; }
+	@media (max-width: $breakPointMedium){ width: 90%; }
+	@media (max-width: $breakPointSmall){ width: 100%; }
 }
 
 .blog-posts .post:hover{
@@ -12,22 +23,16 @@
 
 .blog-posts .post .top{
 	overflow: hidden;
-	border-bottom: 2px solid darken($roseWhite, 10%);
+	border-bottom: 2px solid darken($roseWhite, 5%);
 }
 
 .blog-posts .post .top .title{
-	float: left;
-	width: 55%;
 	margin-bottom: .25em;
 }
 
 .blog-posts .post .top .meta{
-	float: left;
-	width: 45%;
-	padding: .5em;
-
 	font-size: 1.5em;
-	text-align: right;
+	color: lighten($roseBlack, 50%);
 }
 
 .blog-posts .post .excerpt{
