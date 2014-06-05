@@ -12,8 +12,6 @@
 	background-image: url('../../img/poly-rose.png');
 	background-repeat: no-repeat;
 	background-position: 125% 100%;
-
-	animation: introIn $animationSpeed;
 }
 
 .home .section--red{
@@ -55,7 +53,6 @@
 
 .home section h1,
 .home section .text{
-	@include animateIn(left);
 	backface-visibility: hidden; // stops the animation white flash
 }
 
@@ -67,9 +64,9 @@
 .home section h1{
 	margin-bottom: .5em;
 
-	font-size: 7.5em;
-
+	font-size: 6.5em;
 	letter-spacing: -.025em;
+	line-height: .9em;
 	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -133,7 +130,6 @@
 	border: 2px solid transparentize($roseWhite, .75);
 	border-radius: 5px;
 
-	@include animateIn(top);
 	transition: border-color .15s;
 }
 
@@ -192,7 +188,7 @@
 	.home{ font-size: .6em; }
 
 	.home section .move-link{
-		bottom: 5%;
+		bottom: 20%;
 	}
 
 	.home section .latest-post q{
@@ -208,7 +204,7 @@
 
 	.home section{
 		padding: 3.5em 1.5em;
-		background-position: 50% -100%;
+		background-position: 0% -15%;
 	}
 
 	.home section h1,

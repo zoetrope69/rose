@@ -9,8 +9,6 @@
 	padding: 1.5em 2.5em;
 	
 	background: #282828;
-	
-	@include animateIn(bottom);
 }
 
 .blog .top .title{
@@ -38,8 +36,6 @@
 
 .blog .post{
 	padding: 1.5em 0;
-
-	@include animateIn(fade);
 }
 
 .blog .post .wrapper > p:first-child{

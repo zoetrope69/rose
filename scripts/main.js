@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-	consoleSleuths();
 
 	logoInit();
 
@@ -17,6 +16,8 @@ $(document).ready(function(){
 	readingTime();
 
 	projectPlannerForm();
+	
+	consoleSleuths();
 	
 });
 

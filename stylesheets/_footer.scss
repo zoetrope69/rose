@@ -11,10 +11,16 @@ footer{
 
 footer .details,
 footer nav{
-		text-align: center;
+	text-align: center;
 	display: inline-block;
 	padding: .5em 0;
 	width: 100%;
+}
+
+footer .details--faint{
+	color: lighten($roseBlack, 25%);
+	text-transform: uppercase;
+	font-size: .85em;
 }
 
 footer .details:first-child::before{

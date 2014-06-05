@@ -1,11 +1,18 @@
 /* _project-planner.scss */
 
 .project-planner{
+	overflow: hidden;
 	width: 70%;
+	margin: 0 auto;
+	padding: 3em 0;
 
 	@media (max-width: $breakPointExtraLarge){ width: 80%; }
 	@media (max-width: $breakPointLarge){      width: 90%; }
 	@media (max-width: $breakPointMedium){     width: 100%; }
+}
+
+.project-planner h1{
+	text-align: center;
 }
 
 .project-planner .required{

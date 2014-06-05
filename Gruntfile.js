@@ -5,17 +5,17 @@ module.exports = function(grunt) {
 
         concat: {
             dist: {
-                src: ['js/*.js'],
-                dest: 'js/build/script.js'
+                src: ['scripts/*.js'],
+                dest: 'scripts/build/script.js'
             }
         },
 
         uglify: {
             build: {
-                src:  'js/build/script.js',
-                dest: 'js/build/script.min.js',
+                src:  'scripts/build/script.js',
+                dest: 'scripts/build/script.min.js',
                 options: {
-                    sourceMap: 'js/build/script.map.js',
+                    sourceMap: 'scripts/build/script.map.js',
                     sourceMapPrefix: 2,
                     sourceMappingURL: 'script.map.js',
                     banner: '/*! <%= pkg.name %> ~ <%= grunt.template.today("yyyy-mm-dd") %> */'
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                     sourcemap: true
                 },
                 files: {
-                    'css/build/style.css': 'css/rose.scss'
+                    'stylesheets/build/style.css': 'stylesheets/rose.scss'
                 }
             } 
         },
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/build/style.css': 'css/build/style.css'
+                    'stylesheets/build/style.css': 'stylesheets/build/style.css'
                 }
             }
         },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         csso: {
             dist: {
                 files: {
-                    'css/build/style.min.css': 'css/build/style.css'
+                    'stylesheets/build/style.min.css': 'stylesheets/build/style.css'
                 }
             }
         },
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
                 options: {
                 import: false
                 },
-                src: ['css/build/style.css']
+                src: ['stylesheets/build/style.css']
             }
         },
 
@@ -96,6 +96,23 @@ module.exports = function(grunt) {
             }
         },
 
+        copy: {
+            css: {
+                src: 'stylesheets/build/**',
+                dest: '_site/css/',
+                flatten: true,
+                expand: true,
+                filter: 'isFile'
+            },
+            js: {
+                src: 'scripts/build/**',
+                dest: '_site/js/',
+                flatten: true,
+                expand: true,
+                filter: 'isFile'
+            },
+        },
+
         connect: {
             server: {
                 options: {
@@ -117,16 +134,16 @@ module.exports = function(grunt) {
             },
 
             scripts: {
-                files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
+                files: ['scripts/*.js'],
+                tasks: ['concat', 'uglify', 'copy:js'],
                 options: {
                     spawn: false
                 }
             },
 
             css: {
-                files: ['css/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'csso'],
+                files: ['stylesheets/**/*.scss'],
+                tasks: ['sass', 'autoprefixer', 'csso', 'copy:css'],
                 options: {
                     spawn: false
                 }
@@ -141,9 +158,9 @@ module.exports = function(grunt) {
             },
 
             jekyll: {
-                files: ['css/build/*', 'js/build/*', '**/*.html', '_config.yml',
+                files: ['**/*.html', '_config.yml',
                         '_data/*', '*.txt', '_posts/*', '_drafts/*', '_plugins/*'],
-                tasks: ['jekyll:build'],
+                tasks: ['jekyll:build', 'copy:css', 'copy:js'],
                 options: {
                     spawn: false
                 }
@@ -171,6 +188,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // build, serve and watch
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-jekyll');

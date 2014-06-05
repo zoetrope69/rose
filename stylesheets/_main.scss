@@ -33,6 +33,8 @@ body{
 main{
 	position: relative;
 	overflow: hidden;
+	
+	@include animateIn(fade);
 }
 
 .page-desc{
@@ -54,8 +56,6 @@ main{
 	font-style: normal;
 	color: $roseRed;
 	text-align: center;
-
-	@include animateIn(fade);
 }
 
 .page-desc a{
