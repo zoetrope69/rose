@@ -105,7 +105,7 @@ module.exports = function(grunt) {
                 filter: 'isFile'
             },
             js: {
-                src: 'scripts/build/**',
+                src: ['scripts/build/**', 'scripts/lib/**'],
                 dest: '_site/js/',
                 flatten: true,
                 expand: true,
