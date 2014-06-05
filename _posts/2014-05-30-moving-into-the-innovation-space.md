@@ -7,10 +7,13 @@ author: zac
 categories: blog
 ---
 
-This week we moved into our new office space, the Innovation Space in the prime of Portsmouth. The building, formally named <a href="#">Halpern House</a> hosts different start-ups on the second floor. It's an incubator space of sorts and allows for creatives and entrepreneurs to work amongst each other.
+This week we moved into our new office space, the Innovation Space. It's right in the prime of Portsmouth in the Halpern House building.
+
+The second floor is home to different student start-ups, it's an incubator space of sorts and let's different creatives and entrepreneurs work amongst each other. Makes sense really, it's a lot easier to bounce ideas around or collaborate on projects.
 
 ![Innovation Space, Halpern House](http://innovationwarehouse.org/wp-content/uploads/2013/03/Innovation-Warehouse-at-Innovation-Space-400x298.jpg)
 
-As our floor is targeting graduates mainly the office isn't completely full yet, we're expecting it to get pretty rowdy soon. :smile:
+We were looking to get office space on our own but having people around is great. We've already been helping each other out, our floor is targeting graduates mainly the office isn't completely full yet, we're expecting it to get pretty rowdy soon. :smile:
 
-Looking forward blah Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, molestiae, deserunt, fugiat ullam vel at ipsa quidem atque ducimus suscipit sed voluptate necessitatibus quas omnis quia accusamus vitae sapiente asperiores!
+The office is pretty new, there's still some final touches going on. We have access to meeting rooms (named the 'ankle', 'leg', 'elbow' and 'head' room haha).
+

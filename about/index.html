@@ -10,7 +10,7 @@ title: About · ROSE Digital ✿
 		
 		<h1>About</h1>
 
-		<p>ROSE is a Portsmouth based partnership. We strive for the best experience for the users of our products. We stick to modern web standards and care about making products that humans can use but also are super fast and efficient on machines too. We make things we're truly proud of.</p>
+		<p>Based in Portsmouth, ROSE Digital is Zac Colley and Peter Jones.</p>
 	
 	</div>
 	</section>
@@ -41,7 +41,7 @@ title: About · ROSE Digital ✿
 
 			{% if author_details.web or author_details.twitter or author_details.github or author_details.email %}
 			<ul>
-				{% if author_details.web %}<li>Personal site: <a href="{{ author_details.web }}">{{ author_details.web }}</a></li>{% endif %}
+				{% if author_details.web %}<li>Personal site: <a href="http://{{ author_details.web }}">{{ author_details.web }}</a></li>{% endif %}
 				{% if author_details.twitter %}<li>Twitter: <a href="{{ author_details.twitter }}">@{{ author_details.twitter }}</a></li>{% endif %}
 				{% if author_details.github %}<li>Github: <a href="{{ author_details.github }}">{{ author_details.github }}</a></li>{% endif %}
 				{% if author_details.email %}<li>Email: <a href="mailto:{{ author_details.email }}">{{ author_details.email }}</a></li>{% endif %}
