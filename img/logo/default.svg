@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="149.63205"
-   height="50"
+   width="111.15524"
+   height="37.142857"
    id="svg4400"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -27,16 +27,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="-201.60236"
-     inkscape:cy="-49.779309"
+     inkscape:zoom="1.4"
+     inkscape:cx="-34.022538"
+     inkscape:cy="-0.29279656"
      inkscape:document-units="px"
      inkscape:current-layer="g4126"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="709"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-width="1440"
+     inkscape:window-height="868"
+     inkscape:window-x="1366"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -46,11 +46,11 @@
      inkscape:guide-bbox="true">
     <sodipodi:guide
        orientation="0,1"
-       position="93.214289,7.1428555"
+       position="93.214288,-5.7142872"
        id="guide3970" />
     <sodipodi:guide
        orientation="0,1"
-       position="126.42857,71.428569"
+       position="126.42857,58.571426"
        id="guide3972" />
   </sodipodi:namedview>
   <metadata
@@ -68,13 +68,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-61.074349,-387.52941)">
+     transform="translate(-61.07435,-387.52941)">
     <g
        id="g4126"
        transform="matrix(0.4619619,0,0,0.4619619,-430.87416,351.99806)">
       <g
          id="g3094"
-         transform="matrix(0.63366625,0,0,0.63366625,390.113,67.825983)">
+         transform="matrix(0.4707235,0,0,0.4707235,563.6326,70.162909)">
         <g
            id="flowRoot3915"
            style="font-size:200px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#282828;fill-opacity:1;stroke:none;font-family:Quicksand;-inkscape-font-specification:Quicksand"
