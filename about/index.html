@@ -44,8 +44,8 @@ title: About · ROSE Digital ✿
 			{% if author_details.web or author_details.twitter or author_details.github or author_details.email %}
 			<ul>
 				{% if author_details.web %}<li>Personal site: <a href="http://{{ author_details.web }}">{{ author_details.web }}</a></li>{% endif %}
-				{% if author_details.twitter %}<li>Twitter: <a href="{{ author_details.twitter }}">@{{ author_details.twitter }}</a></li>{% endif %}
-				{% if author_details.github %}<li>Github: <a href="{{ author_details.github }}">{{ author_details.github }}</a></li>{% endif %}
+				{% if author_details.twitter %}<li>Twitter: <a href="http://www.twitter.com/{{ author_details.twitter }}">@{{ author_details.twitter }}</a></li>{% endif %}
+				{% if author_details.github %}<li>Github: <a href="http://www.github.com/{{ author_details.github }}">{{ author_details.github }}</a></li>{% endif %}
 				{% if author_details.email %}<li>Email: <a href="mailto:{{ author_details.email }}">{{ author_details.email }}</a></li>{% endif %}
 			</ul>
 			{% endif %}
