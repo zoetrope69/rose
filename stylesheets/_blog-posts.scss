@@ -1,17 +1,13 @@
 /* _blog-posts.scss */
 
-.category-link{
-	color: purple;
-	border-bottom: 2px solid;
-}
-
 .blog-posts .post{
 	display: block;
 	overflow: hidden;
 	padding: 1em;
-	width: 60%;
+	width: 50%;
 	margin: 0 auto;
 
+	@media (max-width: $breakPointExtraLarge){ width: 70%; }
 	@media (max-width: $breakPointLarge){ width: 80%; }
 	@media (max-width: $breakPointMedium){ width: 90%; }
 	@media (max-width: $breakPointSmall){ width: 100%; }
@@ -22,24 +18,27 @@
 }
 
 .blog-posts .post .top{
-	overflow: hidden;
 	border-bottom: 2px solid darken($roseWhite, 5%);
 }
 
 .blog-posts .post .top .title{
 	margin-bottom: .25em;
+
+	line-height: .85em;
 }
 
 .blog-posts .post .top .meta{
+	margin: .25em 0;
+
 	font-size: 1.5em;
 	color: lighten($roseBlack, 50%);
 }
 
 .blog-posts .post .excerpt{
 	position: relative;
-	padding: 1em .5em;
+	padding: .5em 0;
 
-	font-size: 1.1em;
+	font-size: 1.25em;
 }
 
 .blog-posts .post .excerpt::after{
@@ -58,6 +57,9 @@
 }
 
 .pagination{
+	width: 70%;
+	margin: 0 auto;
+	
 	overflow: hidden;
 	padding: 2.5em 0 1em;
 }
@@ -72,7 +74,7 @@
 .pagination .previous,
 .pagination .next{
 	padding: .75em 0;
-	width: 20%;
+	width: 50%;
 
 	font-style: italic;
 	font-weight: 300;
@@ -81,6 +83,7 @@
 }
 
 .pagination .next{
+	float: right;
 	text-align: right;
 }
 

@@ -23,11 +23,13 @@ title: Blog · ROSE Digital ✿
 		
 		<div class="top">
 			
-		<h1 class="title">{{ post.post_title }}</h1>
 			<h2 class="meta">
 				<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%d-%m-%Y" }}</time>
 				<small> by {{ author.display_name }}</small>
 			</h2>
+			
+			<h1 class="title">{{ post.post_title }}</h1>
+			
 		</div>
 
 		<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | replace: '&nbsp;', ' ' | truncate: 250 }}</p>
@@ -37,7 +39,6 @@ title: Blog · ROSE Digital ✿
 
 	{% if paginator.total_pages > 1 %}
 	<div class="pagination">
-	<div class="wrapper">
 		
 		<p class="previous">
 		{% if paginator.previous_page %}
@@ -46,6 +47,10 @@ title: Blog · ROSE Digital ✿
 			<span class="no-link">Prev</span>
 		{% endif %}
 		</p>
+
+		{% comment %}
+
+		TODO: Page nos
 
 		<ul class="page-links">
 		{% for page in (1..paginator.total_pages) %}
@@ -63,6 +68,8 @@ title: Blog · ROSE Digital ✿
 		{% endfor %}
 		</ul>
 
+		{% endcomment %}
+
 		<p class="next">
 		{% if paginator.next_page %}
 			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
@@ -71,7 +78,6 @@ title: Blog · ROSE Digital ✿
 		{% endif %}
 		</p>
 
-	</div>
 	</div>
 	{% endif %}
 

@@ -27,5 +27,5 @@
 $animationSpeed: .5s;
 
 @mixin animateIn($direction){
-	animation: animate-in-#{$direction} $animationSpeed;
+	animation: animate-in-#{$direction} $animationSpeed ease-in both;
 }
