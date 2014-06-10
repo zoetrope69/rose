@@ -1,19 +1,19 @@
 zac:  
   name: Zac Colley
   display_name: Zac
-  title: Front-end Dev and Graphic Designer
+  title: Web Design, User Experience
   gravatar: 26ab7600fc89f94711ec3b7db40d039b
   email: zac@rosedigital.co.uk
   web: zaccolley.com
   twitter: zaccolley
   github: zaccolley
-  bio: "Zac is the front-end dude at ROSE and enjoys fiddling with CSS, watching YouTube videos and being a dickhead"
+  bio: "Zac works on the usability and visual design. You can find him fiddling with CSS or trying to make music with JavaScript."
 
 peter:
   name: Peter Jones
   display_name: Peter
-  title: Back-end Dev and Miscreant
+  title: Back-end Web Development
   email: peter@rosedigital.co.uk
   twitter: peterjonesio
   github: kephail
-  bio: "Pete is the back-end dude at ROSE, looks after various pets and owns multiple red shirts"
+  bio: "When Pete isn't looking after his various pets and owning multiple red shirts, you'll find him working on the fleshy inners of our products."

@@ -11,10 +11,15 @@ This is a test file with every element in for testing. This is a test file with 
 Lorem ipsum dolor sit "amet, 'consectetur' adipisicing elit". Vero, tempora, atque delectus quia alias similique tempore temporibusbeatae namprovident assumenda eaque dicta libero earum facilis 'esse consectetur' enim nesciunt.
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
+
 #### Header 4
+
 ##### Header 5
+
 ###### Header 6
 
 Lorem _emphasis_ dolor sit amet, **strong** adipisicing elit. Accusamus, aspernatur, nisi possimus dignissimos mollitia commodi facilis vitae nostrum voluptatibus nulla distinctio beatae nihil rem? Illo facere dolor vitae quibusdam nesciunt.
@@ -86,19 +91,20 @@ Emojis:
 :rose: :+1: :smile:
 
 # Emoji :smile: Header 1
+
 ## Emoji :smile: Header 2
+
 ### Emoji :smile: Header 3
+
 #### Emoji :smile: Header 4
+
 ##### Emoji :smile: Header 5
+
 ###### Emoji :smile: Header 6
 
 Lorem ipsum dolor :shit: sit amet, consectetur adipisicing elit. Incidunt, ipsam, architecto, culpa, :shit: deserunt accusamus deleniti ipsum doloribus cum reprehenderit aliquam dolorum :shit: alias eligendi nihil :shit: veniam repudiandae excepturi ea est eaque.
 
 Lorem ipsum dolor :shit: sit amet, consectetur adipisicing elit. Incidunt, ipsam, architecto, culpa, :shit: deserunt accusamus deleniti ipsum doloribus cum reprehenderit aliquam dolorum :shit: alias eligendi nihil :shit: veniam repudiandae excepturi ea est eaque.
-
-Gists:
-
-{% gist 5555251 %}
 
 Code:
 
