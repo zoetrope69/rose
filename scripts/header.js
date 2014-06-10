@@ -15,6 +15,7 @@ function elementResize(){
 	$('.home section').css('height', sectionHeight);
 
 	$('body').css('padding-top', headerHeight);
+	$('.small-nav').css('margin-top', headerHeight);
 }
 
 // so anchor links do a smooth scroll
