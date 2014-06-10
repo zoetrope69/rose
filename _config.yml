@@ -4,10 +4,10 @@ email: hello@rosedigital.co.uk
 desc: 'ROSE Digital | Portsmouth based Web Design, Web Development and Graphic Design'
 timezone: GMT
 
-markdown: kramdown
+markdown: redcarpet
 redcarpet:
   extensions: ['smart', 'no_intra_emphasis', 'autolink', 'tables', 'space_after_headers', 'superscript']
-highlighter: true
+pygments: true
 
 paginate: 3
 paginate_path: blog/page-:num
