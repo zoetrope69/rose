@@ -66,6 +66,12 @@
 	background-size: 0;
 }
 
+.blog .post .wrapper > p:first-child a{
+	color: darken($roseWhite, 50%);
+
+	background-image: linear-gradient(to bottom, #fff 50%, lighten(desaturate(darken($roseWhite, 50%), 33.33%), 33.33%) 50%);
+}
+
 .blog .post ul ol,.blog .post ul ul,
 .blog .post ol ul, .blog .post ol ol{
 	margin-left: 1em;
