@@ -120,6 +120,16 @@
 	margin: .5em auto;
 }
 
+.blog .post .img-left{
+	float: left;
+	margin-right: 1em;
+}
+
+.blog .post .img-right{
+	float: right;
+	margin-left: 1em;
+}
+
 .blog .post .emoji{
 	display: inline-block;
 	max-width: 28px;
