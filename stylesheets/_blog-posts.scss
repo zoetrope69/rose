@@ -49,11 +49,11 @@
 	height: 50%;
 	width: 100%;
 
-	background-image: linear-gradient(to top, white, transparent);
+	background-image: linear-gradient(to top, $roseWhite, transparentize($roseWhite, 1));
 }
 
 .blog-posts .post:hover .excerpt::after{
-	background-image: linear-gradient(to top, darken($roseWhite, 5%), transparent);
+	background-image: linear-gradient(to top, darken($roseWhite, 5%), transparentize(darken($roseWhite, 5%), 1));
 }
 
 .pagination{
