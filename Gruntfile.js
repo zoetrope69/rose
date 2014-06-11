@@ -84,14 +84,14 @@ module.exports = function(grunt) {
         },
 
         jekyll: {
-            build: {
+            dev: {
                 options: {
                     drafts: true
                 }
             },
-            serve: {
+            prod: {
                 options: {
-                    drafts: true
+                    drafts: false
                 }
             }
         },
@@ -160,7 +160,7 @@ module.exports = function(grunt) {
             jekyll: {
                 files: ['**/*.html', '_config.yml',
                         '_data/*', '*.txt', '_posts/*', '_drafts/*', '_plugins/*'],
-                tasks: ['jekyll:build', 'copy:css', 'copy:js'],
+                tasks: ['jekyll:dev', 'copy:css', 'copy:js'],
                 options: {
                     spawn: false
                 }
@@ -196,6 +196,7 @@ module.exports = function(grunt) {
     // command line usage
     grunt.registerTask('build', ['concat', 'uglify', 'sass', 'autoprefixer', 'csso', 'imagemin']); // 'grunt build'
     grunt.registerTask('lint', ['jshint', 'htmllint', 'csslint']); // 'grunt lint'
-    grunt.registerTask('default', ['build', 'connect', 'watch']); // 'grunt'
+    grunt.registerTask('default', ['build', 'jekyll:dev', 'copy:css', 'copy:js', 'connect', 'watch']); // 'grunt'
+    grunt.registerTask('prod', ['build', 'jekyll:prod', 'copy:css', 'copy:js', 'connect', 'watch']); // 'grunt prod'
 
 };
