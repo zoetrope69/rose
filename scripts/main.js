@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 	logoInit();
 
 	initMenuButton();
@@ -12,11 +11,7 @@ $(document).ready(function(){
 		elementResize();
 	});
 
-	anchorPageScrolling();
-
 	readingTime();
-
-	projectPlannerForm();
 	
 	consoleSleuths();
 	

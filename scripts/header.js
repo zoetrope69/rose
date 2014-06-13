@@ -21,21 +21,3 @@ function sectionResize(){
 	var sectionHeight = $(window).height() - headerHeight;
 	$('.home section').css('height', sectionHeight);
 }
-
-// so anchor links do a smooth scroll
-function anchorPageScrolling(){
-	$('.move-link').click(function(e){
-		scrollToAnchor($(this).attr("href"));	
-		e.preventDefault(); // Stops the link's normal behaviour
-	});
-}
-
-function scrollToAnchor(id){
-	var animationSpeed = 500; // Speed of the animation in ms
-
-    $('html, body').animate({ scrollTop: $(id).position().top }, animationSpeed);
-}
-
-function capsString(string){
-	return string.substring(0, 1).toUpperCase()+string.substring(1);
-}
