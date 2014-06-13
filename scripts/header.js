@@ -11,11 +11,15 @@ function logoInit(){
 function elementResize(){
 	var headerHeight = $('header').outerHeight();
 
-	var sectionHeight = $(window).height() - headerHeight;
-	$('.home section').css('height', sectionHeight);
-
 	$('body').css('padding-top', headerHeight);
 	$('.small-nav').css('margin-top', headerHeight);
+}
+
+function sectionResize(){
+	var headerHeight = $('header').outerHeight();
+
+	var sectionHeight = $(window).height() - headerHeight;
+	$('.home section').css('height', sectionHeight);
 }
 
 // so anchor links do a smooth scroll

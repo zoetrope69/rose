@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	initMenuButton();
 
+	sectionResize();
 	elementResize();
 
 	$(window).on('debouncedresize', function(){
