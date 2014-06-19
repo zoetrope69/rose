@@ -3,6 +3,7 @@
 node_modules/
 npm-debug.log
 
-build/
+css
+js
 
 _site

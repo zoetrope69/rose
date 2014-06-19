@@ -67,7 +67,7 @@
 	max-height: 100%;
 	margin: 0 auto;
 
-	filter: grayscale(1);
+	// filter: grayscale(1); libsass doesn't support this
 }
 
 .team-member:nth-child(odd) .photo,
