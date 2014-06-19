@@ -9,6 +9,10 @@
 	padding: 1.5em 2.5em;
 	
 	background: $roseBlack;
+
+	@media (max-width: $breakPointMedium){
+		padding: 1em;
+	}
 }
 
 .blog .top .title{
@@ -126,6 +130,16 @@
 	margin: .5em auto;
 }
 
+.blog .post .img-left,
+.blog .post .img-right{
+	max-width: 50%;
+
+	@media (max-width: $breakPointSmall){
+		float: none;
+		max-width: 100%;
+	}
+}
+
 .blog .post .img-left{
 	float: left;
 	margin-right: 1em;
@@ -164,11 +178,7 @@
 	color: lighten($roseBlack, 5%);
 }
 
-@media all and (max-width: $breakPointMedium){
-
-	.blog .top{
-		padding: 1em;
-	}
+@media (max-width: $breakPointMedium){
 
 	.blog .notes .author,
 	.blog .notes p{
