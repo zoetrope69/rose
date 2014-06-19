@@ -13,9 +13,15 @@
       <script src="{{ root_url }}/js/selectivizr.js"></script>
   <![endif]-->
 
+  {% if page.excerpt %}
+    {% assign meta_desc = page.excerpt | remove: '<p>' | remove: '</p>' | strip_html | replace: '&nbsp;', ' ' | truncate: 250 %}
+  {% else %}
+    {% assign meta_desc = site.desc %}
+  {% endif %}
+
   <meta charset="UTF-8">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0' />
-  <meta name="description" content="{{ site.desc }}">
+  <meta name="description" content="{{ meta_desc }}">
 
   <title>{{ page.title }}</title>
 
@@ -31,14 +37,18 @@
 
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url" content="{{ site.url }}" />
+   {% if page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip_html | replace: '&nbsp;', ' ' | truncate: 250 }}" />
+  {% else %}
   <meta property="og:description" content="{{ site.desc }}" />
+  {% endif %}
   <meta property="og:image" content="{{ root_url }}/img/default-social.png" />
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@rosedgtl">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:url" content="{{ site.url }}">
-  <meta name="twitter:description" content="{{ site.desc }}">
+  <meta name="twitter:description" content="{{ meta_desc }}">
   <meta name="twitter:image" content="{{ root_url }}/img/default-social.png">
 
 </head>
