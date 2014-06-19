@@ -9,7 +9,7 @@ categories: blog
 
 This week we moved into our new office, [the Innovation Space](http://www.ris.port.ac.uk/innovationspace/), in amongst the University buildings in the Halpern House.
 
-<img class="img-right" src="/assets/InnovationSpace.jpg" alt="The Innovation Space, Halpern House">
+[<img class="img-right" src="/assets/InnovationSpace.jpg" alt="The Innovation Space, Halpern House">](/assets/InnovationSpace-Large.jpg)
 
 The second floor is home to different graduate start-ups, it's an incubator space of sorts and let's different creatives and entrepreneurs work amongst each other. Makes sense really, it's a lot easier to bounce ideas around and collaborate on projects. :bulb:
 
