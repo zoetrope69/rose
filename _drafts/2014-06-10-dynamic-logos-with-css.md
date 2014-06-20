@@ -7,81 +7,126 @@ author: zac
 categories: blog
 ---
 
-When creating logos often the end product will be a static identity. [After seeing some great usage of logos with moving parts](http://www.hexanine.com/zeroside/the-future-is-fluid-inside-dynamic-logos/) I thought I'd play with the idea of dynamic logos.
+When creating logos often the end product will be a static identity. [After seeing some great usage of logos with moving parts](http://www.hexanine.com/zeroside/the-future-is-fluid-inside-dynamic-logos/) I thought I'd play with the idea of making ours dynamic.
 
-Animating part of a logo or allowing for interaction is quite an interesting idea and can be used to convey information. I wanted something that moves the abstract rose towards an 'O' and back again.
+Animating part of a logo or allowing for interaction is quite an interesting idea and can be used to convey information. I wanted something that moves the abstract rose more towards an 'O' and back again.
 
-I've seen this done with animated SVGs before but I thought doing this with CSS would be interesting. It should be noted any example CSS in this post is without browser prefixes. I'm currently using [autoprefixer](https://github.com/ai/autoprefixer) for this.
+I've seen this done with animated SVGs before but I thought doing this with CSS would be interesting. It should be noted any example CSS in this post is without browser prefixes. (I recommend using [autoprefixer](https://github.com/ai/autoprefixer).)
 
-## The Ground Work
+## Ground work
 
-With anything in this nature you sometimes sarifice accessibility. We'll get into how we combat that later but first we need the basic markup.
+With anything in this nature you sometimes sacrifice accessibility. We'll get into how we combat that later but first we need the basic markup.
 
 I chose to use a list of petals as so:
 
 {% highlight html %}
+R
 <ul class="petals">
 	<li></li>
 	<li></li>
 	<li></li>
 </ul>
+OSE
 {% endhighlight %}
 
-Each `li` is a ring and then can be selected with CSS using `nth-child`.
+Each `li` is a ring (or petal) and then can be selected with CSS using `nth-child`.
 
-## The Petals
+## Building blocks
 
 There's a few parts to creating the logo in CSS.
 
-The typeface in our logo is called Quicksand, this happens to be available through [Google Fonts as a webfont](http://www.google.com/fonts#UsePlace:use/Collection:Quicksand). This is simple, we just set the size and weight of the text. We do use `user-select: none;` to stop the user from being able to select the text.
+The typeface in our logo is called Quicksand, this happens to be available through [Google Fonts as a web-font](http://www.google.com/fonts#UsePlace:use/Collection:Quicksand). This is simple, we just set the size and weight of the text. We do use `user-select: none;` to stop the user from being able to select the text.
 
+<!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
 <div class="code-result">		<div class="example-logo">ROSE</div>		</div>
 _Here is just the logo as standard text_
 
 ### One petal
 
-The petal itself is a bordered square with a border radius to create a perfect circle.
+The petal itself is a square element with a border and border radius to create a perfect circle. I've animated some of the styles to make it more obvious, hover over to pause the animation.
 
-{% highlight scss %}
-height: 1.7rem;
-width: 1.7rem;
-line-height: .5rem;
+{% highlight css %}
+.petals li{
+	height: 1.7rem;
+	width: 1.7rem;
+	line-height: .5rem;
 
-border: 2px solid red;
-border-radius: 50%;
+	border: 2px solid red;
+	border-radius: 50%;
+}
 {% endhighlight %}
 
-<div class="code-result">		<div class="example-petal"></div>		</div>
+<!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
+<div class="code-result">		<div class="example-petal--1"></div>		</div>
 _One section of the abstract rose_
 
-### Positioning the Petals
+### Positioning the petals
 
-{% highlight scss %}
-// then there each petal is handled by nth-child and move to it's position
+We're using `nth-child` here to select each petal. THen each petal is moved into position using the `translate()`. The first parameter is the X position and then second is the Y. The petals must be positioned absolutely so they overlap.
 
-.logo .petals li:nth-child(1){
-	animation-name: petal-one;
-	transform: translate(.5rem, .00001rem); // .00001 because of a IE10/11 bug
+{% highlight css %}
+.petals li{
+	position: absolute; /* absolute position those suckers */
+	height: 1.7rem;
+	width: 1.7rem;
+	line-height: .5rem;
+
+	border: 2px solid red;
+	border-radius: 50%;
 }
 
-.logo .petals li:nth-child(2){
-	animation-name: petal-two;
+.petals li:nth-child(1){
+	transform: translate(.5rem, .00001rem); /* .00001 because of a IE10/11 bug */
+}
+
+.petals li:nth-child(2){
 	transform: translate(0%, .25rem);
 }
 
-.logo .petals li:nth-child(3){
-	animation-name: petal-three;
+.petals li:nth-child(3){
 	transform: translate(.5rem, .5rem);
 }
 {% endhighlight %}
 
-<div class="code-result">		<div class="example-petals">	<div class="example-petal"></div>	<div class="example-petal"></div>	<div class="example-petal"></div>	</div>		</div>
+<!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
+<div class="code-result">		<div class="example-petals">	<div class="example-petal--2-1"></div>	<div class="example-petal--2-2"></div>	<div class="example-petal--2-3"></div>	</div>		</div>
 _Now there's three wow_
 
-You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0.
+You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0. _If you know why, please tell me..._
 
-{% highlight scss %}
-// each petal has a respective animation
+### Animated the petals
+
+Now we have the initial placement we can animate them to create the logo effect, each petal is moving to the position of the petal anticlockwise before it.
+
+{% highlight css %}
+.petals li{
+	position: absolute;
+	height: 1.7rem;
+	width: 1.7rem;
+	line-height: .5rem;
+
+	border: 2px solid red;
+	border-radius: 50%;
+
+	animation: .5s .5s 2 alternate ease-in-out;
+}
+
+.petals li:nth-child(1){
+	animation-name: petal-one;
+	transform: translate(.5rem, .00001rem);
+}
+
+.petals li:nth-child(2){
+	animation-name: petal-two;
+	transform: translate(0%, .25rem);
+}
+
+.petals li:nth-child(3){
+	animation-name: petal-three;
+	transform: translate(.5rem, .5rem);
+}
+
+/* each petal has a respective animation */
 
 @keyframes petal-one{
 	100%{ transform: translate(0%, .25rem); }
@@ -96,31 +141,35 @@ You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE
 }
 {% endhighlight %}
 
-<div class="code-result">		<div class="example-petals--spin">	<div class="example-petal"></div>	<div class="example-petal"></div>	<div class="example-petal"></div>	</div>		</div>
+<!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
+<div class="code-result">		<div class="example-petals">	<div class="example-petal--3-1"></div>	<div class="example-petal--3-2"></div>	<div class="example-petal--3-3"></div>	</div>		</div>
 _Animating wooo_
 
 ## Fallbacks
 
 We use [Modernizr](http://modernizr.com/) for feature detection as this logo relies on `border-radius`, `transform` and `@font-face`. If the browser supports these we remove the class and inject the markup described above.
 
-{% highlight scss %}
-.logo-img-default{
+Then we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 and older don't support multiple backgrounds](http://caniuse.com/#feat=multibackgrounds) so we can force it to use the PNG value.
+
+{% highlight css %}
+.logo-img{
 	background-image: url('../../img/logo/default.png');
 	background-image: url('../../img/logo/default.svg'), none;
 }
 {% endhighlight %}
 _The default logo with PNG fallback_
 
-This is a nice SVG to PNG fallback hack as IE? which doesn't support SVG also doesn't support multiple backgrounds.
 
 Changing the logo to the dynamic logo based on features is a good example of progressive enhancement and ensure we can allow accessibility for users with screen readers.
 
-## Using SASS For More Control
+## Using SASS for more control
 
-SASS, or [Syntatically Awesome StyleSheets](http://sass-lang.com/), is a pre-processor for CSS.
+All this is using numbers by hand, or [magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/), if we want to make this even more flexible and give us control of the size of the logo and it's behaviour we can use [SASS](http://sass-lang.com/), a pre-processor for CSS.
 
-The above code examples are standard CSS [but in the actual code]({{ http://github.com/{{ site.data.social.github }} }}) you'll find we're using SASS. This allows us to calculate some of the sizing without using [magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/).
+The above code examples are standard CSS [but in the actual code]({{ http://github.com/{{ site.data.social.github }} }}) you'll find we're using SASS.
 
-## Are Static Logos Dead?
+I would do this but it ended with blurry sub-pixel shit.
 
-Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. I see it as an extra detail that can [delight your clients](#) 
+## Does this replace static logos?
+
+Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. Juzt a bit of fun lol. 

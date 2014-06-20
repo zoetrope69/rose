@@ -1,0 +1,122 @@
+/* _blog-post-dynamic-logo.scss */
+
+.example-logo{
+	@extend .logo;
+	margin: 0;
+	display: block;
+
+	font-size: 5em;
+	line-height: 1em;
+	text-align: center;
+
+	animation: none;
+}
+
+.example-petal{
+	display: block;
+	height: 100px;
+	width: 100px;
+	
+	border-width: 7px;
+	border-style: solid;
+	
+	animation: .5s infinite alternate ease-in-out;
+}
+
+.example-petal--1{
+	@extend .example-petal;
+	margin: 0 auto;
+
+	border-color: $roseBlack;
+
+	animation-name: animateExamplePetal;
+}
+
+@keyframes animateExamplePetal{
+	to{
+		border-color: $roseRed;
+		border-radius: 50%;
+	}
+}
+
+.example-petal--1:hover,
+.example-petals:hover .example-petal{
+	animation-play-state: paused;
+}
+
+.example-petals{
+	height: 133.33px;
+	width: 133.33px;
+	margin: 0 auto;
+}
+
+.example-petal--2-1,
+.example-petal--2-2,
+.example-petal--2-3{
+	@extend .example-petal;
+	position: absolute;
+	
+	border-color: $roseRed;
+	border-radius: 50%;
+}
+
+.example-petal--2-1{
+	animation-name: example-petal-2-1;
+}
+
+.example-petal--2-2{
+	animation-name: example-petal-2-2;
+}
+
+.example-petal--2-3{
+	animation-name: example-petal-2-3;
+}
+
+@keyframes example-petal-2-1{
+	100%{ transform: translate(33.33px, 0); }
+}
+
+@keyframes example-petal-2-2{
+	100%{ transform: translate(0, 16.66px); }
+}
+
+@keyframes example-petal-2-3{
+	100%{ transform: translate(33.33px, 33.33px); }
+}
+
+.example-petal--3-1,
+.example-petal--3-2,
+.example-petal--3-3{
+	@extend .example-petal;
+	position: absolute;
+	
+	border-color: $roseRed;
+	border-radius: 50%;
+}
+
+.example-petal--3-1{
+	animation-name: example-petal--3-1;
+	transform: translate(33.33px, .000001rem); // .00001 because of a IE1-/11 bug
+}
+
+.example-petal--3-2{
+	animation-name: example-petals--3-2;
+	transform: translate(0%, 16.66px);
+}
+
+.example-petal--3-3{
+	animation-name: example-petals--3-3;
+	transform: translate(33.33px, 33.33px);
+}
+
+@keyframes example-petal--3-1{
+	100%{ transform: translate(0%, 16.66px); }
+}
+
+@keyframes example-petals--3-2{
+	100%{ transform: translate(33.33px, 33.33px); }
+}
+
+@keyframes example-petals--3-3{
+	100%{ transform: translate(33.33px, 0%); }
+}
