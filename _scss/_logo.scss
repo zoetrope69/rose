@@ -10,7 +10,7 @@
 	line-height: 1.5em;
 	white-space: nowrap;
 
-	color: $roseBlack;
+	color: $black;
 
 	backface-visibility: hidden; // stops the animation white flash
 	transform-origin: center;
@@ -21,7 +21,7 @@
 	user-select: none; // stops the user from being able to select the text
 }
 
-.logo-white{ color: $roseWhite; }
+.logo-white{ color: $white; }
 
 .logo a{
 	display: block;
@@ -70,7 +70,7 @@
 	width: 1.7rem;
 	line-height: .5rem;
 
-	border: 2px solid $roseRed;
+	border: 2px solid $red;
 	border-radius: 50%;
 
 	transform: translate(0%, 0%);
@@ -78,8 +78,8 @@
 }
 
 // black & white variants
-.logo-black .petals li{	border-color: $roseBlack; }
-.logo-white .petals li{	border-color: $roseWhite; }
+.logo-black .petals li{	border-color: $black; }
+.logo-white .petals li{	border-color: $white; }
 
 // then there each petal is handled by nth-child and move to it's position
 

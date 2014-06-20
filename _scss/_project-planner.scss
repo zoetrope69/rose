@@ -6,9 +6,9 @@
 	margin: 0 auto;
 	padding: 3em 0;
 
-	@media (max-width: $breakPointExtraLarge){ width: 80%; }
-	@media (max-width: $breakPointLarge){      width: 90%; }
-	@media (max-width: $breakPointMedium){     width: 100%; }
+	@media (max-width: $screen-xl){ width: 80%; }
+	@media (max-width: $screen-l){      width: 90%; }
+	@media (max-width: $screen-m){     width: 100%; }
 }
 
 .project-planner h1{
@@ -16,7 +16,7 @@
 }
 
 .project-planner .required{
-	color: desaturate($roseGreen, 25%);
+	color: desaturate($green, 25%);
 }
 
 .project-planner label,
@@ -42,7 +42,7 @@
 
 	font-size: 1.25em;
 
-	border: 2px solid darken($roseWhite, 15%);
+	border: 2px solid darken($white, 15%);
 
 	outline: none;
 
@@ -51,11 +51,11 @@
 }
 
 .project-planner__input--dirty:not(:focus):invalid{
-	border-color: desaturate($roseRed, 25%);
+	border-color: desaturate($red, 25%);
 }
 
 .project-planner__input:focus{
-	border-color: darken($roseWhite, 25%);
+	border-color: darken($white, 25%);
 }
 
 .project-planner__submit{
@@ -63,20 +63,20 @@
 	margin: 1.5em 0;
 
 	font-size: 2em;
-	color: $roseGreen;
+	color: $green;
 
 	background-color: transparent;
 	
-	border: 2px solid $roseGreen;
+	border: 2px solid $green;
 	border-radius: 4px;
 
 	transition: background-color .25s, color .25s;
 }
 
 .project-planner__submit:hover{
-	color: $roseWhite;
+	color: $white;
 
-	background-color: $roseGreen;
+	background-color: $green;
 
 	cursor: pointer;
 }

@@ -14,33 +14,33 @@
 }
 
 .home .section--red{
-	color: $roseWhite;
-	background-color: $roseRed;
+	color: $white;
+	background-color: $red;
 }
 
 .home .section--red *::selection{
-	background-color: $roseWhite;
-	color: $roseRed;
+	background-color: $white;
+	color: $red;
 }
 
 .home .section--black{
-	color: $roseWhite;
-	background-color: $roseBlack;
+	color: $white;
+	background-color: $black;
 }
 
 .home .section--black *::selection{
-	background-color: $roseWhite;
-	color: $roseBlack;
+	background-color: $white;
+	color: $black;
 }
 
 .home .section--white{
-	color: $roseBlack;
-	background-color: $roseWhite;
+	color: $black;
+	background-color: $white;
 }
 
 .home .section--white *::selection{
-	background-color: $roseBlack;
-	color: $roseWhite;
+	background-color: $black;
+	color: $white;
 }
 
 @keyframes introIn{
@@ -102,7 +102,7 @@
 	width: 110%;
 	content: '';
 
-	border-bottom: 2px solid $roseWhite;
+	border-bottom: 2px solid $white;
 	transform: rotate(-2.5deg);
 }
 
@@ -126,7 +126,7 @@
 	font-family: "Crete Round",Georgia,serif;
 	font-size: 2.5em;
 	
-	border-bottom: 3px solid transparentize($roseWhite, .75);
+	border-bottom: 3px solid transparentize($white, .75);
 
 	transition: border-color .15s;
 }
@@ -138,7 +138,7 @@
 .home section .latest-post{
 	position: absolute;
 	right: 0; bottom: 0; left: 0;
-	background: $roseBlack;
+	background: $black;
 
 	@media (max-height: 500px){
 		display: none;
@@ -159,12 +159,12 @@
 	font-weight: 300;
 	font-style: normal;
 	font-family: $sans-serif;
-	color: lighten($roseWhite, 5%);
+	color: lighten($white, 5%);
 	text-align: center;
 }
 
 .home section .latest-post q{
-	color: $roseWhite;
+	color: $white;
 	font-family: $serif;
 }
 
@@ -173,19 +173,19 @@
 	font-size: 1.5em;
 }
 
-@media (max-width: $breakPointExtraLarge){
+@media (max-width: $screen-xl){
 	
 	.home{ font-size: .75em; }
 	
 }
 
-@media (max-width: $breakPointLarge){
+@media (max-width: $screen-l){
 	
 	.home{ font-size: .7em; }
 
 }
 
-@media (max-width: $breakPointMedium){
+@media (max-width: $screen-m){
 	
 	.home{ font-size: .65em; }
 
@@ -205,7 +205,7 @@
 
 }
 
-@media (max-width: $breakPointSmall){
+@media (max-width: $screen-s){
 	
 	.home{ font-size: .5em; }
 

@@ -27,14 +27,14 @@
 	@extend .example-petal;
 	margin: 0 auto;
 
-	border-color: $roseBlack;
+	border-color: $black;
 
 	animation-name: animateExamplePetal;
 }
 
 @keyframes animateExamplePetal{
 	to{
-		border-color: $roseRed;
+		border-color: $red;
 		border-radius: 50%;
 	}
 }
@@ -56,7 +56,7 @@
 	@extend .example-petal;
 	position: absolute;
 	
-	border-color: $roseRed;
+	border-color: $red;
 	border-radius: 50%;
 }
 
@@ -90,7 +90,7 @@
 	@extend .example-petal;
 	position: absolute;
 	
-	border-color: $roseRed;
+	border-color: $red;
 	border-radius: 50%;
 }
 

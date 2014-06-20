@@ -27,7 +27,7 @@ nav li a{
 	top: 0; right: .75em; bottom: 0; left: .75em;
 	
 	transition: opacity .25s, transform .25s;
-	background: transparentize($roseRed, .1);
+	background: transparentize($red, .1);
 
 	transform-origin: top;
 	transform: none;
@@ -54,10 +54,10 @@ nav li a{
 }
 
 .small-nav li a:hover{
-	background: transparentize($roseWhite, .9);
+	background: transparentize($white, .9);
 }
 
-@media screen and (max-width: $breakPointMedium){
+@media screen and (max-width: $screen-m){
 
 	header nav li a{
 		padding: 2em 0;
@@ -66,7 +66,7 @@ nav li a{
 
 }
 
-@media screen and (max-width: $breakPointSmall){
+@media screen and (max-width: $screen-s){
 
 	header nav li{ display: none; }
 	

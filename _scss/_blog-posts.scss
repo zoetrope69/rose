@@ -7,18 +7,18 @@
 	width: 50%;
 	margin: 0 auto;
 
-	@media (max-width: $breakPointExtraLarge){ width: 70%; }
-	@media (max-width: $breakPointLarge){ width: 80%; }
-	@media (max-width: $breakPointMedium){ width: 90%; }
-	@media (max-width: $breakPointSmall){ width: 100%; }
+	@media (max-width: $screen-xl){ width: 70%; }
+	@media (max-width: $screen-l){ width: 80%; }
+	@media (max-width: $screen-m){ width: 90%; }
+	@media (max-width: $screen-s){ width: 100%; }
 }
 
 .blog-posts .post:hover{
-	background: darken($roseWhite, 5%);
+	background: darken($white, 5%);
 }
 
 .blog-posts .post .top{
-	border-bottom: 2px solid darken($roseWhite, 5%);
+	border-bottom: 2px solid darken($white, 5%);
 }
 
 .blog-posts .post .top .title{
@@ -31,7 +31,7 @@
 	margin: .25em 0;
 
 	font-size: 1.5em;
-	color: lighten($roseBlack, 50%);
+	color: lighten($black, 50%);
 }
 
 .blog-posts .post .excerpt{
@@ -49,11 +49,11 @@
 	height: 50%;
 	width: 100%;
 
-	background-image: linear-gradient(to top, $roseWhite, transparentize($roseWhite, 1));
+	background-image: linear-gradient(to top, $white, transparentize($white, 1));
 }
 
 .blog-posts .post:hover .excerpt::after{
-	background-image: linear-gradient(to top, darken($roseWhite, 5%), transparentize(darken($roseWhite, 5%), 1));
+	background-image: linear-gradient(to top, darken($white, 5%), transparentize(darken($white, 5%), 1));
 }
 
 .pagination{
@@ -78,7 +78,7 @@
 
 	font-style: italic;
 	font-weight: 300;
-	color: lighten($roseBlack, 15%);
+	color: lighten($black, 15%);
 	text-transform: uppercase;
 }
 
@@ -103,7 +103,7 @@
 .pagination .no-link::before,
 .pagination .no-link::after,
 .pagination .no-link{
-	color: darken($roseWhite, 40%);
+	color: darken($white, 40%);
 	cursor: not-allowed;
 }
 
@@ -128,7 +128,7 @@
 
 	border-radius: 5px;
 
-	color: $roseBlack;
+	color: $black;
 	transition: background .15s, color .15s;
 }
 
@@ -139,7 +139,7 @@
 	width: 1em;
 
 	font-size: .75em;
-	color: lighten($roseBlack, 15%);
+	color: lighten($black, 15%);
 }
 
 .pagination .page-links li:nth-child(1n) .page-no::after{ content: '✽' }
@@ -149,26 +149,26 @@
 .pagination .page-links li:nth-child(5n) .page-no::after{ content: '❀' }
 
 .pagination .page-links a.page-no:hover{
-	color: $roseWhite;
+	color: $white;
 	
-	background: lighten($roseBlack, 15%);
+	background: lighten($black, 15%);
 	
 	opacity: 1;
 }
 
 .pagination .page-links a.page-no:hover::after{
-	color: desaturate($roseWhite, 15%)
+	color: desaturate($white, 15%)
 }
 
 .pagination .page-links em.page-no{
 	font-style: normal;
-	color: $roseRed;
+	color: $red;
 	
-	background: lighten($roseBlack, 75%);
+	background: lighten($black, 75%);
 	
 	cursor: default;
 }
 
 .pagination .page-links em.page-no::after{
-	color: desaturate($roseRed, 15%)
+	color: desaturate($red, 15%)
 }

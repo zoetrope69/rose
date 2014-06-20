@@ -8,9 +8,9 @@
 	overflow: hidden;
 	padding: 1.5em 2.5em;
 	
-	background: $roseBlack;
+	background: $black;
 
-	@media (max-width: $breakPointMedium){
+	@media (max-width: $screen-m){
 		padding: 1em;
 	}
 }
@@ -19,7 +19,7 @@
 	margin-bottom: .25em;
 	
 	font-size: 4em;
-	color: $roseWhite;
+	color: $white;
 }
 
 .blog .top .meta{
@@ -27,7 +27,7 @@
 
 	font-size: 1.5em;
 	font-style: normal;
-	color: $roseRed;
+	color: $red;
 }
 
 .blog .top .meta time{
@@ -37,7 +37,7 @@
 .blog .top small{
 	font-size: 1em;
 	float: right;
-	color: darken($roseWhite, 10%);
+	color: darken($white, 10%);
 }
 
 .blog .post{
@@ -54,15 +54,15 @@
 	line-height: 1.5;
 	font-weight: 400;
 	font-size: 1.5em;
-	color: darken($roseWhite, 50%);
+	color: darken($white, 50%);
 }
 
 .blog .post a{
 	// lovely underline style inspired by: https://medium.com/coding-design/2669cd13b5a7
 
-	color: $roseGreen;
+	color: $green;
 
-	background-image: linear-gradient(to bottom, #fff 50%, lighten(desaturate($roseGreen, 33.33%), 33.33%) 50%);
+	background-image: linear-gradient(to bottom, #fff 50%, lighten(desaturate($green, 33.33%), 33.33%) 50%);
 	background-repeat: repeat-x;
 	background-size: 2px 2px;
 	background-position: 0 1.2em;
@@ -70,7 +70,7 @@
 	text-shadow: 1px 0 0 $bg-color, 1px 0 0 $bg-color, 2px 0 0 $bg-color, -2px 0 0 $bg-color;
 }
 
-@media (max-width: $breakPointLarge){
+@media (max-width: $screen-l){
 	.blog .post a{ background-position: 0 1.1em; }
 }
 
@@ -79,9 +79,9 @@
 }
 
 .blog .post .wrapper > p:first-child a{
-	color: darken($roseWhite, 50%);
+	color: darken($white, 50%);
 
-	background-image: linear-gradient(to bottom, #fff 50%, lighten(darken($roseWhite, 50%), 33.33%) 50%);
+	background-image: linear-gradient(to bottom, #fff 50%, lighten(darken($white, 50%), 33.33%) 50%);
 }
 
 .blog .post ul ol,.blog .post ul ul,
@@ -97,7 +97,7 @@
 	font-size: 1.25rem;
 	font-family: $serif;
 	font-weight: 400;
-	color: lighten($roseBlack, 15%);
+	color: lighten($black, 15%);
 }
 
 .blog .post li::before{
@@ -107,7 +107,7 @@
 	
 	line-height: 1em;
 	font-size: .7em;
-	color: lighten($roseBlack, 50%);
+	color: lighten($black, 50%);
 }
 
 .blog .post ul li::before{
@@ -134,7 +134,7 @@
 .blog .post .img-right{
 	max-width: 50%;
 
-	@media (max-width: $breakPointSmall){
+	@media (max-width: $screen-s){
 		float: none;
 		max-width: 100%;
 	}
@@ -154,7 +154,7 @@
 	overflow: hidden;
 	padding: 2em 0;
 
-	border-top: 2px solid darken($roseWhite, 10%);
+	border-top: 2px solid darken($white, 10%);
 }
 
 .blog .notes .author{
@@ -167,7 +167,7 @@
 	padding: .25em 0;
 	
 	font-style: normal;
-	color: $roseGreen;
+	color: $green;
 }
 
 .blog .notes p{
@@ -175,10 +175,10 @@
 	width: 60%;
 
 	font-size: 1.15em;
-	color: lighten($roseBlack, 5%);
+	color: lighten($black, 5%);
 }
 
-@media (max-width: $breakPointMedium){
+@media (max-width: $screen-m){
 
 	.blog .notes .author,
 	.blog .notes p{
@@ -192,7 +192,7 @@
 	width: 100%;
 	padding: .5em;
 
-	color: desaturate($roseRed, 10%);
+	color: desaturate($red, 10%);
 	font-size: 2em;
 	font-family: $serif;
 	text-align: center;
@@ -201,6 +201,6 @@
 }
 
 .interest:hover{
-	color: $roseRed;
+	color: $red;
 	transform: translateY(-3px);
 }

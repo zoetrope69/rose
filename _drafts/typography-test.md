@@ -257,33 +257,33 @@ function capsString(string){
 }
 
 .home section:nth-child(3n+1){
-    color: $roseWhite;
-    background-color: $roseRed;
+    color: $white;
+    background-color: $red;
 }
 
 .home section:nth-child(3n+1) *::selection{
-    background-color: $roseWhite;
-    color: $roseRed;
+    background-color: $white;
+    color: $red;
 }
 
 .home section:nth-child(3n+2){
-    color: $roseWhite;
-    background-color: $roseBlack;
+    color: $white;
+    background-color: $black;
 }
 
 .home section:nth-child(3n+2) *::selection{
-    background-color: $roseWhite;
-    color: $roseBlack;
+    background-color: $white;
+    color: $black;
 }
 
 .home section:nth-child(3n+3){
-    color: $roseBlack;
-    background-color: $roseWhite;
+    color: $black;
+    background-color: $white;
 }
 
 .home section:nth-child(3n+3) *::selection{
-    background-color: $roseBlack;
-    color: $roseWhite;
+    background-color: $black;
+    color: $white;
 }
 
 .home section#intro{
@@ -358,7 +358,7 @@ function capsString(string){
     width: 110%;
     content: '';
 
-    border-bottom: 2px solid $roseWhite;
+    border-bottom: 2px solid $white;
     transform: rotate(-2.5deg);
 }
 
@@ -421,7 +421,7 @@ function capsString(string){
 .home #blog{
     position: absolute;
     right: 0; bottom: 0; left: 0;
-    background: $roseBlack;
+    background: $black;
 }
 
 .home #blog a{
@@ -438,7 +438,7 @@ function capsString(string){
     
     font-size: 1.75em;
     font-weight: 300;
-    color: $roseWhite;
+    color: $white;
     text-align: center
 }
 
@@ -452,14 +452,14 @@ function capsString(string){
     margin: 0 2px;
     
     font-size: 2em;
-    color: darken($roseWhite, 70%);
+    color: darken($white, 70%);
 }
 
 .home #blog q { quotes: "“" "”" "‘" "’"; }
 .home #blog q:before { content: open-quote; }
 .home #blog q:after{ content: close-quote; }
 
-@media screen and (max-width: $breakPointLarge){
+@media screen and (max-width: $screen-l){
 
     .home section > h1{
         font-size: 5.5em;
@@ -488,7 +488,7 @@ function capsString(string){
 
 }
 
-@media screen and (max-width: $breakPointMedium){
+@media screen and (max-width: $screen-m){
     
     .home section{
         padding: 3em .75em;
@@ -515,7 +515,7 @@ function capsString(string){
 
 }
 
-@media screen and (max-width: $breakPointSmall){
+@media screen and (max-width: $screen-s){
 
     .home section#intro{
         background-position: 50% -100%;

@@ -11,7 +11,7 @@
 	width: 50%;
 }
 
-@media (max-width: $breakPointLarge){
+@media (max-width: $screen-l){
 	.team-member{ font-size: .85em; }
 }
 
@@ -30,11 +30,11 @@
 .team-member .details .title{
 	font-size: 2em;
 	font-style: normal;
-	color: lighten($roseBlack, 25%);
+	color: lighten($black, 25%);
 }
 
 .team-member .details .bio{
-	border-bottom: 5px solid lighten($roseBlack, 75%);
+	border-bottom: 5px solid lighten($black, 75%);
 	padding-bottom: .75em;
 }
 
@@ -44,16 +44,16 @@
 }
 
 .team-member ul li a{
-	color: $roseRed;
+	color: $red;
 }
 
 .team-member .details .latest-post{
-	color: $roseGreen;
+	color: $green;
 }
 
 .team-member .details .latest-post q::before,
 .team-member .details .latest-post q::after{
-	color: desaturate($roseBlack, 10%);
+	color: desaturate($black, 10%);
 }
 
 .team-member .photo{
@@ -75,7 +75,7 @@
 	float: right;
 }
 
-@media (max-width: $breakPointMedium){
+@media (max-width: $screen-m){
 
 	.team-member{ padding: 1.5em 0; }
 

@@ -28,12 +28,12 @@ main h1{
 
 main h2{
 	font-size: 2.5em;
-	color: lighten($roseBlack, 2.5%);
+	color: lighten($black, 2.5%);
 }
 
 main h3{
 	font-size: 2em;
-	color: lighten($roseBlack, 5%);
+	color: lighten($black, 5%);
 }
 
 main h4,
@@ -45,19 +45,19 @@ main h6{
 main h4{
 	font-weight: 700;
 	font-size: 1.5em;
-	color: lighten($roseBlack, 7.5%);
+	color: lighten($black, 7.5%);
 }
 
 main h5{ 
 	font-weight: 600;
 	font-size: 1.25em;
-	color: lighten($roseBlack, 10%);
+	color: lighten($black, 10%);
 }
 
 main h6{
 	font-weight: 500;
 	font-size: .9em;
-	color: lighten($roseBlack, 12.5%);
+	color: lighten($black, 12.5%);
 }
 
 main p{	
@@ -91,7 +91,7 @@ main hr{
 	margin: 1.5em 0;
 
 	border: 0;
-	border-top: 2px solid lighten($roseBlack, 75%);
+	border-top: 2px solid lighten($black, 75%);
 }
 
 main ol, main ul{
@@ -117,14 +117,14 @@ main blockquote{
 main blockquote p{
 	font-size: 2em;
 	line-height: 1.25em;
-	color: lighten(desaturate($roseRed, 25%), 5%);
+	color: lighten(desaturate($red, 25%), 5%);
 }
 
 main blockquote cite{
 	display: block;
 
 	font-size: .65em;
-	color: lighten(desaturate($roseRed, 25%), 5%);
+	color: lighten(desaturate($red, 25%), 5%);
 	text-align: right;
 }
 
@@ -132,7 +132,7 @@ main q{
 	quotes: "“" "”" "‘" "’";
 	
 	font-weight: 500;
-	color: lighten($roseBlack, 10%);
+	color: lighten($black, 10%);
 }
 
 main q::before,
@@ -169,11 +169,11 @@ main small{
 	text-transform: lowercase;
 }
 
-$markColour: transparentize(invert($roseRed), .3);
+$markColour: transparentize(invert($red), .3);
 
 main mark{	
 	background: $markColour;
-	color: $roseBlack;
+	color: $black;
 }
 
 main sup,
@@ -189,7 +189,7 @@ main sub{
 	vertical-align: sub;
 }
 
-@media all and (max-width: $breakPointLarge){
+@media all and (max-width: $screen-l){
 
 	main{
 		font-size: .9em;
@@ -197,7 +197,7 @@ main sub{
 
 }
 
-@media all and (max-width: $breakPointMedium){
+@media all and (max-width: $screen-m){
 
 	main{
 		font-size: .85em;
@@ -205,7 +205,7 @@ main sub{
 
 }
 
-@media all and (max-width: $breakPointSmall){
+@media all and (max-width: $screen-s){
 
 	main{
 		font-size: .8em;

@@ -3,8 +3,8 @@
 *::after::selection,
 *::before::selection,
 *::selection{
-	background: transparentize($roseRed, .1);
-	color: $roseWhite;
+	background: transparentize($red, .1);
+	color: $white;
 	text-shadow: none;
 }
 
@@ -16,10 +16,10 @@ body{
 	text-rendering: optimizeLegibility;
 
 	background: $bg-color;
-	color: $roseBlack;
+	color: $black;
 }
 
-@media (max-width: $breakPointMedium){
+@media (max-width: $screen-m){
 
 	body{ padding: 0 .75rem; }
 
@@ -44,9 +44,9 @@ main{
 
 	text-align: center;
 
-	@media (max-width: $breakPointExtraLarge){  width: 70%;	}
-	@media (max-width: $breakPointLarge){ 		width: 80%;	}
-	@media (max-width: $breakPointMedium){ 		width: 90%;	}
+	@media (max-width: $screen-xl){  width: 70%;	}
+	@media (max-width: $screen-l){ 		width: 80%;	}
+	@media (max-width: $screen-m){ 		width: 90%;	}
 }
 
 .page-desc h1{
@@ -54,12 +54,12 @@ main{
 	
 	font-size: 5em;
 	font-style: normal;
-	color: $roseRed;
+	color: $red;
 	text-align: center;
 }
 
 .page-desc a{
-	color: $roseGreen;
+	color: $green;
 }
 
 .emoji,
@@ -88,7 +88,7 @@ main{
 	margin-top: 1em;
 	padding: 1em;
 
-	border: 3px solid lighten($roseBlack, 75%);
+	border: 3px solid lighten($black, 75%);
 	border-radius: 2px;
 
 	background-color: #fff;
