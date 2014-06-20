@@ -139,6 +139,10 @@
 	position: absolute;
 	right: 0; bottom: 0; left: 0;
 	background: $roseBlack;
+
+	@media (max-height: 500px){
+		display: none;
+	}
 }
 
 .home section .latest-post a{
@@ -191,7 +195,7 @@
 	}
 
 	.home section .move-link{
-		bottom: 20%;
+		bottom: 17.5%;
 	}
 
 	.home section .latest-post q{
