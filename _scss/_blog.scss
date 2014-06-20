@@ -81,7 +81,7 @@
 .blog .post .wrapper > p:first-child a{
 	color: darken($roseWhite, 50%);
 
-	background-image: linear-gradient(to bottom, #fff 50%, lighten(desaturate(darken($roseWhite, 50%), 33.33%), 33.33%) 50%);
+	background-image: linear-gradient(to bottom, #fff 50%, lighten(darken($roseWhite, 50%), 33.33%) 50%);
 }
 
 .blog .post ul ol,.blog .post ul ul,
