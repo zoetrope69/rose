@@ -62,7 +62,7 @@ _One section of the abstract rose_
 
 ### Positioning the petals
 
-We're using `nth-child` here to select each petal. THen each petal is moved into position using the `translate()`. The first parameter is the X position and then second is the Y. The petals must be positioned absolutely so they overlap.
+We're using `nth-child` here to select each petal. Then each petal is moved into position using the `translate()`. The first parameter is the X position and then second is the Y. The petals must be positioned absolutely so they overlap.
 
 {% highlight css %}
 .petals li{
@@ -90,11 +90,11 @@ We're using `nth-child` here to select each petal. THen each petal is moved into
 
 <!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
 <div class="code-result">		<div class="example-petals">	<div class="example-petal--2-1"></div>	<div class="example-petal--2-2"></div>	<div class="example-petal--2-3"></div>	</div>		</div>
-_Now there's three wow_
+_Now there's three, wow_
 
 You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0. _If you know why, please tell me..._
 
-### Animated the petals
+### Animating the petals
 
 Now we have the initial placement we can animate them to create the logo effect, each petal is moving to the position of the petal anticlockwise before it.
 
@@ -147,9 +147,9 @@ _Animating wooo_
 
 ## Fallbacks
 
-We use [Modernizr](http://modernizr.com/) for feature detection as this logo relies on `border-radius`, `transform` and `@font-face`. If the browser supports these we remove the class and inject the markup described above.
+We use [Modernizr](http://modernizr.com/) for feature detection as this logo relies on the `border-radius`, `transform` and `@font-face` properties. If the browser supports these we remove the image classes and inject the markup and CSS as described above.
 
-Then we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 and older don't support multiple backgrounds](http://caniuse.com/#feat=multibackgrounds) so we can force it to use the PNG value.
+Also we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 and older don't support multiple backgrounds](http://caniuse.com/#feat=multibackgrounds) so we can force it to use the PNG version.
 
 {% highlight css %}
 .logo-img{
@@ -159,17 +159,16 @@ Then we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 a
 {% endhighlight %}
 _The default logo with PNG fallback_
 
-
-Changing the logo to the dynamic logo based on features is a good example of progressive enhancement and ensure we can allow accessibility for users with screen readers.
+Changing the logo to the dynamic logo based on features is an example of progressive enhancement and ensure we can allow accessibility for users with screen readers.
 
 ## Using SASS for more control
 
 All this is using numbers by hand, or [magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/), if we want to make this even more flexible and give us control of the size of the logo and it's behaviour we can use [SASS](http://sass-lang.com/), a pre-processor for CSS.
 
-The above code examples are standard CSS [but in the actual code]({{ http://github.com/{{ site.data.social.github }} }}) you'll find we're using SASS.
+The above code examples are standard CSS [but in the actual code](http://github.com/{{ site.data.social.github }}) you'll find we're using SASS.
 
 I would do this but it ended with blurry sub-pixel shit.
 
 ## Does this replace static logos?
 
-Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. Juzt a bit of fun lol. 
+Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. Nice extra but not revolutionary. :smirk_cat:
