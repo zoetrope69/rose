@@ -131,16 +131,6 @@
 	margin: .5em auto;
 }
 
-.blog .post .img-left,
-.blog .post .img-right{
-	max-width: 50%;
-
-	@media (max-width: $screen-s){
-		float: none;
-		max-width: 100%;
-	}
-}
-
 .blog .post .img-left{
 	float: left;
 	margin-right: 1em;
@@ -149,6 +139,17 @@
 .blog .post .img-right{
 	float: right;
 	margin-left: 1em;
+}
+
+.blog .post .img-left,
+.blog .post .img-right{
+	max-width: 50%;
+
+	@media (max-width: $screen-s){
+		float: none;
+		margin: 0 auto;
+		max-width: 100%;
+	}
 }
 
 .blog .notes{
