@@ -62,6 +62,54 @@ main{
 	color: $green;
 }
 
+main .row{ overflow: hidden; }
+
+main .row .col{
+	float: left;
+	width: (100%/3);
+	padding: 0 .5em;
+
+	@media (max-width: $screen-m){
+		width: 100%;
+	}
+}
+
+main .row .col:first-child{ padding-left: 0; }
+main .row .col:last-child{ padding-right: 0; }
+
+main .btn{
+	display: block;
+	width: 60%;
+	margin: 50px auto 0;
+	padding: 1em;
+
+	color: $red;
+	font-size: 1.5em;
+	text-align: center;
+
+	border: 2px solid $red;
+	border-radius: 5px;
+	background: $white;
+
+	transition: transform .25s;
+
+	@media (max-width: $screen-xl){ width: 70%;  }
+	@media (max-width: $screen-l){  width: 80%;  }
+	@media (max-width: $screen-m){  width: 90%;  }
+	@media (max-width: $screen-s){  width: 100%; }
+}
+
+main .btn:hover{
+	color: $white;
+
+	background: $red;
+	cursor:
+}
+
+main .btn:active{
+	transform: translateY(-5px);
+}
+
 .emoji,
 .blog .post .emoji{
 	display: inline-block;
