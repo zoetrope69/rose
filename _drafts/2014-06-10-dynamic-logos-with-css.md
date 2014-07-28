@@ -13,7 +13,7 @@ Animating part of a logo or allowing for interaction is quite an interesting ide
 
 I've seen this done with animated SVGs before but I thought doing this with CSS would be interesting. It should be noted any example CSS in this post is without browser prefixes. (I recommend using [autoprefixer](https://github.com/ai/autoprefixer).)
 
-## Ground work
+## Ground Work
 
 With anything in this nature you sometimes sacrifice accessibility. We'll get into how we combat that later but first we need the basic markup.
 
@@ -41,7 +41,7 @@ The typeface in our logo is called Quicksand, this happens to be available throu
 <div class="code-result">		<div class="example-logo">ROSE</div>		</div>
 _Here is just the logo as standard text_
 
-### One petal
+### One Petal
 
 The petal itself is a square element with a border and border radius to create a perfect circle. I've animated some of the styles to make it more obvious, hover over to pause the animation.
 
@@ -60,7 +60,7 @@ The petal itself is a square element with a border and border radius to create a
 <div class="code-result">		<div class="example-petal--1"></div>		</div>
 _One section of the abstract rose_
 
-### Positioning the petals
+### Positioning the Petals
 
 We're using `nth-child` here to select each petal. Then each petal is moved into position using the `translate()`. The first parameter is the X position and then second is the Y. The petals must be positioned absolutely so they overlap.
 
@@ -94,7 +94,7 @@ _Now there's three, wow_
 
 You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0. _If you know why, please tell me..._
 
-### Animating the petals
+### Animating the Petals
 
 Now we have the initial placement we can animate them to create the logo effect, each petal is moving to the position of the petal anticlockwise before it.
 
@@ -159,16 +159,17 @@ Also we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 a
 {% endhighlight %}
 _The default logo with PNG fallback_
 
-Changing the logo to the dynamic logo based on features is an example of progressive enhancement and ensure we can allow accessibility for users with screen readers.
+Changing the logo to the dynamic logo based on the browser's features is an attempt to make this progressively ehanceto ensure we can allow accessibility for users with screen readers.
 
-## Using SASS for more control
+## Using SASS for More Control
 
-All this is using numbers by hand, or [magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/), if we want to make this even more flexible and give us control of the size of the logo and it's behaviour we can use [SASS](http://sass-lang.com/), a pre-processor for CSS.
+All this is using numbers by hand ([magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/)), which is not ideal. If we want to make this even more flexible and give us control of the size of the logo and it's behaviour we can use [SASS](http://sass-lang.com/), a pre-processor for CSS.
 
-The above code examples are standard CSS [but in the actual code](http://github.com/{{ site.data.social.github }}) you'll find we're using SASS.
+I'm looking to move towards that, my current efforts ended up with sub-pixel placement which created a lot of blurring. _I'll update here with the SASS if/when I do this._
 
-I would do this but it ended with blurry sub-pixel shit.
 
-## Does this replace static logos?
+## Does this Replace Static Logos?
 
-Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. Nice extra but not revolutionary. :smirk_cat:
+Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. Nice extra but not revolutionary.
+
+_I realise this implementation isn't perfect [so please tweet us](http://twitter.com/rosedgtl) if you have any hot tips._ :smirk_cat:
