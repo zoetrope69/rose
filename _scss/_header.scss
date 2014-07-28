@@ -10,6 +10,8 @@ header{
 	background-color: $white; 
 	background-color: transparentize(white, .05);
 	color: $white;
+
+	backface-visibility: hidden;
 }
 
 header .logo{
