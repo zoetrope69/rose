@@ -7,11 +7,12 @@ author: zac
 categories: blog
 ---
 
-When creating logos often the end product will be a static identity. [After seeing some great usage of logos with moving parts](http://www.hexanine.com/zeroside/the-future-is-fluid-inside-dynamic-logos/) I thought I'd play with the idea of making ours dynamic.
+[<img class="img-right img-round" src="/assets/airbnb-logo.gif" alt="Airbnb's animated "Bélo" logo">](http://blog.airbnb.com/belong-anywhere/)
+When creating logos often the end product will be a static identity. [After seeing some great usage of logos with moving parts](http://www.hexanine.com/zeroside/the-future-is-fluid-inside-dynamic-logos/) I thought I'd play with the idea of making ours dynamic. And if [Airbnb](https://www.airbnb.com/) are doing it, we have to be too.
 
-Animating part of a logo or allowing for interaction is quite an interesting idea and can be used to convey information. I wanted something that moves the abstract rose more towards an 'O' and back again.
+Animating part of a logo or allowing for interaction could be used to convey information. I wanted something that moves the abstract rose more towards an **'O'** and back again.
 
-I've seen this done with animated SVGs before but I thought doing this with CSS would be interesting. It should be noted any example CSS in this post is without browser prefixes. (I recommend using [autoprefixer](https://github.com/ai/autoprefixer).)
+I've seen this done with animated SVGs before but I thought doing this with CSS would be interesting. _It should be noted any example CSS in this post is without browser prefixes. (I recommend using [autoprefixer](https://github.com/ai/autoprefixer).)_
 
 ## Ground Work
 
@@ -58,11 +59,11 @@ The petal itself is a square element with a border and border radius to create a
 
 <!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
 <div class="code-result">		<div class="example-petal--1"></div>		</div>
-_One section of the abstract rose_
+_One section of the abstract rose_ :thumbsup:
 
 ### Positioning the Petals
 
-We're using `nth-child` here to select each petal. Then each petal is moved into position using the `translate()`. The first parameter is the X position and then second is the Y. The petals must be positioned absolutely so they overlap.
+Each petal is moved into position using `transform: translate(x, y);`. The first parameter is the _x_ position and then second is the _y_. The petals must be positioned absolutely so they overlap.
 
 {% highlight css %}
 .petals li{
@@ -90,13 +91,13 @@ We're using `nth-child` here to select each petal. Then each petal is moved into
 
 <!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
 <div class="code-result">		<div class="example-petals">	<div class="example-petal--2-1"></div>	<div class="example-petal--2-2"></div>	<div class="example-petal--2-3"></div>	</div>		</div>
-_Now there's three, wow_
+_Now there's three, wow._
 
-You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0. _If you know why, please tell me..._
+:warning: You may notice the .00001rem, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0. _If you know why, please tell me..._
 
 ### Animating the Petals
 
-Now we have the initial placement we can animate them to create the logo effect, each petal is moving to the position of the petal anticlockwise before it.
+Now we have the initial placement we can animate them to create the spin effect, each petal is moving to the position of the petal anticlockwise before it.
 
 {% highlight css %}
 .petals li{
@@ -149,7 +150,7 @@ _Animating wooo_
 
 We use [Modernizr](http://modernizr.com/) for feature detection as this logo relies on the `border-radius`, `transform` and `@font-face` properties. If the browser supports these we remove the image classes and inject the markup and CSS as described above.
 
-Also we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 and older don't support multiple backgrounds](http://caniuse.com/#feat=multibackgrounds) so we can force it to use the PNG version.
+Also we can fallback from SVG to PNG with this nice hack. :zap: [Internet Explorer 8 and older don't support multiple backgrounds](http://caniuse.com/#feat=multibackgrounds) so we can force it to use the PNG version.
 
 {% highlight css %}
 .logo-img{
@@ -159,13 +160,11 @@ Also we can fallback from SVG to PNG with this nice hack. [Internet Explorer 8 a
 {% endhighlight %}
 _The default logo with PNG fallback_
 
-Changing the logo to the dynamic logo based on the browser's features is an attempt to make this progressively ehanceto ensure we can allow accessibility for users with screen readers.
-
 ## Using SASS for More Control
 
-All this is using numbers by hand ([magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/)), which is not ideal. If we want to make this even more flexible and give us control of the size of the logo and it's behaviour we can use [SASS](http://sass-lang.com/), a pre-processor for CSS.
+All this is using numbers by hand ([magic numbers](http://csswizardry.com/2012/11/code-smells-in-css/)), which is not ideal. If we want to make this even more flexible and give us control of the size of the logo and it's behaviour we could use [SASS](http://sass-lang.com/), a pre-processor for CSS.
 
-I'm looking to move towards that, my current efforts ended up with sub-pixel placement which created a lot of blurring. _I'll update here with the SASS if/when I do this._
+I'm looking to move towards generating the animation algorithimcally, my current efforts ended up with sub-pixel placement which created a lot of blurring. _I'll update here with the SASS if/when this appears._
 
 
 ## Does this Replace Static Logos?
