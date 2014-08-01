@@ -15,10 +15,6 @@
 	padding: .25em;
 	width: (100% / 3);
 
-	@media (max-width: $screen-m){
-		width: 100%;
-	}
-
 	&:nth-child(1),
 	&:nth-child(3n+1):last-child{
 		width:  100%;
@@ -28,7 +24,11 @@
 	&:nth-child(3n+1):nth-last-child(2),
 	&:nth-child(3n+1):nth-last-child(2) + &{
 		width: 50%;
+
+		@media (max-width: $screen-m){ width: 100%;	}
 	}
+
+	@media (max-width: $screen-m){ width: 100%;	}
 
 }
 

@@ -24,7 +24,7 @@ nav li a{
 	overflow: hidden;
 	z-index: 100;
 	position: fixed;
-	top: 0; right: .75em; bottom: 0; left: .75em;
+	top: 4rem; right: .75em; bottom: 0; left: .75em;
 	
 	transition: opacity .25s, transform .25s;
 	background: transparentize($red, .1);
@@ -58,6 +58,7 @@ nav li a{
 }
 
 @media screen and (max-width: $screen-m){
+
 
 	header nav li a{
 		padding: 2em 0;
