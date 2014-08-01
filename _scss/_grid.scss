@@ -1,0 +1,24 @@
+/* _grid.scss */
+
+.row{ overflow: hidden; }
+
+.col{
+	float: left;
+	padding: 0 .5em;
+
+	@media (max-width: $screen-m){
+		width: 100%;
+	}
+}
+
+.col:first-child{ padding-left: 0; }
+.col:last-child{ padding-right: 0; }
+
+$gridAmount: 12;
+
+@for $i from 1 through $gridAmount{
+	.col-#{$i}{
+		@extend .col;
+		width: (100% / $gridAmount) * $i;
+	}
+}

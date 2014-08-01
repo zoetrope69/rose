@@ -7,7 +7,7 @@ title: Blog · ROSE Digital ✿
 
 	<section class="page page-desc">
 	<div class="wrapper">
-	
+
 		<h1>Blog</h1>
 	
 		<p>Mostly you'll find posts on how we work, hot tips for the web and other assorted office goings on.</p>
@@ -23,12 +23,12 @@ title: Blog · ROSE Digital ✿
 		
 		<div class="top">
 			
+			<h1 class="title">{{ post.post_title }}</h1>
+
 			<h2 class="meta">
 				<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%d-%m-%Y" }}</time>
 				<small> by {{ author.display_name }}</small>
-			</h2>
-			
-			<h1 class="title">{{ post.post_title }}</h1>
+			</h2>			
 			
 		</div>
 
