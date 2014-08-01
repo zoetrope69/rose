@@ -17,44 +17,34 @@
 	background: darken($white, 5%);
 }
 
-.blog-posts .post .top{
+.blog-posts .post{
+	overflow: hidden;
 	border-bottom: 2px solid darken($white, 5%);
 }
 
-.blog-posts .post .top .title{
+.blog-posts .post:last-child{
+	border: none;
+}
+
+.blog-posts .post .title{
+	float: right;
+	width: 70%;
 	margin: 0 0 .05em;
 
+	font-size: 2em;
 	line-height: .85em;
+	text-align: right;
 }
 
-.blog-posts .post .top .meta{
-	margin: .25em 0;
+.blog-posts .post .meta{
+	float: left;
+	width: 30%;
+	margin: .5em 0;
 
-	font-size: 1.5em;
+	font-size: 1em;
 	font-style: normal;
+	font-family: $sans-serif; 
 	color: lighten($black, 50%);
-}
-
-.blog-posts .post .excerpt{
-	position: relative;
-	padding: .5em 0;
-
-	font-size: 1.25em;
-}
-
-.blog-posts .post .excerpt::after{
-	position: absolute;
-	bottom: 0;
-	display: block;
-	content: '';
-	height: 50%;
-	width: 100%;
-
-	background-image: linear-gradient(to top, $white, transparentize($white, 1));
-}
-
-.blog-posts .post:hover .excerpt::after{
-	background-image: linear-gradient(to top, darken($white, 5%), transparentize(darken($white, 5%), 1));
 }
 
 .pagination{
