@@ -26,6 +26,7 @@
 	float: left;
 
 	font-size: 1.5em;
+	font-family: $sans-serif;
 	font-style: normal;
 	color: $red;
 }
@@ -48,10 +49,11 @@
 .post h1, .post h2,
 .post h3, .post h4,
 .post h5, .post h6{
+	clear: both;
 	margin: 1em 0 .5em;
 }
 
-.blog .post .wrapper > p:first-child{
+.blog .post article p:first-child{
 	line-height: 1.5;
 	font-weight: 400;
 	font-size: 1.5em;
@@ -79,7 +81,7 @@
 	background-size: 0;
 }
 
-.blog .post .wrapper > p:first-child a{
+.blog .post article p:first-child a{
 	color: darken($white, 50%);
 
 	background-image: linear-gradient(to bottom, #fff 50%, lighten(darken($white, 50%), 33.33%) 50%);
@@ -95,8 +97,7 @@
 	margin-bottom: .5em;
 
 	list-style: none;
-	font-size: 1.25rem;
-	font-family: $serif;
+	font-size: 1.25em;
 	font-weight: 400;
 	color: lighten($black, 15%);
 }
@@ -133,12 +134,12 @@
 
 .blog .post .img-left{
 	float: left;
-	margin-right: 1em;
+	margin: .25em 1em .25em 5px;
 }
 
 .blog .post .img-right{
 	float: right;
-	margin-left: 1em;
+	margin: .25em 5px .25em 1em;
 }
 
 .blog .post .img-left,
@@ -150,6 +151,14 @@
 		margin: 0 auto;
 		max-width: 100%;
 	}
+}
+
+.blog .post .img-round{
+	border-radius: 50%;
+}
+
+.blog .post .img-screen{
+	border: 2px dashed transparentize($black, .85);
 }
 
 .blog .notes{

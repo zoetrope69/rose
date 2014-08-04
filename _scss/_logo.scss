@@ -3,7 +3,7 @@
 .logo{
 	display: inline-block;
 
-	font-family: Quicksand;
+	font-family: Quicksand, sans-serif;
 	font-weight: 400;
 	font-size: 2.5rem;
 
@@ -37,7 +37,8 @@
 
 	text-indent: -9999px;
 	
-	background: no-repeat 10px center;
+	background-repeat: no-repeat;
+	background-position: 10px center;
 	background-size: auto 100%;
 }
 
@@ -56,58 +57,6 @@
 	background-image: url('../../img/logo/white.svg'), none;
 }
 
-.logo .petals{
-	position: relative;
-	display: inline-block;
-	width: 2.25rem;
-	height: 2rem;
-}
-
-// each petal is absolute positioned so they're over each other
-.logo .petals li{
-	position: absolute;
-	height: 1.7rem;
-	width: 1.7rem;
-	line-height: .5rem;
-
-	border: 2px solid $red;
-	border-radius: 50%;
-
-	transform: translate(0%, 0%);
-	animation: .5s .5s 2 alternate ease-in-out;
-}
-
-// black & white variants
-.logo-black .petals li{	border-color: $black; }
-.logo-white .petals li{	border-color: $white; }
-
-// then there each petal is handled by nth-child and move to it's position
-
-.logo .petals li:nth-child(1){
-	animation-name: petal-one;
-	transform: translate(.5rem, .00001rem); // .00001 because of a IE1-/11 bug
-}
-
-.logo .petals li:nth-child(2){
-	animation-name: petal-two;
-	transform: translate(0%, .25rem);
-}
-
-.logo .petals li:nth-child(3){
-	animation-name: petal-three;
-	transform: translate(.5rem, .5rem);
-}
-
-// each petal has a respective animation
-
-@keyframes petal-one{
-	100%{ transform: translate(0%, .25rem); }
-}
-
-@keyframes petal-two{
-	100%{ transform: translate(.5rem, .5rem); }
-}
-
-@keyframes petal-three{
-	100%{ transform: translate(.5rem, 0%); }
+@media (max-width: $screen-s){
+	.logo-img{ background-size: auto 90%; }
 }

@@ -1,14 +1,11 @@
 $(document).ready(function(){
 
-	logoInit();
-
 	initMenuButton();
 
 	sectionResize();
-	elementResize();
 
 	$(window).on('debouncedresize', function(){
-		elementResize();
+		sectionResize();
 	});
 
 	readingTime();

@@ -1,0 +1,149 @@
+/* _work.scss */
+
+.work{
+	width: 70%;
+	margin: 0 auto;
+
+	@media(max-width: $screen-l){ width:  80%; }
+	@media(max-width: $screen-m){ width:  90%; }
+	@media(max-width: $screen-s){ width: 100%; }
+}
+
+.work-item{
+	overflow: hidden;
+	float: left;
+	padding: .25em;
+	width: (100% / 3);
+
+	&:nth-child(1),
+	&:nth-child(3n+1):last-child{
+		width:  100%;
+	}
+
+	&:nth-child(2), &:nth-child(3),
+	&:nth-child(3n+1):nth-last-child(2),
+	&:nth-child(3n+1):nth-last-child(2) + &{
+		width: 50%;
+
+		@media (max-width: $screen-m){ width: 100%;	}
+	}
+
+	@media (max-width: $screen-m){ width: 100%;	}
+
+}
+
+.blog-work h4,
+.work-item a{
+	display: block;
+	padding: 1.5em 0;
+	
+	text-align: center;
+	color: inherit;
+	font-size: 1.5em;
+	font-weight: 500;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	border-radius: 2px;
+}
+
+.UPGS{
+	text-indent: -9999px;
+	
+	color: #111;
+	
+	background-color: #f1f1f1;
+	background-image: url('../img/work/upgs.png');
+	background-image: url('../img/work/upgs.svg'), none;
+}
+
+.dandy{
+	text-indent: -9999px;
+	
+	color: #383838;
+
+	background-color: #FFD0F6;
+	background-image: url('../img/work/dandydomains.png');
+}
+
+.uopcs{
+	text-indent: -9999px;
+
+	color: $white;
+
+	background-color: #6DA46D;
+	background-image: url('http://uopcs.com/img/circuit.svg'), url('../img/work/uopcs.png');
+	background-repeat: repeat, no-repeat;
+}
+
+.tedx{
+	text-indent: -9999px;
+
+	color: #ee2922;
+
+	background-color: #111;
+	background-image: url('../img/work/tedx.png');
+}
+
+.UPRacing{
+	text-indent: -9999px;
+
+	color: #FFF;
+
+	background-color: #57215E;
+	background-image: url('../img/work/upracing.png');
+	background-image: url('../img/work/upracing.svg'), none;
+}
+
+.blog-work{
+    padding: 1em;
+    overflow: hidden;
+
+    font-size: 1em;
+
+    background: darken($white, 5%);
+}
+
+.blog-work h4{
+	margin: 0;
+	float: left;
+	width: 35%;
+
+	@media (max-width: $screen-m){
+		width: 100%;
+	}
+}
+
+.blog-work ul{
+	margin: .5em 0;
+	float: left;
+	width: 65%;
+
+	font-size: .75em;
+
+	@media (max-width: $screen-m){
+		padding: 0;
+		margin-top: 1.5em;
+		width: 100%;
+	}
+}
+
+.blog .post .blog-work ul li{
+
+	@media (max-width: $screen-m){
+		padding: 0;
+		margin-left: 0;
+	}
+}
+
+.blog .post .blog-work ul li a{
+	color: inherit;
+
+	background-image: linear-gradient(to bottom, #fff 50%, lighten($black, 50%) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 1.2em;
+}
+
+.blog .post .blog-work ul li::before{ content: ''; }

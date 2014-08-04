@@ -1,0 +1,58 @@
+---
+layout: post
+title:  'oing a website with ubracin or sommin - Blog · ROSE Digital ✏'
+post_title: 'UPRacing'
+date:   2014-04-16 14:12:09
+author: zac
+categories: work
+work_title: UPRacing
+---
+
+Two years ago the UPRacing team decided on a full revamp of the team’s branding. We worked with the team on their [new website](http://upracing.co.uk). Competing in [Formula Student](www.formulastudent.com) events, the team wanted somewhere to showcase their cars, events and give updates to other teams and partners.
+
+<div class="blog-work">
+	<h4 class="UPRacing">UPRacing</h4>
+	<ul>
+		<li>Development: ROSE Digital, <a href="http://benstaker.com/">Ben Staker</a></li>
+		<li>Design: <a href="http://magicalizard.co.uk/">Matt Jackson</a>, ROSE Digital (Responsive)</li>
+		<li>Branding: <a href="http://dangordondesign.com/">Dan Gordon</a></li>
+	</ul>
+</div>
+
+## Displaying the Events
+
+Thinking of ways to visualise data is always good fun! :smile_cat:
+
+I designed the events page to allow for comparing between events at a glance. Each sub-event is colour coded to a key. The amount the bar is filled represents how well the car did in the event overall.
+
+[<img class="img-left img-screen" src="/assets/upracing-events.gif" alt="Events information visualisation">](http://upracing.co.uk/events)
+
+When clicking more a table with a break down of the the information listing slides into view. The sub event name, the result and where that puts the team amongst the other teams can been seen here.
+
+These visualisations are generated dynamically from a database making it easy to add more events in the future.
+
+## Thinking Responsively
+
+<img class="img-right img-screen" src="/assets/upracing-mobile.jpg" alt="The UPRacing website at a mobile screen size">
+
+Making websites an enjoyable experience across screen sizes was important for this site. At events _potential_ partners and sponsors would be browsing on their mobile phones.
+
+A lot of content needed to be reordered. The navigation for example had to be reworked, I went for a checkered flag :checkered_flag: inspired navigation listing.
+
+For the content on the site, specifically the blog, I tweaked the text for a better reading experience and made sure the images and videos scaled appropriately.
+
+## Mapping
+
+Teams come from all around the world for [Formula Student](www.formulastudent.com) events. :earth_americas: We had a map at the bottom of the page to give context to where we were based, when clicking to 'Silverstone' or 'Circuit De Catalunya' you're whisked away to that location giving a real sense of how far the team travels.
+
+<img class="img-screen" src="/assets/upracing-map.jpg" alt="The UPRacing website's map">
+
+I implemented the maps using map data from [Open Street Maps](http://www.openstreetmap.org/) and [Leaflet.js](http://leafletjs.com/) which is great alternative to Google Maps.
+
+* * *
+
+You can see the site live here: [upracing.co.uk](http://upracing.co.uk) :link:
+
+
+
+

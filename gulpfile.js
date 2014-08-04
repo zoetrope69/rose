@@ -25,6 +25,15 @@ gulp.task('jekyll-build', function (done) {
 });
 
 /**
+ * build the Jekyll site (without drafts)
+ */
+gulp.task('jekyll-build-deploy', function (done) {
+	browserSync.notify(messages.jekyllBuild);
+	return cp.spawn('jekyll', ['serve'], { stdio: 'inherit' })
+		.on('close', done);
+});
+
+/**
  * rebuild jekyll & do page reload
  */
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
@@ -97,3 +106,4 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('deploy', ['scripts', 'sass', 'jekyll-build-deploy']);

@@ -1,60 +1,71 @@
 /* _blog-posts.scss */
 
-.blog-posts .post{
+.blog-posts .blog-post{
 	display: block;
 	overflow: hidden;
 	padding: 1em;
-	width: 50%;
+	width: 70%;
 	margin: 0 auto;
 
-	@media (max-width: $screen-xl){ width: 70%; }
-	@media (max-width: $screen-l){ width: 80%; }
-	@media (max-width: $screen-m){ width: 90%; }
-	@media (max-width: $screen-s){ width: 100%; }
+	@media (max-width: $screen-xl){ width: 80%; }
+	@media (max-width: $screen-l){ width: 90%; }
+	@media (max-width: $screen-m){ width: 100%; }
 }
 
-.blog-posts .post:hover{
+.blog-posts .blog-post:hover{
 	background: darken($white, 5%);
 }
 
-.blog-posts .post .top{
+.blog-posts .blog-post{
+	overflow: hidden;
 	border-bottom: 2px solid darken($white, 5%);
 }
 
-.blog-posts .post .top .title{
-	margin: 0 0 .05em;
-
-	line-height: .85em;
+.blog-posts .blog-post:last-child{
+	border: none;
 }
 
-.blog-posts .post .top .meta{
+.blog-posts .blog-post .title{
+	float: left;
+	width: 60%;
+	margin: 0;
+	padding: 0 .25em;
+
+	font-size: 2em;
+	@media (max-width: $screen-s){ width: 70%; }
+}
+
+.blog-posts .blog-post .meta{
+	float: left;
+	width: 30%;
+	margin: .5em 0;
+	padding: 0 1em;
+
+	font-size: 1em;
+	font-style: normal;
+	font-family: $sans-serif; 
+	color: lighten($black, 50%);
+	text-align: right;
+}
+
+.blog-posts .blog-post .category{
+	float: left;
+	width: 10%;
+	padding: .75em;
 	margin: .25em 0;
 
-	font-size: 1.5em;
-	color: lighten($black, 50%);
+	color: transparentize($black, .35);
+	font-size: .6em;
+	text-align: center;
+	text-transform: uppercase;
+	
+	border-radius: 2px;
+
+	@media (max-width: $screen-s){ display: none; }
 }
 
-.blog-posts .post .excerpt{
-	position: relative;
-	padding: .5em 0;
-
-	font-size: 1.25em;
-}
-
-.blog-posts .post .excerpt::after{
-	position: absolute;
-	bottom: 0;
-	display: block;
-	content: '';
-	height: 50%;
-	width: 100%;
-
-	background-image: linear-gradient(to top, $white, transparentize($white, 1));
-}
-
-.blog-posts .post:hover .excerpt::after{
-	background-image: linear-gradient(to top, darken($white, 5%), transparentize(darken($white, 5%), 1));
-}
+.blog-posts .blog-post .category-blog{ visibility: hidden; }
+.blog-posts .blog-post .category-work{ background-color: $light-green; }
 
 .pagination{
 	width: 70%;
