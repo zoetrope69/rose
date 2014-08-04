@@ -5,11 +5,15 @@
 	margin: 0;
 	display: block;
 
-	font-size: 5em;
+	font-size: 10em;
 	line-height: 1em;
 	text-align: center;
 
 	animation: none;
+}
+
+.example-logo .example-petals{
+	display: inline-block;
 }
 
 .example-petal{

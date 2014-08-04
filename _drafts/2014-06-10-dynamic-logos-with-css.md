@@ -36,7 +36,21 @@ Each `li` is a ring (or petal) and then can be selected with CSS using `nth-chil
 
 There's a few parts to creating the logo in CSS.
 
-The typeface in our logo is called Quicksand, this happens to be available through [Google Fonts as a web-font](http://www.google.com/fonts#UsePlace:use/Collection:Quicksand). This is simple, we just set the size and weight of the text. We do use `user-select: none;` to stop the user from being able to select the text.
+The typeface in our logo is called Quicksand, this happens to be available through [Google Fonts as a web-font](http://www.google.com/fonts#UsePlace:use/Collection:Quicksand). This is simple, we just set the size and weight of the text. You can use `user-select: none;` to stop the user from being able to select the text.
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Quicksand::latin&text=ROSE' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 
 <!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
 <div class="code-result">		<div class="example-logo">ROSE</div>		</div>
@@ -146,9 +160,16 @@ Now we have the initial placement we can animate them to create the spin effect,
 <div class="code-result">		<div class="example-petals">	<div class="example-petal--3-1"></div>	<div class="example-petal--3-2"></div>	<div class="example-petal--3-3"></div>	</div>		</div>
 _Animating wooo_
 
+### Final product
+
+And here's it all together:
+
+<!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
+<div class="code-result">		<div class="example-logo">R<div class="example-petals">	<div class="example-petal--3-1"></div>	<div class="example-petal--3-2"></div>	<div class="example-petal--3-3"></div>	</div>SE</div>		</div>
+
 ## Fallbacks
 
-We use [Modernizr](http://modernizr.com/) for feature detection as this logo relies on the `border-radius`, `transform` and `@font-face` properties. If the browser supports these we remove the image classes and inject the markup and CSS as described above.
+You can use [Modernizr](http://modernizr.com/) for feature detection as this logo relies on the `border-radius`, `transform` and `@font-face` properties. If the browser supports these we remove the image classes and inject the markup and CSS as described above.
 
 Also we can fallback from SVG to PNG with this nice hack. :zap: [Internet Explorer 8 and older don't support multiple backgrounds](http://caniuse.com/#feat=multibackgrounds) so we can force it to use the PNG version.
 
@@ -171,4 +192,4 @@ I'm looking to move towards generating the animation algorithimcally, my current
 
 Depending on usage I think a dynamic logo can be useful to convey some information about a brand's identity but in most cases it will not. Nice extra but not revolutionary.
 
-_I realise this implementation isn't perfect [so please tweet us](http://twitter.com/rosedgtl) if you have any hot tips._ :smirk_cat:
+_I realise this implementation isn't perfect, [tweet us](http://twitter.com/rosedgtl) if you have any hot tips._ :smirk_cat:
