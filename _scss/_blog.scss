@@ -134,14 +134,12 @@
 
 .blog .post .img-left{
 	float: left;
-	margin-right: 1em;
-	margin-left: 5px;
+	margin: .25em 1em .25em 5px;
 }
 
 .blog .post .img-right{
 	float: right;
-	margin-left: 1em;
-	margin-right: 5px;
+	margin: .25em 5px .25em 1em;
 }
 
 .blog .post .img-left,
