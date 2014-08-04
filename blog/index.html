@@ -16,17 +16,20 @@ title: Blog · ROSE Digital ✿
 	</section>
 
 	{% for post in site.posts %}
-	<a href="{{ post.url }}" class="post">
+	<a href="{{ post.url }}" class="blog-post">
 	<div class="wrapper">
 			
 		{% assign author = site.data.authors[post.author] %}
+
+		<p class="category category-{{ post.categories }}">{{ post.categories }}</p>
 			
 		<h1 class="title">{{ post.post_title }}</h1>
 
-		<h2 class="meta">
-			<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%B %d, %Y" }}</time>
+		<div class="meta">
+			<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%d %b, %Y" }}</time>
 			<small>{{ author.display_name }}</small>
-		</h2>
+		</div>
+
 	</div>
 	</a>
 	{% endfor %}

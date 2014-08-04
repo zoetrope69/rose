@@ -109,6 +109,10 @@
 	margin: 0;
 	float: left;
 	width: 35%;
+
+	@media (max-width: $screen-m){
+		width: 100%;
+	}
 }
 
 .blog-work ul{
@@ -117,8 +121,29 @@
 	width: 65%;
 
 	font-size: .75em;
+
+	@media (max-width: $screen-m){
+		padding: 0;
+		margin-top: 1.5em;
+		width: 100%;
+	}
 }
 
-.blog-work ul li::before{ content: ''; }
+.blog .post .blog-work ul li{
 
-.blog-work ul li a{ color: inherit; }
+	@media (max-width: $screen-m){
+		padding: 0;
+		margin-left: 0;
+	}
+}
+
+.blog .post .blog-work ul li a{
+	color: inherit;
+
+	background-image: linear-gradient(to bottom, #fff 50%, lighten($black, 50%) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 1.2em;
+}
+
+.blog .post .blog-work ul li::before{ content: ''; }
