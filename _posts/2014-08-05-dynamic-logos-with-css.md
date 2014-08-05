@@ -2,7 +2,7 @@
 layout: post
 title:  'Dynamic Logos with CSS - Blog · ROSE Digital ✏'
 post_title: 'Dynamic Logos with CSS'
-date:   2014-08-06 18:00:00
+date:   2014-08-05 16:32:05
 author: zac
 categories: blog
 ---
