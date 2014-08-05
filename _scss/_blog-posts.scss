@@ -50,7 +50,7 @@
 }
 
 .blog-posts .blog-post .category-blog{ visibility: hidden; }
-.blog-posts .blog-post .category-work{ background-color: $light-green; }
+.blog-posts .blog-post .category-work{ background-color: lighten($green, 25%); }
 
 .pagination{
 	width: 70%;
