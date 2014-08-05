@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  'Working with UPGS - Blog · ROSE Digital ✏'
-post_title: 'Working with UPGS'
+title:  'UPGS - Blog · ROSE Digital ✏'
+post_title: 'UPGS'
 date:   2014-08-04 14:12:09
 author: zac
 categories: work
