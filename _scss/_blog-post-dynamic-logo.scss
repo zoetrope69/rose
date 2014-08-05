@@ -33,6 +33,7 @@ $petalSize: 100px;
 	height: $petalSize * 1.3;
 	width: $petalSize * 1.3;
 	margin: 0 auto;
+	transform: translateY(0);
 }
 
 @for $i from 1 through 3{
@@ -73,7 +74,7 @@ $petalSize: 100px;
 
 .example-petal--3-1{
 	animation-name: example-petal--3-1;
-	transform: translate($petalSize / 3, .000001px); // .00001 because of a IE1-/11 bug
+	transform: translate($petalSize / 3, 0);
 }
 
 .example-petal--3-2{

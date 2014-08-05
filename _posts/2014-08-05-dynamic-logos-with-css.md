@@ -51,7 +51,7 @@ Each petal is moved into position using `transform: translate(x, y);`. They say 
 
 {% highlight css %}
 .petals li:nth-child(1){
-	transform: translate(33.33px, .00001px);
+	transform: translate(33.33px, 0px);
 }
 
 .petals li:nth-child(2){
@@ -66,8 +66,6 @@ Each petal is moved into position using `transform: translate(x, y);`. They say 
 <!-- We're using Jekyll and HTML doesn't render very well amongst Markdown hence the unusual classes -->
 <div class="code-result">		<div class="example-petals">	<div class="example-petal--2-1"></div>	<div class="example-petal--2-2"></div>	<div class="example-petal--2-3"></div>	</div>		</div>
 <em class="caption">Now there's three, wow. :tada:</em>
-
-You may notice the .00001, rather than 0. This is because of a bug in IE10/IE11, which causes the element to jump about when animating from 0. _If you know why, please tell me..._ :warning:
 
 ## Animating the Petals
 
