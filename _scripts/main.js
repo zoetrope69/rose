@@ -2,11 +2,7 @@ $(document).ready(function(){
 
 	initMenuButton();
 
-	sectionResize();
-
-	$(window).on('debouncedresize', function(){
-		sectionResize();
-	});
+	projectPlannerForm();
 
 	readingTime();
 	
@@ -19,7 +15,6 @@ function projectPlannerForm(){
 	if($('.project-planner')){
 
 		$('.project-planner__input').blur(function(e){
-			console.log("test");
 			$(this).addClass('project-planner__input--dirty');
 		});
 
