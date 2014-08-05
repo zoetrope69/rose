@@ -32,5 +32,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt repudiandae t
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fuga totam libero accusamus. Numquam autem omnis exercitationem earum praesentium maxime, possimus a. Dicta impedit rerum dolorum enim, numquam vero esse.
 
 <img class="img-screen" src="/assets/upgs/upgs-screen-desktop.png" alt="Screenshot of the UPGS website at a typical desktop screen size">
-
-:link: [thegamingsociety.co.uk](http://thegamingsociety.co.uk)

@@ -1,10 +1,18 @@
 <form method="post" id="project-planner" class="project-planner">
 
-	<h1>Project planner</h1>
+	<h1>Project Planner</h1>
 
-	<label for="client-name">What is your name? <span class="required">*</span></label>
+	<h2>Who are you?</h2>
+
+	<label for="client-name">What's your name? <span class="required">*</span></label>
 	<input class="project-planner__input" type="text" name="client-name" id="client-name"
-		   placeholder="Full name" required autocomplete="name" />
+		   placeholder="Name" required autocomplete="given-name" />
+
+   <label for="client-organisation">What company?</label>
+	<input class="project-planner__input" type="text" name="client-organisation" id="client-organisation"
+		   placeholder="Name" autocomplete="organization" />
+
+	<h2>Your deetz</h2>
 
 	<label for="client-email">What's your email? <span class="required">*</span></label>
 	<input class="project-planner__input" type="email" name="client-email" id="client-email"
@@ -14,11 +22,21 @@
 	<input class="project-planner__input" type="tel" name="client-phone" id="client-phone"
 		   placeholder="+1-555-555-1212" autocomplete="tel" />
 
+	<h2>Yo ideas.</h2>
+
+	<label for="project-budget">Cash dollar y'all</label>
+	<select class="project-planner__input" name="project-budget" id="project-budget">
+		<option>&lt; £1k</option>
+		<option selected>£1 – £10k</option>
+		<option>£10 – £50k</option>
+		<option>£50k +</option>
+	</select>
+
 	<label for="project-desc">Project Description <span class="required">*</span></label>
 	<textarea class="project-planner__input" name="project-desc" id="project-desc"
 			  placeholder="Tell us a bit about your project" required rows="5"></textarea>
 
-	<button class="project-planner__submit" type="submit">Send</button>
+	<button class="project-planner__submit" type="submit">Send off this info!</button>
 
 	<p class="required">* We need this! :¬)</p>
 	

@@ -1,18 +1,26 @@
 /* _project-planner.scss */
 
+.page-content .page-desc,
 .project-planner{
-	overflow: hidden;
-	width: 70%;
-	margin: 0 auto;
-	padding: 3em 0;
+	float: left;
+	width: 50%;
 
-	@media (max-width: $screen-xl){ width: 80%; }
-	@media (max-width: $screen-l){      width: 90%; }
-	@media (max-width: $screen-m){     width: 100%; }
+	@media (max-width: $screen-m){ width: 100%; }
 }
 
-.project-planner h1{
-	text-align: center;
+.page-content .page-desc{
+	padding-right: 1.5em;
+	
+	@media (max-width: $screen-m){ padding-right: 0; }
+}
+
+.project-planner{
+	overflow: hidden;
+	margin-top: 3.5em;
+	padding-left: 1.5em;
+	border-left: 2px solid darken($white, 5%);
+
+	@media (max-width: $screen-m){ padding-left: 0; }
 }
 
 .project-planner .required{
@@ -68,7 +76,6 @@
 	background-color: transparent;
 	
 	border: 2px solid $green;
-	border-radius: 4px;
 
 	transition: background-color .25s, color .25s;
 }
