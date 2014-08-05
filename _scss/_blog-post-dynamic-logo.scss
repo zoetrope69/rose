@@ -51,15 +51,15 @@ $petalSize: 100px;
 }
 
 @keyframes example-petal-2-1{
-	100%{ transform: translate($petalSize / 3, 0); }
+	to{ transform: translate(33.33%, 0); }
 }
 
 @keyframes example-petal-2-2{
-	100%{ transform: translate(0, $petalSize / 6); }
+	to{ transform: translate(0, 16.66%); }
 }
 
 @keyframes example-petal-2-3{
-	100%{ transform: translate($petalSize / 3, $petalSize / 3); }
+	to{ transform: translate(33.33%, 33.33%); }
 }
 
 .example-petal--3-1,
@@ -74,27 +74,27 @@ $petalSize: 100px;
 
 .example-petal--3-1{
 	animation-name: example-petal--3-1;
-	transform: translate($petalSize / 3, 0);
+	transform: translate(33.33%, 0);
 }
 
 .example-petal--3-2{
 	animation-name: example-petals--3-2;
-	transform: translate(0%, $petalSize / 6);
+	transform: translate(0%, 16.66%);
 }
 
 .example-petal--3-3{
 	animation-name: example-petals--3-3;
-	transform: translate($petalSize / 3, $petalSize / 3);
+	transform: translate(33.33%, 33.33%);
 }
 
 @keyframes example-petal--3-1{
-	100%{ transform: translate(0%, $petalSize / 6); }
+	to{ transform: translate(0%, 16.66%); }
 }
 
 @keyframes example-petals--3-2{
-	100%{ transform: translate($petalSize / 3, $petalSize / 3); }
+	to{ transform: translate(33.33%, 33.33%); }
 }
 
 @keyframes example-petals--3-3{
-	100%{ transform: translate($petalSize / 3, 0%); }
+	to{ transform: translate(33.33%, 0%); }
 }
