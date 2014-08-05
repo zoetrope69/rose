@@ -42,6 +42,8 @@
 	margin: .25em 0;
 
 	color: transparentize($black, .35);
+	border: 1px solid;
+	border-radius: 2px;
 	font-size: .6em;
 	text-align: center;
 	text-transform: uppercase;
@@ -50,7 +52,7 @@
 }
 
 .blog-posts .blog-post .category-blog{ visibility: hidden; }
-.blog-posts .blog-post .category-work{ background-color: lighten($green, 25%); }
+.blog-posts .blog-post .category-work{ color: $green; }
 
 .pagination{
 	width: 70%;
