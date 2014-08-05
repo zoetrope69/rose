@@ -213,21 +213,3 @@
 
 	@media (max-width: $screen-m){ width: 100%; }
 }
-
-.interest{
-	display: block;
-	width: 100%;
-	padding: .5em;
-
-	color: desaturate($red, 10%);
-	font-size: 2em;
-	font-family: $serif;
-	text-align: center;
-
-	transition: color .5s ease-in, transform .5s, ease-in;
-}
-
-.interest:hover{
-	color: $red;
-	transform: translateY(-3px);
-}

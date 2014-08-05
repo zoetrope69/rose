@@ -36,6 +36,8 @@ main{
 
 .page .page-desc{
 	width: 50%;
+
+	@media(max-width: $screen-m){ width: 100%; }
 }
 
 .page-desc h1,
@@ -95,6 +97,24 @@ main .btn:active{
 	max-height: 28px;
 	margin: 0;
 	margin-bottom: -.25em;
+}
+
+.interest{
+	display: block;
+	width: 100%;
+	padding: .5em;
+
+	color: desaturate($red, 10%);
+	font-size: 2em;
+	font-family: $serif;
+	text-align: center;
+
+	transition: color .5s ease-in, transform .5s, ease-in;
+}
+
+.interest:hover{
+	color: $red;
+	transform: translateY(-3px);
 }
 
 @import 'error';

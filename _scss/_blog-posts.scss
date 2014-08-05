@@ -3,21 +3,15 @@
 .blog-posts .blog-post{
 	display: block;
 	overflow: hidden;
-	padding: 1em 0;
+	padding: 1em;
+	border-bottom: 2px solid darken($white, 5%);
 }
+.blog-posts .blog-post:last-child{ border: none; }
 
 .blog-posts .blog-post:hover{
 	background: darken($white, 5%);
 }
 
-.blog-posts .blog-post{
-	overflow: hidden;
-	border-bottom: 2px solid darken($white, 5%);
-}
-
-.blog-posts .blog-post:last-child{
-	border: none;
-}
 
 .blog-posts .blog-post .title{
 	float: left;
