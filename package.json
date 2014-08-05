@@ -1,6 +1,13 @@
 {
   "name": "rose",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zaccolley/rose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaccolley/rose/issues"
+  },
   "devDependencies": {
     "browser-sync": "~0.9.1",
     "gulp": "~3.8.0",
