@@ -1,5 +1,11 @@
 /* _work.scss */
 
+.work{
+	width: 80%;
+
+	@media (max-width: $screen-m){ width: 100%;	}
+}
+
 .work-item{
 	overflow: hidden;
 	float: left;
@@ -84,8 +90,9 @@
 }
 
 .blog-work{
-    padding: 1em;
     overflow: hidden;
+    padding: 1em;
+    margin-bottom: 1em;
 
     font-size: 1em;
 
