@@ -6,13 +6,9 @@
 
 .blog .top{
 	overflow: hidden;
-	padding: 1.5em 2.5em;
+	padding: 1.5em 0;
 	
 	background: $black;
-
-	@media (max-width: $screen-m){
-		padding: 1em;
-	}
 }
 
 .blog .top .title{
@@ -24,6 +20,7 @@
 
 .blog .top .meta{
 	float: left;
+	width: 75%;
 
 	font-size: 1.5em;
 	font-family: $sans-serif;
@@ -36,9 +33,12 @@
 }
 
 .blog .top small{
-	font-size: 1em;
+	width: 25%;
 	float: right;
+	
+	font-size: 1.25em;
 	color: darken($white, 10%);
+	text-align: right;
 }
 
 .blog .post{
@@ -148,7 +148,7 @@
 
 	@media (max-width: $screen-s){
 		float: none;
-		margin: 0 auto;
+		margin: 0 auto 1em;
 		max-width: 100%;
 	}
 }
@@ -171,6 +171,8 @@
 .blog .notes .author{
 	float: left;
 	width: 40%;
+
+	@media (max-width: $screen-m){ width: 100%; }
 }
 
 .blog .notes h1{
@@ -187,15 +189,8 @@
 
 	font-size: 1.15em;
 	color: lighten($black, 5%);
-}
 
-@media (max-width: $screen-m){
-
-	.blog .notes .author,
-	.blog .notes p{
-		width: 100%;
-	}
-
+	@media (max-width: $screen-m){ width: 100%; }
 }
 
 .interest{

@@ -1,6 +1,6 @@
 /* _project-planner.scss */
 
-.page-content .page-desc,
+.page-content .page-idea,
 .project-planner{
 	float: left;
 	width: 50%;
@@ -8,7 +8,7 @@
 	@media (max-width: $screen-m){ width: 100%; }
 }
 
-.page-content .page-desc{
+.page-content .page-idea{
 	padding-right: 1.5em;
 	
 	@media (max-width: $screen-m){ padding-right: 0; }

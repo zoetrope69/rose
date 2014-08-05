@@ -3,10 +3,10 @@ layout: default
 title: About · ROSE Digital ✿
 ---
 
-<main>
+<main class="page page-about">
+<div class="wrapper">
 	
-	<section class="page page-desc">
-	<div class="wrapper">
+	<section class="page-desc">
 		
 		<h1>About</h1>
 
@@ -14,13 +14,10 @@ title: About · ROSE Digital ✿
 
 		<p>Working with us means you're communicating directly with the people designing and building for you. We're flexible and can adapt easily to your ideas and business.</p>
 	
-	</div>
 	</section>
-
 	
 	{% for author in site.data.authors %}{% assign author_details = author[1] %}
 	<section class="team-member" id="{{ author_details.display_name }}">
-	<div class="wrapper">
 
 		<div class="photo">
 			<img src="{{ root_url }}/img/{{ author_details.display_name }}-head.png" alt="Image of {{  author_details.display_name }}">
@@ -52,9 +49,8 @@ title: About · ROSE Digital ✿
 
 		</div>
 
-	</div>
 	</section>
 	{% endfor %}
 
-
+</div>
 </main>

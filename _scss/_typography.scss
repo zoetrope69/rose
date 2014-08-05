@@ -1,5 +1,11 @@
 /*_typography.scss */
 
+main{
+	@media (max-width: $screen-l){ font-size: .9em; }
+	@media (max-width: $screen-m){ font-size: .85em; }
+	@media (max-width: $screen-s){ font-size: .8em; }
+}
+
 main h1, main h2,
 main h3, main h4,
 main h5, main h6,
@@ -15,11 +21,6 @@ main h3{
 	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-main h1,
-main h2{
-	font-style: italic;
 }
 
 main h1{
@@ -80,11 +81,12 @@ main a:hover{
 }
 
 main em{
+	font-weight: 400;
 	font-style: italic;
 }
 
 main strong{
-	font-weight: bold;
+	font-weight: 700;
 }
 
 main hr{
@@ -187,28 +189,4 @@ main sup{
 
 main sub{
 	vertical-align: sub;
-}
-
-@media all and (max-width: $screen-l){
-
-	main{
-		font-size: .9em;
-	}
-
-}
-
-@media all and (max-width: $screen-m){
-
-	main{
-		font-size: .85em;
-	}
-
-}
-
-@media all and (max-width: $screen-s){
-
-	main{
-		font-size: .8em;
-	}
-
 }

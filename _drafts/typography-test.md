@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Typography Testing - Blog · ROSE Digital ✏'
-post_title: 'Typography Testing'
+post_title: '[TEST] Typography Testing'
 date: 2001-01-01 00:00:00
 author: zac
 categories: blog

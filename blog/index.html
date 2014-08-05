@@ -3,25 +3,21 @@ layout: default
 title: Blog · ROSE Digital ✿
 ---
 
-<main class="blog-posts">
+<main class="page blog-posts">
+<div class="wrapper">
 
-	<section class="page page-desc">
-	<div class="wrapper">
+	<section class="page-desc">
 
 		<h1>Blog</h1>
-	
+
 		<p>Mostly you'll find posts on how we work, hot tips for the web and other assorted office goings on.</p>
 	
-	</div>
 	</section>
 
 	{% for post in site.posts %}
 	<a href="{{ post.url }}" class="blog-post">
-	<div class="wrapper">
 			
 		{% assign author = site.data.authors[post.author] %}
-
-		<p class="category category-{{ post.categories }}">{{ post.categories }}</p>
 			
 		<h1 class="title">{{ post.post_title }}</h1>
 
@@ -30,8 +26,10 @@ title: Blog · ROSE Digital ✿
 			<small>{{ author.display_name }}</small>
 		</div>
 
-	</div>
+		<p class="category category-{{ post.categories }}">{{ post.categories }}</p>
+
 	</a>
 	{% endfor %}
 
+</div>
 </main>

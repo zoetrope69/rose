@@ -9,7 +9,7 @@
 }
 
 body{
-	padding: 5rem 1rem 0;
+	padding-top: 5rem;
 	
 	font-family: $sans-serif;
 	font-weight: 400;
@@ -17,17 +17,14 @@ body{
 
 	background: $bg-color;
 	color: $black;
-}
 
-@media (max-width: $screen-m){
-
-	body{ padding: 4rem .75rem 0; }
-
+	@media (max-width: $screen-m){ padding-top: 4rem; }
 }
 
 .wrapper{
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: 0 auto;
+	padding: 0 1.5em;
 }
 
 main{
@@ -37,16 +34,13 @@ main{
 	@include animateIn(fade);
 }
 
-.page-desc{
+.page .page-desc{
 	width: 50%;
-	margin: 0 auto;
-	margin-bottom: 2em;
+}
 
-	text-align: center;
-
-	@media (max-width: $screen-xl){  width: 70%;	}
-	@media (max-width: $screen-l){ 		width: 80%;	}
-	@media (max-width: $screen-m){ 		width: 90%;	}
+.page-desc h1,
+.page-desc p{
+	max-width: 40em;
 }
 
 .page-desc h1{
@@ -55,7 +49,6 @@ main{
 	font-size: 5em;
 	font-style: normal;
 	color: $red;
-	text-align: center;
 }
 
 .page-desc a{

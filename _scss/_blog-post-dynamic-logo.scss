@@ -1,27 +1,25 @@
 /* _blog-post-dynamic-logo.scss */
 
 .example-logo{
-	@extend .logo;
 	margin: 0;
 	display: block;
 
-	font-size: 10em;
+	font-size: 7em;
+	font-weight: 400;
 	line-height: 1em;
 	text-align: center;
 
 	animation: none;
 }
 
-.example-logo .example-petals{
-	display: inline-block;
-}
+$petalSize: 100px;
 
 .example-petal{
 	display: block;
-	height: 100px;
-	width: 100px;
+	height: $petalSize;
+	width: $petalSize;
 	
-	border-width: 7px;
+	border-width: $petalSize * 0.07;
 	border-style: solid;
 	
 	animation: .5s infinite alternate ease-in-out;
@@ -43,49 +41,36 @@
 	}
 }
 
-.example-petal--1:hover,
-.example-petals:hover .example-petal{
-	animation-play-state: paused;
-}
-
 .example-petals{
-	height: 133.33px;
-	width: 133.33px;
+	height: $petalSize * 1.3;
+	width: $petalSize * 1.3;
 	margin: 0 auto;
 }
 
-.example-petal--2-1,
-.example-petal--2-2,
-.example-petal--2-3{
-	@extend .example-petal;
-	position: absolute;
-	
-	border-color: $red;
-	border-radius: 50%;
-}
+@for $i from 1 through 3{
 
-.example-petal--2-1{
-	animation-name: example-petal-2-1;
-}
+	.example-petal--2-#{$i}{
+		@extend .example-petal;
+		position: absolute;
+		
+		border-color: $red;
+		border-radius: 50%;
 
-.example-petal--2-2{
-	animation-name: example-petal-2-2;
-}
+		animation-name: example-petal-2-#{$i};
+	}
 
-.example-petal--2-3{
-	animation-name: example-petal-2-3;
 }
 
 @keyframes example-petal-2-1{
-	100%{ transform: translate(33.33px, 0); }
+	100%{ transform: translate($petalSize / 3, 0); }
 }
 
 @keyframes example-petal-2-2{
-	100%{ transform: translate(0, 16.66px); }
+	100%{ transform: translate(0, $petalSize / 6); }
 }
 
 @keyframes example-petal-2-3{
-	100%{ transform: translate(33.33px, 33.33px); }
+	100%{ transform: translate($petalSize / 3, $petalSize / 3); }
 }
 
 .example-petal--3-1,
@@ -100,27 +85,27 @@
 
 .example-petal--3-1{
 	animation-name: example-petal--3-1;
-	transform: translate(33.33px, .000001rem); // .00001 because of a IE1-/11 bug
+	transform: translate($petalSize / 3, .000001px); // .00001 because of a IE1-/11 bug
 }
 
 .example-petal--3-2{
 	animation-name: example-petals--3-2;
-	transform: translate(0%, 16.66px);
+	transform: translate(0%, $petalSize / 6);
 }
 
 .example-petal--3-3{
 	animation-name: example-petals--3-3;
-	transform: translate(33.33px, 33.33px);
+	transform: translate($petalSize / 3, $petalSize / 3);
 }
 
 @keyframes example-petal--3-1{
-	100%{ transform: translate(0%, 16.66px); }
+	100%{ transform: translate(0%, $petalSize / 6); }
 }
 
 @keyframes example-petals--3-2{
-	100%{ transform: translate(33.33px, 33.33px); }
+	100%{ transform: translate($petalSize / 3, $petalSize / 3); }
 }
 
 @keyframes example-petals--3-3{
-	100%{ transform: translate(33.33px, 0%); }
+	100%{ transform: translate($petalSize / 3, 0%); }
 }

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Emoji Test - Blog · ROSE Digital ✏'
-post_title: 'Emoji Test'
+post_title: '[TEST] Emoji Test'
 date: 2001-01-01 00:00:00
 author: zac
 categories: blog

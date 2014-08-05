@@ -14,7 +14,7 @@
 
 	backface-visibility: hidden; // stops the animation white flash
 	transform-origin: center;
-	@include animateIn(logo);
+	@include animateIn(fade);
 
 	transition: opacity .15s;
 
@@ -38,8 +38,10 @@
 	text-indent: -9999px;
 	
 	background-repeat: no-repeat;
-	background-position: 10px center;
+	background-position: left center;
 	background-size: auto 100%;
+
+	@media (max-width: $screen-s){ background-size: auto 90%; }
 }
 
 .logo-img-default{
@@ -55,8 +57,4 @@
 .logo-img-white{
 	background-image: url('../../img/logo/white.png');
 	background-image: url('../../img/logo/white.svg'), none;
-}
-
-@media (max-width: $screen-s){
-	.logo-img{ background-size: auto 90%; }
 }
