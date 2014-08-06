@@ -24,7 +24,8 @@ nav li a{
 	overflow: hidden;
 	z-index: 100;
 	position: fixed;
-	top: 4rem; right: .75em; bottom: 0; left: .75em;
+	top: 4rem; right: 0;
+	bottom: 0; left: 0;
 	
 	transition: opacity .25s, transform .25s;
 	background: transparentize($red, .1);
@@ -39,9 +40,14 @@ nav li a{
 	transition: opacity .25s, transform .25s .5s;
 }
 
+.small-nav li{
+	float: left;
+	width: 50%;
+}
+
 .small-nav li a{
 	display: block;
-	padding: .75em 1em;
+	padding: 1.25em 1em;
 	
 	font-family: $serif;
 	font-weight: 400;
@@ -55,20 +61,4 @@ nav li a{
 
 .small-nav li a:hover{
 	background: transparentize($white, .9);
-}
-
-@media screen and (max-width: $screen-m){
-
-
-	header nav li a{
-		padding: 2em 0;
-		font-size: .9em;
-	}
-
-}
-
-@media screen and (max-width: $screen-s){
-
-	header nav li{ display: none; }
-	
 }

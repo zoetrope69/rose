@@ -3,36 +3,32 @@ layout: default
 title: Work · ROSE Digital ✿
 ---
 
-<main>
+<main class="page page-work">
+<div class="wrapper">
 
-	<section class="page">
-	<div class="wrapper">
+	<div class="page-desc">
 
-		<div class="page-desc">
+		<h1>Work</h1>
 
-			<h1>Work</h1>
-
-			<p>Here's some of our work:</p>
-
-		</div>
-
-		<ul class="work">
-			{% comment %}
-			<li class="work-item"><a class="tedx" href="http://tedxuniversityofportsmouth.com">TEDxUniversityofPortsmouth</a></li>
-			{% endcomment %}
-			<li class="work-item"><a class="uopcs" href="http://uopcs.com/">UoPCS</a></li>
-
-			{% for post in site.posts %}
-			{% if post.categories contains 'work' %}
-				<li class="work-item"><a class="{{ post.work_title }}" href="{{ post.url }}">{{ post.work_title }}</a></li>
-			{% endif %}
-			{% endfor %}
-
-			<li class="work-item"><a class="dandy" href="http://adandydoma.in">Dandydomains</a></li>
-
-		</ul>
+		<p>Here's a few pieces of our work!</p>
 
 	</div>
-	</section>
 
+	<ul class="work">
+		{% comment %}
+		<li class="work-item"><a class="tedx" href="http://tedxuniversityofportsmouth.com">TEDxUniversityofPortsmouth</a></li>
+		{% endcomment %}
+		<li class="work-item"><a class="uopcs" href="http://uopcs.com/">UoPCS</a></li>
+
+		{% for post in site.posts %}
+		{% if post.categories contains 'work' %}
+			<li class="work-item"><a class="{{ post.work_title }}" href="{{ post.url }}">{{ post.work_title }}</a></li>
+		{% endif %}
+		{% endfor %}
+
+		<li class="work-item"><a class="dandy" href="http://adandydoma.in">Dandydomains</a></li>
+
+	</ul>
+
+</div>
 </main>

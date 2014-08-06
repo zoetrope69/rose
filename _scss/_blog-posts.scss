@@ -4,35 +4,22 @@
 	display: block;
 	overflow: hidden;
 	padding: 1em;
-	width: 70%;
-	margin: 0 auto;
-
-	@media (max-width: $screen-xl){ width: 80%; }
-	@media (max-width: $screen-l){ width: 90%; }
-	@media (max-width: $screen-m){ width: 100%; }
+	border-bottom: 2px solid darken($white, 5%);
 }
+.blog-posts .blog-post:last-child{ border: none; }
 
 .blog-posts .blog-post:hover{
 	background: darken($white, 5%);
-}
-
-.blog-posts .blog-post{
-	overflow: hidden;
-	border-bottom: 2px solid darken($white, 5%);
-}
-
-.blog-posts .blog-post:last-child{
-	border: none;
 }
 
 .blog-posts .blog-post .title{
 	float: left;
 	width: 60%;
 	margin: 0;
-	padding: 0 .25em;
+	padding: 0;
 
 	font-size: 2em;
-	@media (max-width: $screen-s){ width: 70%; }
+	@media (max-width: $screen-m){ width: 70%; }
 }
 
 .blog-posts .blog-post .meta{
@@ -55,17 +42,17 @@
 	margin: .25em 0;
 
 	color: transparentize($black, .35);
+	border: 1px solid;
+	border-radius: 2px;
 	font-size: .6em;
 	text-align: center;
 	text-transform: uppercase;
-	
-	border-radius: 2px;
 
-	@media (max-width: $screen-s){ display: none; }
+	@media (max-width: $screen-m){ display: none; }
 }
 
 .blog-posts .blog-post .category-blog{ visibility: hidden; }
-.blog-posts .blog-post .category-work{ background-color: $light-green; }
+.blog-posts .blog-post .category-work{ color: $green; }
 
 .pagination{
 	width: 70%;

@@ -1,22 +1,37 @@
 /* _project-planner.scss */
 
+.page-content .page-desc,
 .project-planner{
-	overflow: hidden;
-	width: 70%;
-	margin: 0 auto;
-	padding: 3em 0;
+	float: left;
+	width: 50%;
 
-	@media (max-width: $screen-xl){ width: 80%; }
-	@media (max-width: $screen-l){      width: 90%; }
-	@media (max-width: $screen-m){     width: 100%; }
+	@media (max-width: $screen-m){ width: 100%; }
 }
 
-.project-planner h1{
-	text-align: center;
+.page-content .page-desc{
+	padding-right: 1.5em;
+	
+	@media (max-width: $screen-m){ padding-right: 0; }
+}
+
+.project-planner{
+	overflow: hidden;
+	margin-top: 3.5em;
+	padding-left: 1.5em;
+	border-left: 2px solid darken($white, 5%);
+
+	@media (max-width: $screen-m){
+		padding-left: 0;
+		border: none;
+	}
 }
 
 .project-planner .required{
 	color: desaturate($green, 25%);
+}
+
+.project-planner h2{
+	margin: .75em 0;
 }
 
 .project-planner label,
@@ -43,15 +58,17 @@
 	font-size: 1.25em;
 
 	border: 2px solid darken($white, 15%);
+    border-radius: 0;
 
+    -webkit-appearance: none;
 	outline: none;
 
 	transition: border-color .5s;
-	margin-bottom: .5em;
+	margin-bottom: .5em;	
 }
 
 .project-planner__input--dirty:not(:focus):invalid{
-	border-color: desaturate($red, 25%);
+	border-color: desaturate($red, 15%);
 }
 
 .project-planner__input:focus{
@@ -68,7 +85,7 @@
 	background-color: transparent;
 	
 	border: 2px solid $green;
-	border-radius: 4px;
+	border-radius: 5px;
 
 	transition: background-color .25s, color .25s;
 }
@@ -79,4 +96,8 @@
 	background-color: $green;
 
 	cursor: pointer;
+}
+
+.project-planner #project-idea{
+	min-height: 200px;
 }

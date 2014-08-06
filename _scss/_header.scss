@@ -5,7 +5,7 @@ header{
 	position: fixed;
 	top: 0; right: 0; left: 0;
 	overflow: hidden;
-	padding: .75em 1rem;
+	padding: .75em 0;
 	height: 5rem;
 	
 	background-color: $white; 
@@ -13,6 +13,11 @@ header{
 	color: $white;
 
 	backface-visibility: hidden;
+
+	@media (max-width: $screen-m){
+		height: 4rem;
+		padding: .25em 0;
+	}
 }
 
 header .logo{
@@ -31,11 +36,15 @@ header nav li{
 	
 	color: $red;
 	text-align: center;
+
+	@media (max-width: $screen-s){ display: none; }
 }
 
 header nav li.menu-link{
 	display: none;
 	width: 100%;
+
+	@media (max-width: $screen-s){ display: block; }
 }
 
 header nav li.menu-link a{
@@ -51,26 +60,17 @@ header nav li.menu-link a{
 header nav li a{
 	padding: 1.5em 0;
 	@include animateIn(fade);
+
+	@media (max-width: $screen-m){
+		padding: 2em 0;
+		font-size: .9em;
+	}
 }
 
 header nav li a:hover{
 	color: $black;
 }
 
-@media screen and (max-width: $screen-m){
-	
-	header{
-		padding: 0 .75rem;
-		height: 4rem; 
-	}
-
-}
-
-@media screen and (max-width: $screen-s){
-	
-	header nav li.menu-link{ display: block; }
-
-}
 
 @import 'logo';
 @import 'nav';

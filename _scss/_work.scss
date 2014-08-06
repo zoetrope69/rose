@@ -1,18 +1,14 @@
 /* _work.scss */
 
 .work{
-	width: 70%;
-	margin: 0 auto;
+	width: 80%;
 
-	@media(max-width: $screen-l){ width:  80%; }
-	@media(max-width: $screen-m){ width:  90%; }
-	@media(max-width: $screen-s){ width: 100%; }
+	@media (max-width: $screen-m){ width: 100%;	}
 }
 
 .work-item{
 	overflow: hidden;
 	float: left;
-	padding: .25em;
 	width: (100% / 3);
 
 	&:nth-child(1),
@@ -44,8 +40,6 @@
 
 	background-position: center;
 	background-repeat: no-repeat;
-	
-	border-radius: 2px;
 }
 
 .UPGS{
@@ -73,8 +67,7 @@
 	color: $white;
 
 	background-color: #6DA46D;
-	background-image: url('http://uopcs.com/img/circuit.svg'), url('../img/work/uopcs.png');
-	background-repeat: repeat, no-repeat;
+	background-image: url('../img/work/uopcs.png');
 }
 
 .tedx{
@@ -97,8 +90,9 @@
 }
 
 .blog-work{
-    padding: 1em;
     overflow: hidden;
+    padding: 1em;
+    margin-bottom: 1em;
 
     font-size: 1em;
 

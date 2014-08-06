@@ -1,5 +1,11 @@
 /*_typography.scss */
 
+main{
+	@media (max-width: $screen-l){ font-size: .9em; }
+	@media (max-width: $screen-m){ font-size: .85em; }
+	@media (max-width: $screen-s){ font-size: .8em; }
+}
+
 main h1, main h2,
 main h3, main h4,
 main h5, main h6,
@@ -17,41 +23,35 @@ main h3{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-main h1,
-main h2{
-	font-style: italic;
-}
-
 main h1{
 	font-size: 3em;
 }
 
 main h2{
 	font-size: 2.5em;
-	color: lighten($black, 2.5%);
+	color: lighten($black, 5%);
 }
 
 main h3{
 	font-size: 2em;
-	color: lighten($black, 5%);
+	color: lighten($black, 7.5%);
 }
 
 main h4,
 main h5,
 main h6{
 	text-transform: uppercase;
+	color: lighten($black, 7.5%);
 }
 
 main h4{
 	font-weight: 700;
 	font-size: 1.5em;
-	color: lighten($black, 7.5%);
 }
 
 main h5{ 
 	font-weight: 600;
 	font-size: 1.25em;
-	color: lighten($black, 10%);
 }
 
 main h6{
@@ -80,11 +80,12 @@ main a:hover{
 }
 
 main em{
+	font-weight: 400;
 	font-style: italic;
 }
 
 main strong{
-	font-weight: bold;
+	font-weight: 600;
 }
 
 main hr{
@@ -187,28 +188,4 @@ main sup{
 
 main sub{
 	vertical-align: sub;
-}
-
-@media all and (max-width: $screen-l){
-
-	main{
-		font-size: .9em;
-	}
-
-}
-
-@media all and (max-width: $screen-m){
-
-	main{
-		font-size: .85em;
-	}
-
-}
-
-@media all and (max-width: $screen-s){
-
-	main{
-		font-size: .8em;
-	}
-
 }

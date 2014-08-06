@@ -1,7 +1,9 @@
 ErrorDocument 404 /404/index.html
 ErrorDocument 500 /500/index.html
 
-# compress text, html, javascript, css, xml:
+# compress svg, text, html, javascript, css, xml:
+AddType image/svg+xml .svg
+AddOutputFilterByType DEFLATE image/svg+xml
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml

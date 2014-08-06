@@ -3,20 +3,23 @@
 .team-member{
 	overflow: hidden;
 	padding: 3em 0;
+	
+	@media (max-width: $screen-l){ font-size: .85em; }
+	@media (max-width: $screen-m){ padding: 1.5em 0; }
 }
 
 .team-member .details,
 .team-member .photo{
 	float: left;
 	width: 50%;
-}
 
-@media (max-width: $screen-l){
-	.team-member{ font-size: .85em; }
+	@media (max-width: $screen-m){ width: 100%;	}
 }
 
 .team-member .details{
 	padding: 1em;
+
+	@media (max-width: $screen-m){ padding: 1em 0; }
 }
 
 .team-member .details .name{
@@ -25,12 +28,16 @@
 	
 	font-size: 4em;
 	font-style: normal;
+
+	@media (max-width: $screen-m){ text-align: center; }
 }
 
 .team-member .details .title{
 	font-size: 2em;
 	font-style: normal;
 	color: lighten($black, 25%);
+
+	@media (max-width: $screen-m){ text-align: center; }
 }
 
 .team-member .details .bio{
@@ -73,23 +80,4 @@
 .team-member:nth-child(odd) .photo,
 .team-member:nth-child(odd) .photo img{
 	float: right;
-}
-
-@media (max-width: $screen-m){
-
-	.team-member{ padding: 1.5em 0; }
-
-	.team-member .details,
-	.team-member .photo{
-		float: none;
-		width: 100%;
-	}
-
-	.team-member .name,
-	.team-member .title{
-		text-align: center;
-	}
-
-	.team-member .details{ padding: 1em 0; }
-
 }

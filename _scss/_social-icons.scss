@@ -1,28 +1,18 @@
 /* _social-icons.scss */
 
-.social-icons{
-	width: 50%;
-	margin: 0 auto;
-
-	@media (max-width: $screen-l){ width: 75%; }
-}
-
 .social-icons li{
 	float: left;
 	width: (100%/3);
-	padding: 0 .5em;
 }
 
 .social-icon{
 	display: block;
-	width: 64px;
-	height: 64px;
-	margin: 0 auto;
+	width: auto;
+	height: 100px;
 
 	text-indent: -9999px;
 
 	background: center no-repeat;
-	border-radius: 5px;
 }
 
 .social-icon--github{
