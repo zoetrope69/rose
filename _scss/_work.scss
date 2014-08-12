@@ -1,11 +1,5 @@
 /* _work.scss */
 
-.work{
-	width: 80%;
-
-	@media (max-width: $screen-m){ width: 100%;	}
-}
-
 .work-item{
 	overflow: hidden;
 	float: left;
