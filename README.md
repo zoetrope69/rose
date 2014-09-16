@@ -9,4 +9,6 @@ rose website, will move this to rosedigital account
 4. build, start watching file changes and start a server with draft posts - `gulp` (you can add `--limit_posts 1` for speed)
 5. to build for deployment remove the '--drafts' from the jekyll command
 
+_using [h5bp/server-configs-apache](https://github.com/h5bp/server-configs-apache) for the apache config_
+
 :rose:
