@@ -1,4 +1,4 @@
-<form method="post" id="project-planner" class="project-planner">
+<form action="{{ root_url }}/contact/email.php" method="post" id="project-planner" class="project-planner">
 
 	<h2>Project Planner</h2>
 
@@ -50,4 +50,7 @@
 
 	<button class="project-planner__submit" type="submit">Send us the deetz</button>
 	
+	<p class="project-planner__response project-planner__response--hidden">Email not sent&hellip;</p>
+
+
 </form>

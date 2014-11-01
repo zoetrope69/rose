@@ -55,7 +55,62 @@ function projectPlannerForm(){
 			$(this).addClass('project-planner__input--dirty');
 		});
 
-		// $('.project-planner__submit').click(function(e){ e.preventDefault(); });
+		var form = $('.project-planner');
+
+		$(form).submit(function(e){
+
+			var formData = $(form).serialize(),
+				plannerResponse = $('.project-planner__response');
+			
+			$(plannerResponse).addClass('project-planner__response--hidden');
+
+			$.ajax({
+				type: 'POST',
+				url: $(form).attr('action'),
+				data: formData
+			})
+			.done(function(response){
+
+				// set response styles
+				$(plannerResponse).removeClass('project-planner__response--error');
+				$(plannerResponse).addClass('project-planner__response--success ');
+
+				// Set the response
+				$(plannerResponse).html(response);
+
+				// Clear the form
+				// $('#client-name').val('');
+				// $('#client-organisation').val('');
+				// $('#client-email').val('');
+				// $('#client-phone').val('');
+				// $('#project-budget').val('');
+				// $('#project-idea').val('');
+
+			})
+			.fail(function(data){
+
+				// set response styles
+				$(plannerResponse).removeClass('project-planner__response--success');
+				$(plannerResponse).addClass('project-planner__response--error');
+
+				var response = 'Oops, something went wrong. Try again?';
+
+				if(data.responseText !== ''){
+					response = data.responseText;
+				}
+
+				$(plannerResponse).html(response);
+
+			})			
+			.always(function() {
+				
+				// show the response
+				$(plannerResponse).removeClass('project-planner__response--hidden');
+
+			});
+
+			e.preventDefault();
+		});
 
 	}
 
