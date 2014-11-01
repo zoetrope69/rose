@@ -20,6 +20,9 @@ function mapInit(){
 
 		var map = L.map('map').setView(roseOfficeGeo, 12);
 
+		// stop the map from interrupting scrolling of the page
+		map.scrollWheelZoom.disable();
+
 		L.tileLayer('http://{s}.tiles.mapbox.com/v3/zaccolley.jaccno9i/{z}/{x}/{y}.png', {
 			maxZoom: 18
 		}).addTo(map);
