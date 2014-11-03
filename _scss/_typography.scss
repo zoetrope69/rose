@@ -187,3 +187,10 @@ main sup{
 main sub{
 	vertical-align: sub;
 }
+
+main strike,
+main del{
+	opacity: .5;
+	
+	text-decoration-line: line-through;
+}
