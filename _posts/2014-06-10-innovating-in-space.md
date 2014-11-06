@@ -15,6 +15,6 @@ The second floor is home to different graduate start-ups, it's an incubator spac
 
 We were planning to move into the refurbished prison cell blocks in the Historic Dockyard provided as part of the [Into the Cell Block](http://www.port.ac.uk/uopnews/2014/04/25/into-the-cell-block-creative-and-digital-start-ups/) programme. As it's still under construction until the new year we were offered this office instead.
 
-It's turned out really well as we've already been helping each other out as there's a good mix of skillsets. The floor isn't full yet, we're expecting it to get pretty rowdy soon. :laughing:
+It's turned out really well as we've already been helping each other out as there's a good mix of skillsets. The floor isn't full yet, we're expecting it to get pretty rowdy soon. :smile:
 
 We'll be updating the blog with what we're up to so [follow us on Twitter](http://www.twitter.com/{{ site.data.social.twitter }}) for when we post next.

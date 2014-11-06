@@ -7,28 +7,7 @@ author: zac
 categories: blog
 ---
 
-# ios
-
-:bowtie:
-:metal:
-:fu:
-:neckbeard:
-:feelsgood:
-:finnadie:
-:goberserk:
-:godmode:
-:hurtrealbad:
-:rage1:
-:rage2:
-:rage3:
-:rage4:
-:suspect:
-:trollface:
-:octocat:
-:squirrel:
-:shipit:
-
-# main
+# Main
 
 :smile:
 :laughing:
@@ -41,7 +20,6 @@ categories: blog
 :kissing_closed_eyes:
 :flushed:
 :relieved:
-:satisfied:
 :grin:
 :wink:
 :stuck_out_tongue_winking_eye:
@@ -107,7 +85,6 @@ categories: blog
 :star2:
 :dizzy:
 :boom:
-:collision:
 :anger:
 :exclamation:
 :question:
@@ -119,20 +96,14 @@ categories: blog
 :notes:
 :musical_note:
 :fire:
-:hankey:
 :poop:
-:shit:
-:+1:
 :thumbsup:
-:-1:
 :thumbsdown:
 :ok_hand:
 :punch:
-:facepunch:
 :fist:
 :v:
 :wave:
-:hand:
 :raised_hand:
 :open_hands:
 :point_up:
@@ -146,7 +117,6 @@ categories: blog
 :muscle:
 :walking:
 :runner:
-:running:
 :couple:
 :family:
 :two_men_holding_hands:
@@ -252,7 +222,6 @@ categories: blog
 :penguin:
 :turtle:
 :bug:
-:honeybee:
 :ant:
 :beetle:
 :snail:
@@ -282,7 +251,6 @@ categories: blog
 :leopard:
 :cat2:
 :poodle:
-:paw_prints:
 :bouquet:
 :cherry_blossom:
 :tulip:
@@ -318,7 +286,6 @@ categories: blog
 :waning_crescent_moon:
 :last_quarter_moon_with_face:
 :first_quarter_moon_with_face:
-:moon:
 :earth_africa:
 :earth_americas:
 :earth_asia:
@@ -359,7 +326,6 @@ categories: blog
 :computer:
 :tv:
 :iphone:
-:phone:
 :telephone:
 :telephone_receiver:
 :pager:
@@ -392,7 +358,6 @@ categories: blog
 :electric_plug:
 :battery:
 :calling:
-:email:
 :mailbox:
 :postbox:
 :bath:
@@ -410,7 +375,6 @@ categories: blog
 :euro:
 :credit_card:
 :money_with_wings:
-:e-mail:
 :inbox_tray:
 :outbox_tray:
 :envelope:
@@ -423,7 +387,7 @@ categories: blog
 :smoking:
 :bomb:
 :gun:
-:hocho:
+:knife:
 :pill:
 :syringe:
 :page_facing_up:
@@ -493,7 +457,6 @@ categories: blog
 :dart:
 :mahjong:
 :clapper:
-:memo:
 :pencil:
 :book:
 :art:
@@ -502,13 +465,11 @@ categories: blog
 :trumpet:
 :saxophone:
 :guitar:
-:shoe:
 :sandal:
 :high_heel:
 :lipstick:
 :boot:
 :shirt:
-:tshirt:
 :necktie:
 :womans_clothes:
 :dress:
@@ -604,7 +565,6 @@ categories: blog
 :church:
 :department_store:
 :european_post_office:
-:city_sunrise:
 :city_sunset:
 :japanese_castle:
 :european_castle:
@@ -625,7 +585,6 @@ categories: blog
 :roller_coaster:
 :ship:
 :speedboat:
-:boat:
 :sailboat:
 :rowboat:
 :anchor:
@@ -642,7 +601,6 @@ categories: blog
 :tractor:
 :blue_car:
 :oncoming_automobile:
-:car:
 :red_car:
 :taxi:
 :oncoming_taxi:
@@ -694,7 +652,6 @@ categories: blog
 :it:
 :ru:
 :gb:
-:uk:
 :de:
 
 # Symbols
@@ -859,7 +816,6 @@ categories: blog
 :registered:
 :tm:
 :x:
-:heavy_exclamation_mark:
 :bangbang:
 :interrobang:
 :o:
@@ -877,8 +833,12 @@ categories: blog
 :wavy_dash:
 :part_alternation_mark:
 :trident:
-:black_square:
-:white_square:
+:black_small_square:
+:black_medium_square:
+:black_large_square:
+:white_small_square:
+:white_medium_square:
+:white_large_square:
 :white_check_mark:
 :black_square_button:
 :white_square_button:

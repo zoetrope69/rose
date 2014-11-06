@@ -13,4 +13,4 @@ include: ['.htaccess']
 
 exclude: ['package.json', 'node_modules', 'gulpfile.js', 'README.md', 'LICENSE']
 
-emoji-images-path: 'img/hangouts-emoji/'
+emoji-images-path: 'img/emojione-emoji/svg'
