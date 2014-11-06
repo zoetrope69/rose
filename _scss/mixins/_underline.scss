@@ -1,0 +1,14 @@
+/* _underline.scss */
+
+@mixin underline($colour) {
+	// lovely underline style inspired by: https://medium.com/coding-design/2669cd13b5a7
+
+	color: $colour;
+
+	background-image: linear-gradient(to bottom, #fff 50%, lighten($colour, 15%) 50%);
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 1.2em;
+
+	text-shadow: 1px 0 0 $bg-color, 1px 0 0 $bg-color, 2px 0 0 $bg-color, -2px 0 0 $bg-color;
+}

@@ -1,5 +1,8 @@
 /* _main.scss */
 
+@import 'mixins/underline';
+@import 'mixins/animations';
+
 *::after::selection,
 *::before::selection,
 *::selection{

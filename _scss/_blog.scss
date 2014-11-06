@@ -61,16 +61,7 @@
 }
 
 .blog .post a{
-	// lovely underline style inspired by: https://medium.com/coding-design/2669cd13b5a7
-
-	color: $green;
-
-	background-image: linear-gradient(to bottom, #fff 50%, lighten(desaturate($green, 33.33%), 33.33%) 50%);
-	background-repeat: repeat-x;
-	background-size: 2px 2px;
-	background-position: 0 1.2em;
-
-	text-shadow: 1px 0 0 $bg-color, 1px 0 0 $bg-color, 2px 0 0 $bg-color, -2px 0 0 $bg-color;
+	@include underline($green);
 }
 
 @media (max-width: $screen-l){
