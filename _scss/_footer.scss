@@ -84,13 +84,18 @@ footer nav li a:hover{
 	color: $red;
 }
 
+footer .cc,
+footer .map{
+	line-height: 1.5em;
+	
+	font-size: .85em;
+}
+
 footer .cc{
 	display: block;
 	margin: 0 auto;
 	width: 40%;
-	line-height: 1.5em;
 	
-	font-size: .85em;
 	color: lighten($black, 25%);
 
 	@media (max-width: $screen-m){ width: 70%; }
