@@ -96,8 +96,9 @@ main .btn:active{
 .emoji,
 .blog .post .emoji{
 	display: inline-block;
-	max-width: 28px;
-	max-height: 28px;
+	max-width: 1.5em;
+	max-height: 1.5em;
+	line-height: 1em;
 	margin: 0;
 	margin-bottom: -.25em;
 }

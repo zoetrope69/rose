@@ -14,15 +14,16 @@
 .blog .top .title{
 	margin-bottom: .25em;
 	
-	font-size: 4em;
+	font-size: 3.5em;
+	line-height: 1em;
 	color: $white;
 }
 
 .blog .top .meta{
 	float: left;
-	width: 75%;
+	width: 70%;
 
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-family: $sans-serif;
 	font-style: normal;
 	color: $red;
@@ -33,10 +34,10 @@
 }
 
 .blog .top small{
-	width: 25%;
+	width: 30%;
 	float: right;
 	
-	font-size: 1.25em;
+	font-size: 1.2em;
 	color: darken($white, 10%);
 	text-align: right;
 }
