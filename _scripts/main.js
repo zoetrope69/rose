@@ -132,11 +132,13 @@ function readingTime(){
 	// if on the blog page
 	if($('.blog').length){
 
-		var time = Math.ceil(wordCount / wordsPerMinute),
-			wordCount = $('.blog .post').text().split(" ").length,
-			wordsPerMinute = 250; // according to http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension
+		var wordCount = $('.blog .post').text().split(" ").length,
+			wordsPerMinute = 250, // according to http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension
+			time = Math.ceil(wordCount / wordsPerMinute);
 
-
-		$('.blog .top .meta').after('<small>~ '+ time +' min read</small>');
+		if(time > 0){
+			$('.blog .top .meta').after('<small>~ '+ time +' min read</small>');
+		}
+		
 	}
 }
