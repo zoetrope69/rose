@@ -1,5 +1,14 @@
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ root_url }}/js/jquery.min.js"><\/script>')</script>
+
+{% if page.map %}
+<!-- leaflet.js (maps) -->
+<script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script>window.L || document.write('<script src="{{ root_url }}/js/leaflet.min.js"><\/script>')</script>
+{% endif %}
+
+<!-- Our scripts -->
 <script src="{{ root_url }}/js/script.min.js"></script>
 
 <!-- Piwik -->
@@ -16,4 +25,3 @@
 		g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
 	})();
 </script>
-<!-- End Piwik Code -->

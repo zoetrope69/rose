@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function(){
 
 	initMenuButton();
@@ -35,7 +37,7 @@ function mapInit(){
 			popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
 		});
 
-		var marker = L.marker(roseOfficeGeo, { icon: roseIcon }).addTo(map).bindPopup("<a href='https://goo.gl/maps/4udjl'>Get directions here.</a>");
+		L.marker(roseOfficeGeo, { icon: roseIcon }).addTo(map).bindPopup("<a href='https://goo.gl/maps/4udjl'>Get directions here.</a>");
 
 	}
 }
@@ -51,7 +53,7 @@ function projectPlannerForm(){
 			e.preventDefault();
 		});
 
-		$('.project-planner__input').blur(function(e){
+		$('.project-planner__input').blur(function(){
 			$(this).addClass('project-planner__input--dirty');
 		});
 
@@ -119,7 +121,7 @@ function projectPlannerForm(){
 // if anyone pokes into the console display this
 function consoleSleuths(){
 	// if we can console log, some browsers can't
-	if(this.console){
+	if(typeof console === "object"){
 		console.log("Hey, if you find anything broken, please go post an issue: " +
 					"http://github.com/rosedigital/website/issues :¬)");
 	}
@@ -130,11 +132,11 @@ function readingTime(){
 	// if on the blog page
 	if($('.blog').length){
 
-		var wordsPerMinute = 250; // according to http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension
-		var wordCount = $('.blog .post').text().split(" ").length;
+		var time = Math.ceil(wordCount / wordsPerMinute),
+			wordCount = $('.blog .post').text().split(" ").length,
+			wordsPerMinute = 250; // according to http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension
 
-		var readingTime = Math.ceil(wordCount / wordsPerMinute);
 
-		$('.blog .top .meta').after('<small>~ '+ readingTime +' min read</small>');
+		$('.blog .top .meta').after('<small>~ '+ time +' min read</small>');
 	}
 }

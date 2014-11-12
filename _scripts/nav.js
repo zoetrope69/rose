@@ -2,7 +2,7 @@ function initMenuButton(){
 
 	$('header .menu-link').click(function(e){
 		
-		if($('header .menu-link a').text() == 'Menu'){
+		if($('header .menu-link a').text() === 'Menu'){
 			$('header .menu-link a').text('Close');
 		}else{
 			$('header .menu-link a').text('Menu');

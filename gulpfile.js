@@ -9,7 +9,13 @@ var gulp =  require('gulp'),
 
 	browserSync = require('browser-sync'),
 	cp = require('child_process'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+
+
+    imagemin = require('gulp-imagemin'),
+
+	htmlValidate = require("gulp-htmlhint"),
+	jshint = require('gulp-jshint');
 
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -60,6 +66,7 @@ gulp.task('browser-sync', ['scripts', 'sass', 'jekyll-build'], function() {
 gulp.task('scripts', function() {
 	gulp.src('_scripts/*.js')
 		.pipe(concat('script.js'))
+		.pipe(gulp.dest('_site/js'))
 		.pipe(uglify())
 		.pipe(rename('script.min.js'))
 		.pipe(gulp.dest('_site/js'))
@@ -71,6 +78,7 @@ gulp.task('scripts', function() {
 		.pipe(browserSync.reload({ stream: true }))
 		.pipe(gulp.dest('js'))
 });
+
 
 /** SASS
  * compile sass, add vendor prefixes then minify.
@@ -92,12 +100,37 @@ gulp.task('sass', function () {
 });
 
 /**
+ * lint the js
+ */
+gulp.task('lint-scripts', function() {
+	gulp.src('_scripts/**.js')
+		.pipe(jshint('.jshintrc'))
+		.pipe(jshint.reporter('default'))
+});
+
+/**
+ * validate html
+ */
+gulp.task('lint-html', function () {
+	gulp.src('_site/**/*.html')
+		.pipe(htmlValidate())
+		.pipe(htmlValidate.reporter())
+});
+
+gulp.task('images', function() {
+	return gulp.src('assets/**/*')
+		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+		.pipe(gulp.dest('.'))
+});
+
+/**
  * watch JS/SASS files for changes & recompile
  * watch html/md/image files, run jekyll & reload browsers
  */
 gulp.task('watch', function () {
 	gulp.watch('_scripts/*.js', ['scripts']);
 	gulp.watch('_scss/**/*.scss', ['sass']);
+	gulp.watch('assets/**/*', ['images']);
 	gulp.watch(['**/*.html', '**/*.php', '**/*.md', 'img/*', '_config', '_data/*'], ['jekyll-rebuild']);
 });
 
@@ -105,5 +138,6 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
+gulp.task('lint', ['lint-html', 'lint-scripts']);
 gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('deploy', ['scripts', 'sass', 'jekyll-build-deploy']);
