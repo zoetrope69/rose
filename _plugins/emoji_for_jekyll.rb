@@ -94,7 +94,7 @@ module EmojiForJekyll
 				img_src = "https://github.global.ssl.fastly.net/images/icons/emoji/#{name}.png"
 			end
 			
-			"<img class='emoji' title='\"#{name}\" emoji' alt='\"#{name}\" emoji' src='#{img_src}' >"
+			"<img class=\"emoji\" title=\"'#{name}' emoji\" alt=\"'#{name}' emoji\" src=\"#{img_src}\" >"
 		end
 	end
 end

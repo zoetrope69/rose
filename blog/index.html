@@ -23,7 +23,7 @@ desc: Mostly you'll find posts on how we work, hot tips for the web and other as
 		<h1 class="title">{{ post.title }}</h1>
 
 		<div class="meta">
-			<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%d %b, %Y" }}</time>
+			<time datetime="{{ post.date | date: '%Y-%m-%dT%TZ' }}" title="{{ post.date | date: '%x %X' }}">{{ post.date | date: "%d %b, %Y" }}</time>
 			<small>{{ author.display_name }}</small>
 		</div>
 
