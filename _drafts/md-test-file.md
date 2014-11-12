@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  'Markdown Test File - Blog · ROSE Digital ✏'
-post_title: '[TEST] Markdown Test File'
+title: '[TEST] Markdown Test File'
 date: 2001-01-01 00:00:00
 author: zac
-categories: blog
+category: blog
 ---
 
 This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing. This is the contents from the Markdown website used for testing.

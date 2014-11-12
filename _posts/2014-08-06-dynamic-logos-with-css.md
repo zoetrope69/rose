@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  'Dynamic Logos with CSS - Blog · ROSE Digital ✏'
-post_title: 'Dynamic Logos with CSS'
+title:  'Dynamic Logos with CSS'
 date:   2014-08-06 16:32:05
 author: zac
-categories: blog
+category: blog
 ---
 
 When creating logos often the end product will be a static identity. [After seeing some great usage of logos with moving parts](http://www.hexanine.com/zeroside/the-future-is-fluid-inside-dynamic-logos/) I thought I'd play with the idea of making ours dynamic.

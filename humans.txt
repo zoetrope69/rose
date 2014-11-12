@@ -21,5 +21,6 @@ Zac thanks his mum and dad too
 Last update: {{ site.time }}
 Doctype: HTML5
 Standards: HTML5, CSS3
-Software: Sublime Text, GIMP, Inkscape, Git, Grunt, Bower, SASS, Jekyll
-Code: html5shiv, jQuery, emojify.js, jquery-smartresize
+Software: Sublime Text, GIMP, Inkscape, Git, Gulp, SASS, Jekyll
+Code: html5shiv, selectivizr, jQuery
+

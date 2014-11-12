@@ -11,7 +11,7 @@ layout: default
 		
 		{% assign author = site.data.authors[page.author] %}
 		
-		<h1 class="title">{{ page.post_title }}</h1>
+		<h1 class="title">{{ page.title }}</h1>
 		<h2 class="meta">
 			Posted on <time timestamp="{{ page.date }}" title="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time> by <a href="{{ root_url}}/about/#{{ author.display_name }}" class="author">{{ author.display_name }}</a>
 		</h2>

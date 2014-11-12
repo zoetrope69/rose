@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Work · ROSE Digital ✿
+title: Work
+desc: Here's a some of our projects.
 ---
 
 <main class="page page-work">
@@ -10,7 +11,7 @@ title: Work · ROSE Digital ✿
 
 		<h1>Work</h1>
 
-		<p>Here's a some of our work and projects!</p>
+		<p>Here's a some of our projects.</p>
 
 	</div>
 
@@ -21,7 +22,7 @@ title: Work · ROSE Digital ✿
 		<li class="work-item"><a class="uopcs" href="http://uopcs.com/">UoPCS</a></li>
 
 		{% for post in site.posts %}
-		{% if post.categories contains 'work' %}
+		{% if post.category contains 'work' %}
 			<li class="work-item"><a class="{{ post.work_title }}" href="{{ post.url }}">{{ post.work_title }}</a></li>
 		{% endif %}
 		{% endfor %}

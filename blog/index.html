@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Blog · ROSE Digital ✿
+title: Blog
+desc: Mostly you'll find posts on how we work, hot tips for the web and other assorted office goings on.
 ---
 
 <main class="page blog-posts">
@@ -19,14 +20,14 @@ title: Blog · ROSE Digital ✿
 			
 		{% assign author = site.data.authors[post.author] %}
 			
-		<h1 class="title">{{ post.post_title }}</h1>
+		<h1 class="title">{{ post.title }}</h1>
 
 		<div class="meta">
 			<time timestamp="{{ page.date }}" title="{{ page.date }}">{{ post.date | date: "%d %b, %Y" }}</time>
 			<small>{{ author.display_name }}</small>
 		</div>
 
-		<p class="category category-{{ post.categories }}">{{ post.categories }}</p>
+		<p class="category category-{{ post.category }}">{{ post.category }}</p>
 
 	</a>
 	{% endfor %}

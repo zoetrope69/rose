@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  'Typography Testing - Blog · ROSE Digital ✏'
-post_title: '[TEST] Typography Testing'
+title: '[TEST] Typography Testing'
 date: 2001-01-01 00:00:00
 author: zac
-categories: blog
+category: blog
 ---
 
 This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing. 

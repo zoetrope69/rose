@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  'Innovating in Space - Blog · ROSE Digital ✏'
-post_title: 'Innovating in Space'
+title:  'Innovating in Space'
 date:   2014-06-10 14:12:09
 author: zac
-categories: blog
+category: blog
 ---
 
 This week we moved into our new office, [the Innovation Space](http://www.ris.port.ac.uk/innovationspace/), in amongst the University buildings in the Halpern House.

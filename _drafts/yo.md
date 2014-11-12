@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  'Content Distribution with Yo and Snapchat - Blog · ROSE Digital ✏'
-post_title: 'Content Distribution with Yo and Snapchat'
+title: 'Content Distribution with Yo and Snapchat'
 date:   2014-05-30 14:12:09
 author: zac
-categories: blog
+category: blog
 ---
 
 ## Snapchat
