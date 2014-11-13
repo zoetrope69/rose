@@ -34,11 +34,11 @@
 	{% if page.title %}
 
 		{% if page.category contains 'blog' %}
-			{% capture page_title %}{{ page.title }} ✏ Blog ✿ {{ site.name }}{% endcapture %}
+			{% capture page_title %}{{ page.title }} · Blog · {{ site.name }} ✏{% endcapture %}
 		{% elsif page.category contains 'work' %}
-			{% capture page_title %}{{ page.title }} ✏ Work ✿ {{ site.name }}{% endcapture %}
+			{% capture page_title %}{{ page.title }} · Work · {{ site.name }} ✏{% endcapture %}
 		{% else %}
-			{% capture page_title %}{{ page.title }} ✿ {{ site.name }}{% endcapture %}
+			{% capture page_title %}{{ page.title }} · {{ site.name }} ✿{% endcapture %}
 		{% endif %}
 
 	{% endif %}
