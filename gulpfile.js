@@ -11,7 +11,6 @@ var gulp =  require('gulp'),
 	cp = require('child_process'),
 	rename = require('gulp-rename'),
 
-
     imagemin = require('gulp-imagemin'),
 
 	htmlValidate = require("gulp-htmlhint"),
