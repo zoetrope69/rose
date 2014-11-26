@@ -72,10 +72,12 @@ They made some traffic light systems and even got a speaker playing Merry Christ
 
 ### Light Art
 
-<blockquote class="media media-right instagram-media" data-instgrm-version="4">
+<div class="media media-right">
+<blockquote class="instagram-media" data-instgrm-version="4">
 	<img src="/assets/hackpompey-lightart.jpg" alt="Light art">
 	<p><a href="https://instagram.com/p/vtZ0nYtiX6/" target="_top">A video posted by hackpompey (@hackpompey)</a> on <time datetime="2014-11-22T16:54:00+00:00">Nov 11, 2014 at 8:54am PST</time></p>
 </blockquote>
+</div>
 
 [Sean](https://twitter.com/seanmtracey) was messing about with web audio and some cool visuals with his camera. :fireworks: :art:
 
@@ -105,14 +107,16 @@ James was working on some open-source code. Improving the [Browser Capabilities 
 
 ### ROSY the Robot
 
-[Jorge](https://twitter.com/jbergasa) and Simon were hacking on their retro robot ROSY. They stayed over after the hack to bring her back to life. :sparkling_heart:
-
-The robot came with a magazine, which included _printed_ BASIC code that you'd use to get it function.
-
-<blockquote class="media twitter-tweet" lang="en-gb">
+<div class="media media-right">	
+<blockquote class="twitter-tweet" lang="en-gb">
 	<p><a href="https://twitter.com/hashtag/hackpompey?src=hash">#hackpompey</a> 4 hours late but we made it! Check out the video of our robotic debut: <a href="http://t.co/cnfnJh7J27">http://t.co/cnfnJh7J27</a></p>
 	&mdash; Jorge Bergasa (@jbergasa) <a href="https://twitter.com/jbergasa/status/536288116152471552">November 22, 2014</a>
 </blockquote>
+</div>
+
+[Jorge](https://twitter.com/jbergasa) and Simon were hacking on their retro robot ROSY. They stayed over after the hack to bring her back to life. :sparkling_heart:
+
+The robot came with a magazine, which included _printed_ BASIC code that you'd use to get it function.
 
 ### Cosmic Radiation
 
@@ -120,14 +124,16 @@ The robot came with a magazine, which included _printed_ BASIC code that you'd u
 
 ### Quadcopter
 
-After cannibalizing another quadcopter, Todd, Richard and David ended up with a quadcopter controlled by their phone's sensors. :helicopter:
-
-The phones sensor data was sent to an Arduino which then interfaced with the quadcopter's remote.
-
-<blockquote class="media instagram-media" data-instgrm-version="4">
+<div class="media media-right">
+<blockquote class="instagram-media" data-instgrm-version="4">
 	<img src="/assets/hackpompey-quadcopter.jpg" alt="Light art">
 	<p><a href="https://instagram.com/p/vtGG-XtiaL/" target="_top">A video posted by hackpompey (@hackpompey)</a> on <time datetime="2014-11-22T14:01:45+00:00">Nov 11, 2014 at 6:01am PST</time></p>
 </blockquote>
+</div>
+
+After cannibalizing another quadcopter, Todd, Richard and David ended up with a quadcopter controlled by their phone's sensors. :helicopter:
+
+The phones sensor data was sent to an Arduino which then interfaced with the quadcopter's remote.
 
 ### Show and Tell
 

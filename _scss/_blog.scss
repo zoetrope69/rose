@@ -177,16 +177,22 @@
 	border: 2px dashed transparentize($black, .85);
 }
 
-.blog .post .media,
-.blog .post .twitter-tweet,
-.blog .post .instagram-media{
-	width: 50% !important;
-	box-shadow: none !important;
-	border: 2px solid darken($white, 5%) !important;	
+.blog .post .media{
+	width: 50%;
+	border: 2px solid darken($white, 5%);
+	border-radius: 5px;
 
 	@media (max-width: $screen-m){
-		width: 100% !important;
+		width: 100%;
 	}
+}
+
+
+.blog .post .twitter-tweet,
+.blog .post .instagram-media{
+	width: 100% !important;
+	box-shadow: none !important;
+	border: none !important;
 }
 
 .code-result{
