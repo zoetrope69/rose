@@ -130,7 +130,7 @@ gulp.task('watch', function () {
 	gulp.watch('_scripts/*.js', ['scripts']);
 	gulp.watch('_scss/**/*.scss', ['sass']);
 	gulp.watch('assets/**/*', ['images']);
-	gulp.watch(['**/*.html', '**/*.php', '**/*.md', 'img/*', '_config', '_data/*'], ['jekyll-rebuild']);
+	gulp.watch(['**/*.html', '!_site/*', '**/*.php', '**/*.md', 'img/*', '_config', '_data/*'], ['jekyll-rebuild']);
 });
 
 /**
