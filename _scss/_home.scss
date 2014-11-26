@@ -76,6 +76,7 @@
 	margin-bottom: .25em;
 
 	font-size: 6em;
+	font-weight: 700;
 	
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -83,7 +84,7 @@
 	@media (max-width: $screen-l){ font-size: 6.5em; }
 	@media (max-width: $screen-m){
 		width: 100%;
-		font-size: 6em;
+		font-size: 5em;
 		line-height: .95em;
 	}
 }
