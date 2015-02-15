@@ -46,6 +46,8 @@ He went for a kind of 'science lab' vibe with a flask, and some other device bit
 
 Each watch controls one of the dots on the screen and they have to work together try and collide with each other.
 
+Their code [is on GitHub](https://github.com/dcgauld/hack-pompey). :link:
+
 > "It’s one of the only games that gets easier progressively as you go through the levels..." <cite>David Gauld</cite>
 
 ### Population Visualizations
