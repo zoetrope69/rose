@@ -53,9 +53,9 @@ Graham continued to work on his app and with usage of open data he added some lo
 
 <img class="img-left" src="/assets/hackpompey-open-data-gathered.jpg" alt="Some lads gathered round a Raspberry Pi">
 
-We reall enjoyed the day and we hope you did too, thanks for coming everyone!
+We really enjoyed the day and we hope you did too, thanks for coming everyone!
 
-We would also like to thank Portsmouth City Council ([Nicola](https://twitter.com/FoxLanguish)) and Hampshire Hub ([Mark](https://twitter.com/markbraggins)) for sponsoring the event and sharing the data, we hope to see more collaboration with the commnunity in the future!
+We would also like to thank Portsmouth City Council ([Nicola](https://twitter.com/FoxLanguish)) and Hampshire Hub ([Mark](https://twitter.com/markbraggins)) for sponsoring the event and sharing the data, we hope to see more collaboration with the community in the future!
 
 Thanks again to Andy and the [Innovation Space](http://www.innovationspace.org.uk/) team for allowing us to use the space and buying the pizza :pizza:, if you're looking to start up it's a good place to be.
 
