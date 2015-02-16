@@ -116,12 +116,6 @@ gulp.task('lint-html', function () {
 		.pipe(htmlValidate.reporter())
 });
 
-gulp.task('images', function() {
-	return gulp.src('assets/**/*')
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-		.pipe(gulp.dest('.'))
-});
-
 /**
  * watch JS/SASS files for changes & recompile
  * watch html/md/image files, run jekyll & reload browsers
@@ -129,7 +123,6 @@ gulp.task('images', function() {
 gulp.task('watch', function () {
 	gulp.watch('_scripts/*.js', ['scripts']);
 	gulp.watch('_scss/**/*.scss', ['sass']);
-	gulp.watch('assets/**/*', ['images']);
 	gulp.watch(['**/*.html', '!_site/*', '**/*.php', '**/*.md', 'img/*', '_config', '_data/*'], ['jekyll-rebuild']);
 });
 
