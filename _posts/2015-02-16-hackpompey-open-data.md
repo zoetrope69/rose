@@ -6,13 +6,13 @@ author: zac
 category: blog
 ---
 
-On February 7th we once again opened the doors at the innovation space to eager hackers and makers to participate in our second hackpompey event. 
-
-This time, with support from Portsmouth City Council and [Hampshire Hub](http://www.hampshirehub.net/) we decided to try a theme and encouraged the use of Open Data provided through several online API's.
-
-Here's a little of what went on at the second hack event, hackpompey Open Data:
+On February 7th we once again opened the doors at the Innovation Space to eager hackers and makers to participate in our second hackpompey event.
 
 ![Some people chilling about](/assets/hackpompey-open-data.jpg)
+
+This time, with support from Portsmouth City Council and [Hampshire Hub](http://www.hampshirehub.net/) we decided to try a theme and encouraged the use of Open Data provided through several online APIs.
+
+Here's a little of what went on at the second hack event, hackpompey Open Data.
 
 ## The Hacks
 
@@ -20,13 +20,15 @@ We were really pleased with the mix of people we had attending our second event,
 
 ### Open Pub Golf
 
-Gavin, Tristan and Dan made a way to make a pub golf 'course' using [Open Street Maps](http://www.openstreetmap.org/) and [OSRM](http://project-osrm.org/). :beer: :golf: by using your postcode as a starting location and the available data on local pubs, it was able to calculate a route between them to use for a pub crawl.
+Gavin, Tristan and Dan made a way to make a pub golf 'course' using [Open Street Maps](http://www.openstreetmap.org/) and [OSRM](http://project-osrm.org/).
+
+With your postcode as the starting location and the available data on local pubs, it was able to calculate a route between them to use for a pub crawl. :beer: :golf:
 
 ### Spitfire Hardware
 
 <img class="img-right" src="/assets/hackpompey-open-data-greg.jpg" alt="The inners">
 
-Greg came along with part of the inners of his remote control Spitfire he was working on within the [Tangmere Military Aviation Museum](http://www.tangmere-museum.org.uk/). :airplane: 
+Greg came along with part of the inners of his remote control Spitfire he was working on within the [Tangmere Military Aviation Museum](http://www.tangmere-museum.org.uk/). :airplane:
 
 
 ### Robots!
@@ -59,9 +61,9 @@ We would also like to thank Portsmouth City Council ([Nicola](https://twitter.co
 
 Thanks again to Andy and the [Innovation Space](http://www.innovationspace.org.uk/) team for allowing us to use the space and buying the pizza :pizza:, if you're looking to start up it's a good place to be.
 
-Thanks to [Deli Too](http://www.tripadvisor.co.uk/Restaurant_Review-g186298-d6438539-Reviews-Delicatessen_Too-Portsmouth_Hampshire_England.html) for the breakfast courtasy of [Nick Savage](http://www.port.ac.uk/school-of-computing/staff/dr-nick-savage.html) and [the School of Computing](http://www.port.ac.uk/school-of-computing/).
+Thanks to [Deli Too](http://www.tripadvisor.co.uk/Restaurant_Review-g186298-d6438539-Reviews-Delicatessen_Too-Portsmouth_Hampshire_England.html) for the breakfast courtesy of [Nick Savage](http://www.port.ac.uk/school-of-computing/staff/dr-nick-savage.html) and [the School of Computing](http://www.port.ac.uk/school-of-computing/).
 
-Keep your eyes peeled for the next one by following us on [twitter](http://twitter.com/hackpompey), [instagram](http://instagram.com/hackpompey) or [facebook](http://facebook.com/hackpompey), we're 'hackpompey' everywhere.
+Keep your eyes peeled for the next one by following us on [Twitter](http://twitter.com/hackpompey), [Instagram](http://instagram.com/hackpompey) or [Facebook](http://facebook.com/hackpompey), we're 'hackpompey' everywhere.
 
 :smile:
 
