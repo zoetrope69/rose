@@ -7,16 +7,16 @@ $(document).ready(function(){
 	projectPlannerForm();
 
 	readingTime();
-	
+
 	consoleSleuths();
 
 	mapInit();
-	
+
 });
 
 function mapInit(){
 	// if the map is on the page
-	if($('#map')){
+	if (typeof L !== 'undefined' && $('#map')) {
 
 		var roseOfficeGeo = [50.794315619385124, -1.0954651236534119];
 
