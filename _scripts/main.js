@@ -4,8 +4,6 @@ $(document).ready(function(){
 
 	initMenuButton();
 
-	projectPlannerForm();
-
 	readingTime();
 
 	consoleSleuths();
@@ -42,82 +40,6 @@ function mapInit(){
 	}
 }
 
-function projectPlannerForm(){
-
-	if($('.project-planner')){
-
-		$('.project-planner-link').click(function(e){
-			$('.project-planner input[name="name"]').focus();
-
-			// stop default link behaviour
-			e.preventDefault();
-		});
-
-		$('.project-planner__input').blur(function(){
-			$(this).addClass('project-planner__input--dirty');
-		});
-
-		var form = $('.project-planner');
-
-		$(form).submit(function(e){
-
-			var formData = $(form).serialize(),
-				plannerResponse = $('.project-planner__response');
-			
-			$(plannerResponse).addClass('project-planner__response--hidden');
-
-			$.ajax({
-				type: 'POST',
-				url: $(form).attr('action'),
-				data: formData
-			})
-			.done(function(response){
-
-				// set response styles
-				$(plannerResponse).removeClass('project-planner__response--error');
-				$(plannerResponse).addClass('project-planner__response--success ');
-
-				// Set the response
-				$(plannerResponse).html(response);
-
-				// Clear the form
-				// $('#client-name').val('');
-				// $('#client-organisation').val('');
-				// $('#client-email').val('');
-				// $('#client-phone').val('');
-				// $('#project-budget').val('');
-				// $('#project-idea').val('');
-
-			})
-			.fail(function(data){
-
-				// set response styles
-				$(plannerResponse).removeClass('project-planner__response--success');
-				$(plannerResponse).addClass('project-planner__response--error');
-
-				var response = 'Oops, something went wrong. Try again?';
-
-				if(data.responseText !== ''){
-					response = data.responseText;
-				}
-
-				$(plannerResponse).html(response);
-
-			})			
-			.always(function() {
-				
-				// show the response
-				$(plannerResponse).removeClass('project-planner__response--hidden');
-
-			});
-
-			e.preventDefault();
-		});
-
-	}
-
-}
-
 // if anyone pokes into the console display this
 function consoleSleuths(){
 	// if we can console log, some browsers can't
@@ -139,6 +61,6 @@ function readingTime(){
 		if(time > 0){
 			$('.blog .top .meta').after('<small>~ '+ time +' min read</small>');
 		}
-		
+
 	}
 }
