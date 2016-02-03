@@ -20,7 +20,7 @@ module EmojiForJekyll
 
 			site.pages.each { |p| substitute(p, additional_keys) }
 
-			site.posts.each { |p| substitute(p, additional_keys) }
+			site.posts.docs.each { |p| substitute(p, additional_keys) }
 		end
 
 		private
@@ -93,7 +93,7 @@ module EmojiForJekyll
 			else # otherwise use fallback CDN
 				img_src = "https://github.global.ssl.fastly.net/images/icons/emoji/#{name}.png"
 			end
-			
+
 			"<img class=\"emoji\" title=\"'#{name}' emoji\" alt=\"'#{name}' emoji\" src=\"#{img_src}\" >"
 		end
 	end
