@@ -6,35 +6,35 @@ desc: ROSE Digital is Zac Colley and Peter Jones, two guys based in Portsmouth.
 
 <main class="page page-about">
 <div class="wrapper">
-	
+
 	<section class="page-desc">
-		
+
 		<h1>About</h1>
 
 		<p>ROSE Digital is Zac Colley and Peter Jones, two guys based in Portsmouth.</p>
 
 		<p>Working with us means you're communicating directly with the people designing and building for you. We're flexible and can adapt easily to your ideas and business.</p>
-	
+
 	</section>
-	
+
 	{% for author in site.data.authors %}{% assign author_details = author[1] %}
 	<section class="team-member" id="{{ author_details.display_name }}">
 
 		<div class="photo">
-			<img src="{{ root_url }}/img/{{ author_details.display_name }}-head.png" alt="Image of {{  author_details.display_name }}">
+			<img src="{{ root_url }}/img/{{ author_details.display_name }}-head.jpg" alt="Image of {{  author_details.display_name }}">
 		</div>
 
 		<div class="details">
-			
+
 			<h1 class="name">{{ author_details.name }}</h1>
 			{% if author_details.title %}
 			<h2 class="title"><small>{{ author_details.title }}</small></h2>
 			{% endif %}
-			
+
 			{% if author_details.bio %}
 			<p class="bio">{{ author_details.bio }}</p>
 			{% endif %}
-	
+
 			{% for post in site.posts %}
 			{% include latest-member-post.html %}
 			{% endfor %}
