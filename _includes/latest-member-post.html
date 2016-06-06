@@ -1,6 +1,0 @@
-{% if post.title and post.author == author[0] %}
-<p class="latest-post">
-	<a href="{{ root_url }}{{ post.url }}">{{ author_details.display_name }} recently wrote: <q>{{ post.title }}</q></a>
-</p>
-{% break %} 
-{% endif %}

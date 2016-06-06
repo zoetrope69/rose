@@ -3,12 +3,6 @@
 
   <p class="details">ROSE Digital LLP &copy; {{ site.time | date: "%Y" }}</p>
 
-  <ul class="details links">
-      <li><a title="{{ site.data.social.github }}" href="http://github.com/{{ site.data.social.github }}">GitHub</a></li>
-      <li><a title="@{{ site.data.social.twitter }}" href="http://twitter.com/{{ site.data.social.twitter }}">Twitter</a></li>
-      <li><a title="{{ site.data.social.googleplus }}" href="https://google.com/{{ site.data.social.googleplus }}" rel="publisher">Google+</a></li>
-  </ul>
-
   {% if page.category %}
   <p class="details cc">
 
@@ -24,17 +18,6 @@
 
   <p class="details cc">Open source emoji from <a href="http://emojione.com/">Emoji One</a>.</p>
   {% endif %}
-
-  {% if page.map %}
-  <p class="details map">Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Map titles &copy; <a href="http://mapbox.com">Mapbox</a>.</p>
-  {% endif %}
-  
-  <nav>
-    <ul>
-      <li><a href="{{ root_url }}/">Home</a></li>
-      {% include nav.html %}
-    </ul>
-  </nav>
 
   <p class="details details--faint">Partnership Number: OC393584</p>
 

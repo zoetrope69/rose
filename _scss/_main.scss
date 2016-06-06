@@ -12,8 +12,6 @@
 }
 
 body{
-	padding-top: 5rem;
-
 	font-family: $sans-serif;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
@@ -28,13 +26,13 @@ body{
 	max-width: 1300px;
 	margin: 0 auto;
 	padding: 0 1.5em;
+
+  @include animateIn(fade);
 }
 
 main{
 	position: relative;
 	overflow: hidden;
-
-	@include animateIn(fade);
 }
 
 .page .page-desc{
@@ -61,39 +59,6 @@ main{
 	color: $green;
 }
 
-main .btn{
-	display: block;
-	width: 60%;
-	margin: 50px auto 0;
-	padding: 1em;
-
-	color: $red;
-	font-size: 1.5em;
-	text-align: center;
-
-	border: 2px solid $red;
-	border-radius: 5px;
-	background: $white;
-
-	transition: transform .25s;
-
-	@media (max-width: $screen-xl){ width: 70%;  }
-	@media (max-width: $screen-l){  width: 80%;  }
-	@media (max-width: $screen-m){  width: 90%;  }
-	@media (max-width: $screen-s){  width: 100%; }
-}
-
-main .btn:hover{
-	color: $white;
-
-	background: $red;
-	cursor: pointer;
-}
-
-main .btn:active{
-	transform: translateY(-5px);
-}
-
 .emoji,
 .blog .post .emoji{
 	display: inline-block;
@@ -104,35 +69,11 @@ main .btn:active{
 	margin-bottom: -.25em;
 }
 
-.interest{
-	display: block;
-	width: 100%;
-	padding: .5em;
-
-	color: desaturate($red, 10%);
-	font-size: 2em;
-	font-family: $serif;
-	text-align: center;
-
-	transition: color .5s ease-in, transform .5s, ease-in;
-}
-
-.interest:hover{
-	color: $red;
-	transform: translateY(-3px);
-}
-
-@import 'error';
-
 @import 'header';
 @import 'logo';
-@import 'nav';
 @import 'home';
-@import 'team-member';
 @import 'blog';
 @import 'blog-posts';
-@import 'work';
 @import 'footer';
-@import 'leaflet';
 
 @import 'blog-post-dynamic-logo';

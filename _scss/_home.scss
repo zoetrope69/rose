@@ -7,51 +7,20 @@
 	@media (max-width: $screen-s){ font-size: .5em; }
 }
 
+.home .wrapper{
+  max-width: 40em;
+}
+
 .home section{
 	overflow: hidden;
 	position: relative;
 	padding: 2.5em 0;
 	width: 100%;
 
-	background-image: url('../../img/bg-rose.png');
-	background-image: url('../../img/bg-rose.svg'), none;
-	background-repeat: no-repeat;
-	background-position: 125% 100%;
-
 	@media (max-width: $screen-s){
 		padding: 2em 0 2.5em;
 		background-position: 0% -15%;
 	}
-}
-
-.home .section--red{
-	color: $white;
-	background-color: $red;
-}
-
-.home .section--red *::selection{
-	background-color: $white;
-	color: $red;
-}
-
-.home .section--black{
-	color: $white;
-	background-color: $black;
-}
-
-.home .section--black *::selection{
-	background-color: $white;
-	color: $black;
-}
-
-.home .section--white{
-	color: $black;
-	background-color: $white;
-}
-
-.home .section--white *::selection{
-	background-color: $black;
-	color: $white;
 }
 
 @keyframes introIn{
@@ -116,74 +85,12 @@
 
 .home section .text a{
 	font-weight: 400;
-	
+
 	border-bottom: 1px solid;
-	
+
 	transition: border-color .15s;
 }
 
 .home section .text a:hover{
 	border-color: transparent;
-}
-
-.home section .move-link{
-	float: right;
-	padding: .5em;
-	margin-top: 1em;
-	
-	white-space: nowrap;
-	font-size: 2.5em;
-	color: $red;
-
-	border: 2px solid transparentize($white, .75);
-	border-radius: 5px;
-
-	background: $white;
-
-	transition: border-color .15s;
-}
-
-.home section .move-link:hover{
-	border-color: transparent;
-}
-
-.home .latest-post{
-	background: $black;
-}
-
-.home .latest-post a{
-	display: block;
-	padding: 1.5em;
-}
-
-.home .latest-post a:hover{ opacity: .8; }
-
-.home .latest-post h3{
-	margin: 0;
-
-	font-size: 2em;
-	font-weight: 300;
-	font-style: normal;
-	font-family: $sans-serif;
-	color: lighten($white, 5%);
-	text-align: center;
-
-	@media (max-width: $screen-m){
-		font-size: 2.5em;
-	}
-}
-
-.home .latest-post q{
-	color: $white;
-	font-family: $serif;
-
-	@media (max-width: $screen-m){
-		display: block;
-		margin-top: .25em;
-	}
-}
-
-.home .latest-post q::before,
-.home .latest-post q::after{
-	font-size: 1.5em;
 }

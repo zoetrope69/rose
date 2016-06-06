@@ -1,78 +1,19 @@
 /* _header.scss */
 
 header{
-	z-index: 1337;
-	position: fixed;
-	top: 0; right: 0; left: 0;
 	overflow: hidden;
 	padding: .75em 0;
-	height: 5rem;
-	
-	background-color: $white; 
-	background-color: transparentize(white, .05);
+
+	background-color: $white;
 	color: $white;
 
 	backface-visibility: hidden;
-
-	@media (max-width: $screen-m){
-		height: 4rem;
-		padding: .25em 0;
-	}
 }
 
 header .logo{
-	float: left;
-	width: 40%;
+  display: block;
+  margin: .5em auto;
+  width: 100%;
 }
-
-header nav{
-	float: left;
-	width: 60%;
-}
-
-header nav li{
-	float: left;
-	width: (100%/$navLinkAmount);
-	
-	color: $red;
-	text-align: center;
-
-	@media (max-width: $screen-s){ display: none; }
-}
-
-header nav li.menu-link{
-	display: none;
-	width: 100%;
-
-	@media (max-width: $screen-s){ display: block; }
-}
-
-header nav li.menu-link a{
-	float: right;
-	padding: .75em;
-	width: 50%;
-	margin: 1em auto;
-	
-	border: 1px solid;
-	border-radius: 5px;
-
-	transform: translateZ(0);
-}
-
-header nav li a{
-	padding: 1.5em 0;
-	@include animateIn(fade);
-
-	@media (max-width: $screen-m){
-		padding: 2em 0;
-		font-size: .9em;
-	}
-}
-
-header nav li a:hover{
-	color: $black;
-}
-
 
 @import 'logo';
-@import 'nav';
