@@ -79,7 +79,7 @@ Now we have the initial placement we can animate them to create the spin effect,
 
 	border: 7px solid red;
 	border-radius: 50%;
-	
+
 	animation: .5s infinite alternate ease-in-out;
 }
 
@@ -97,7 +97,7 @@ Now we have the initial placement we can animate them to create the spin effect,
 	transform: translate(33.33%, 33.33%);
 	animation-name: petal-3;
 }
-	
+
 /* each petal has a respective animation */
 
 @keyframes petal-1{
@@ -131,13 +131,13 @@ $spinSpeed: .5s;
 
 .petals li{
     position: absolute;
-  
+
     height: $petalSize;
     width: $petalSize;
 
     border: $petalThickness solid $petalColour;
     border-radius: 50%;
-  
+
     animation: $spinSpeed; infinite alternate ease-in-out;
 }
 
@@ -150,7 +150,7 @@ $position:(
 
 // loop through petals
 @for $i from 1 to length($position) + 1{
-  
+
   .petals li:nth-child(#{$i}){
     transform: nth($position, $i);
     animation-name: petal-#{$i};
@@ -167,5 +167,3 @@ $position:(
 {% endhighlight %}
 
 I realise this implementation isn't perfect, you can find the above code [in a CodePen](http://codepen.io/zaccolley/pen/ApEiF), feel free to fork and improve.
-
-_[Tweet @ us](http://twitter.com/rosedgtl) if you have any hot tips._ :smirk_cat:

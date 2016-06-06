@@ -34,7 +34,7 @@ Toby was messing about with Open CV and facial recognition. :japanese_ogre:
 
 ### ODL Graphics
 
-[Jason](http://twitter.com/creative-element) designed some logos for the [Open Device Lab](http://odl.rose.digital) we're starting up.
+[Jason](http://twitter.com/creative-element) designed some logos for the Open Device Lab we're starting up.
 
 He went for a kind of 'science lab' vibe with a flask, and some other device bits and bobs. :iphone: :computer:
 
@@ -109,7 +109,7 @@ James was working on some open-source code. Improving the [Browser Capabilities 
 
 ### ROSY the Robot
 
-<div class="media media-right">	
+<div class="media media-right">
 <blockquote class="twitter-tweet" lang="en-gb">
 	<p><a href="https://twitter.com/hashtag/hackpompey?src=hash">#hackpompey</a> 4 hours late but we made it! Check out the video of our robotic debut: <a href="http://t.co/cnfnJh7J27">http://t.co/cnfnJh7J27</a></p>
 	&mdash; Jorge Bergasa (@jbergasa) <a href="https://twitter.com/jbergasa/status/536288116152471552">November 22, 2014</a>
@@ -171,4 +171,3 @@ Bring on the next one! :thumbsup:
 
 <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-
