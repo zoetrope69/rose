@@ -6,7 +6,7 @@ author: zac
 category: blog
 ---
 
-This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing. 
+This is a test file with every element in for testing. This is a test file with every element in for testing. This is a test file with every element in for testing.
 
 Lorem ipsum dolor sit "amet, 'consectetur' adipisicing elit". Vero, tempora, atque delectus quia alias similique tempore temporibusbeatae namprovident assumenda eaque dicta libero earum facilis 'esse consectetur' enim nesciunt.
 
@@ -72,12 +72,12 @@ id sem consectetuer libero luctus adipiscing.
 * * *
 
 > ## This is a header.
-> 
+>
 > 1.   This is the first list item.
 > 2.   This is the second list item.
-> 
+>
 > Here's some example code:
-> 
+>
 >     return shell_exec("echo $input | $markdown_script");
 
 ![wot](http://lorempixel.com/500/500)
@@ -122,9 +122,9 @@ title: ROSE Digital
     <div class="text">
 
         <p>ROSE Digital are a future-thinking partnership offering website design, development and graphic design.</p>
-    
+
     </div>
-    
+
     <a class="move-link" href="#work">What can we offer?</a>
 
 </section><!-- end of intro section -->
@@ -176,10 +176,7 @@ title: ROSE Digital
         <p>P &amp; Z :¬)</p>
         <p class="logo-sig logo-white-svg">ROSE Digital</p>
     </div>
-    
-    {% assign post = site.posts.first %}
-    {% include latest-post.html %}
-    
+
 </section><!-- end of contact section -->
 
 </main>
@@ -221,14 +218,14 @@ function scrollPage(clicked){
         var id = String(clicked).substr(url.length); // Take the URL and leave the # part
 
         var postPosition = $(id).position().top; // Finds the position from the top of the window for the heading with the ID 'hrefValue'
-        
+
         var headerHeight = $('header').outerHeight();
-        
+
         // How far scrolled down minus the height of the header
         var scrollAmount = postPosition - headerHeight;
         // Moves to the top of the post in 'animationSpeed'ms
         $('body').animate({ scrollTop: scrollAmount }, animationSpeed);
-        
+
         event.preventDefault(); // Stops the link's normal behaviour
 }
 
@@ -332,7 +329,7 @@ function capsString(string){
 
     font-size: 2.25em;
     font-weight: 600;
-    
+
     text-transform: uppercase;
 }
 
@@ -369,7 +366,7 @@ function capsString(string){
     height: 2em;
 
     text-indent: -9999px;
-    
+
     background-repeat: no-repeat;
     background-position: center right;
     background-size: auto 100%;
@@ -381,10 +378,10 @@ function capsString(string){
 .home section > .text a{
     font: inherit;
     font-weight: 400;
-    
+
     border-bottom: 1px solid;
     color: inherit;
-    
+
     text-decoration: none;
     transition: border-color .15s;
 }
@@ -435,7 +432,7 @@ function capsString(string){
 .home #blog h1{
     width: 100%;
     display: inline-block;
-    
+
     font-size: 1.75em;
     font-weight: 300;
     color: $white;
@@ -450,7 +447,7 @@ function capsString(string){
 .home #blog q:after{
     vertical-align: -0.25em;
     margin: 0 2px;
-    
+
     font-size: 2em;
     color: darken($white, 70%);
 }
@@ -489,7 +486,7 @@ function capsString(string){
 }
 
 @media screen and (max-width: $screen-m){
-    
+
     .home section{
         padding: 3em .75em;
     }
@@ -509,7 +506,7 @@ function capsString(string){
     }
 
     .home section > .move-link{
-        font-size: 1.5em; 
+        font-size: 1.5em;
         bottom: 5%;
     }
 
@@ -549,7 +546,7 @@ function capsString(string){
     .home section > .move-link{
         bottom: 5%; right: 5%; left: 5%;
 
-        font-size: 1.25em; 
+        font-size: 1.25em;
         text-align: center;
     }
 
