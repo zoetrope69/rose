@@ -3,9 +3,9 @@ ROSE Digital's website
 
 [rose.digital](http://rose.digital)
 
-rose website, will move this to rosedigital account
+rose website
 
-1. install ruby dependancies - `gem install jekyll rouge redcarpet`
+1. install ruby dependencies - `gem install jekyll rouge redcarpet`
 2. install node modules - `npm install`
 3. build, start watching file changes and start a server with draft posts - `npm start`
 4. to build for deployment use `npm run build`
