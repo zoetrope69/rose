@@ -32,7 +32,7 @@ footer .details a{
 	color: inherit;
 	font-weight: 600;
 	text-decoration: none;
-	
+
 	border-bottom: 1px solid transparent;
 
 	transition: border-color .15s;
@@ -71,7 +71,7 @@ footer .cc{
 	display: block;
 	margin: 0 auto;
 	width: 40%;
-	
+
 	color: lighten($black, 25%);
 
 	@media (max-width: $screen-m){ width: 70%; }
@@ -82,9 +82,9 @@ footer .cc a{ font-weight: 300; }
 footer .cc .license-icons{
 	display: block;
 	margin-top: .5em;
-	
+
 	border: none;
-	
+
 	opacity: .75;
 }
 

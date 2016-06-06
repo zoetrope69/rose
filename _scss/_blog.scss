@@ -7,13 +7,13 @@
 .blog .top{
 	overflow: hidden;
 	padding: 1.5em 0;
-	
+
 	background: $black;
 }
 
 .blog .top .title{
 	margin-bottom: .25em;
-	
+
 	font-size: 3.5em;
 	font-weight: 700;
 	line-height: 1em;
@@ -27,7 +27,7 @@
 	font-size: 1.2em;
 	font-family: $sans-serif;
 	font-style: normal;
-	color: $red;
+	color: darken($white, 15%);
 }
 
 .blog .top .meta time{
@@ -37,7 +37,7 @@
 .blog .top small{
 	width: 30%;
 	float: right;
-	
+
 	font-size: 1.2em;
 	color: darken($white, 10%);
 	text-align: right;
@@ -99,7 +99,7 @@
 	float: left;
 	margin: .25em 0;
 	margin-right: .5em;
-	
+
 	line-height: 1em;
 	font-size: .7em;
 	color: lighten($black, 50%);
@@ -109,7 +109,7 @@
 	content: '✿';
 }
 
-.blog .post ol{ counter-reset: section; }		
+.blog .post ol{ counter-reset: section; }
 .blog .post ol li{ counter-increment: section; }
 .blog .post ol li::before{ content: counters(section, '.') '.'; }
 
