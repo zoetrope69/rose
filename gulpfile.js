@@ -5,13 +5,13 @@ var gulp =  require('gulp'),
 
 	sass = require('gulp-sass'),
 	prefix = require('gulp-autoprefixer'),
-    minifyCSS = require('gulp-minify-css'),
+  minifyCSS = require('gulp-minify-css'),
 
 	browserSync = require('browser-sync'),
 	cp = require('child_process'),
 	rename = require('gulp-rename'),
 
-    imagemin = require('gulp-imagemin'),
+  imagemin = require('gulp-imagemin'),
 
 	htmlValidate = require("gulp-htmlhint"),
 	jshint = require('gulp-jshint');
@@ -32,7 +32,7 @@ gulp.task('jekyll-build', function (done) {
 /**
  * build the Jekyll site (without drafts)
  */
-gulp.task('jekyll-build-deploy', function (done) {
+gulp.task('jekyll-build-production', function (done) {
 	browserSync.notify(messages.jekyllBuild);
 	return cp.spawn('jekyll', ['serve'], { stdio: 'inherit' })
 		.on('close', done);
@@ -132,4 +132,4 @@ gulp.task('watch', function () {
  */
 gulp.task('lint', ['lint-html', 'lint-scripts']);
 gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('deploy', ['scripts', 'sass', 'jekyll-build-deploy']);
+gulp.task('build', ['scripts', 'sass', 'jekyll-build-production']);
