@@ -18,8 +18,14 @@ body{
 
 	background: $bg-color;
 	color: $black;
+}
 
-	@media (max-width: $screen-m){ padding-top: 4rem; }
+.years-alive {
+  display: block;
+
+  color: darken($bg-color, 35%);
+  font-size: .85em;
+  text-align: center;
 }
 
 .wrapper{
