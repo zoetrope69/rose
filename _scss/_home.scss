@@ -1,96 +1,30 @@
 /* _home.scss */
 
 .home{
-	@media (max-width: $screen-xl){ font-size: .75em; }
-	@media (max-width: $screen-l){  font-size: .7em; }
-	@media (max-width: $screen-m){  font-size: .65em; }
-	@media (max-width: $screen-s){ font-size: .5em; }
+	font-size: 1.25em;
+	@media (max-width: $screen-m){ font-size: .85em; }
 }
 
 .home .wrapper{
-  max-width: 40em;
-}
-
-.home section{
-	overflow: hidden;
-	position: relative;
-	padding: 2.5em 0;
-	width: 100%;
-
-	@media (max-width: $screen-s){
-		padding: 2em 0 2.5em;
-		background-position: 0% -15%;
-	}
-}
-
-@keyframes introIn{
-	0%{
-		background-image: none;
-		background-position: 125% 0%;
-	}
-}
-
-.home section h1,
-.home section .text{
-	backface-visibility: hidden; // stops the animation white flash
-}
-
-.home section h1,
-.home section h2{
-	color: inherit;
+  max-width: 32.5em;
 }
 
 .home section h1{
-	width: 70%;
-	margin-bottom: .25em;
-
-	font-size: 6em;
+	font-size: 5em;
 	font-weight: 700;
+  color: inherit;
 
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	@media (max-width: $screen-l){ font-size: 6.5em; }
 	@media (max-width: $screen-m){
-		width: 100%;
-		font-size: 5em;
 		line-height: .95em;
+    margin-bottom: .5em;
 	}
-}
-
-.home section h2{
-	margin-bottom: .5em;
-
-	font-size: 2.25em;
-	font-weight: 600;
-	font-family: $sans-serif;
-
-	text-transform: uppercase;
-}
-
-.home section .text{
-	float: left;
-	font-size: 1.45em;
-
-	@media (max-width: $screen-s){
-		width: 100%;
-		float: none;
-	}
-}
-
-.home section .text p{
-	width: (100% * 2/3);
-	line-height: 1.25;
 }
 
 .home section .text a{
-	font-weight: 400;
-
-	border-bottom: 1px solid;
-
-	transition: border-color .15s;
+  @include underline($black);
 }
 
-.home section .text a:hover{
-	border-color: transparent;
+.home section .text h2{
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
