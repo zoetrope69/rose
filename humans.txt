@@ -1,15 +1,17 @@
----
-title: humans.txt
----
-
 /* TEAM */
-{% for author in site.data.authors %}{% assign author_details = author[1] %}
-Name: {{ author_details.name }}
-Title: {{ author_details.title }}
-Website: {{ author_details.web }}
-Twitter: {{ author_details.twitter }}
-Github: {{ author_details.github }}
-{% endfor %}
+
+Name: Zac Colley
+Title: Web Design, User Experience
+Website: zaccolley.com
+Twitter: zaccolley
+Github: zaccolley
+
+Name: Peter Jones
+Title: Back-end Web Development
+Website: 
+Twitter: peterjonesio
+Github: kephail
+
 
 /* THANKS */
 
@@ -18,7 +20,7 @@ Zac thanks his mum and dad too
 
 /* SITE */
 
-Last update: {{ site.time }}
+Last update: 2016-06-19 02:52:55 +0000
 Doctype: HTML5
 Standards: HTML5, CSS3
 Software: Sublime Text, GIMP, Inkscape, Git, Gulp, SASS, Jekyll
